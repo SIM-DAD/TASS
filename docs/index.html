@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TASS — Text Analysis for Social Scientists | T-Lex Project</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0A0A0A;
+      --white: #FFFFFF;
+      --red:   #CC0000;
+      --gray:  #5C5C5C;
+      --light: #F2F2F2;
+      --rule:  1px solid #D0D0D0;
+      --font:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--white);
+      color: var(--black);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--black);
+      border-bottom: 4px solid var(--red);
+      padding: 2.5rem 0 2rem;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: end;
+    }
+
+    .back-link {
+      display: inline-block;
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: var(--red); }
+
+    h1 {
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 900;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    h1 span { color: var(--red); }
+
+    .tagline {
+      color: var(--gray);
+      font-size: 0.9375rem;
+      margin-top: 0.5rem;
+      letter-spacing: 0.04em;
+    }
+
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.5rem;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.5875rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .pill-status  { background: var(--red); color: var(--white); }
+    .pill-version { border: 1px solid var(--gray); color: var(--gray); }
+
+    /* ── NAV ── */
+    nav {
+      background: var(--red);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+    }
+
+    .nav-inner a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.875rem 1.5rem;
+      border-right: 1px solid rgba(255,255,255,0.2);
+      transition: background 0.15s;
+      cursor: pointer;
+    }
+    .nav-inner a:first-child { border-left: 1px solid rgba(255,255,255,0.2); }
+    .nav-inner a:hover  { background: rgba(0,0,0,0.2); }
+    .nav-inner a.active { background: var(--black); }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .tab-panel          { display: none; }
+    .tab-panel.active   { display: block; }
+
+    /* ── SECTIONS ── */
+    section.content-section {
+      padding: 4.5rem 0;
+      border-bottom: var(--rule);
+    }
+    section.content-section:last-child { border-bottom: none; }
+
+    .section-label {
+      font-size: 0.5875rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      border-left: 4px solid var(--red);
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+
+    h3 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.75rem;
+      color: var(--black);
+    }
+
+    p {
+      color: var(--gray);
+      max-width: 72ch;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── COMPARISON TABLE ── */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      font-size: 0.875rem;
+    }
+
+    .compare-table th {
+      background: var(--black);
+      color: var(--white);
+      text-align: left;
+      padding: 0.75rem 1rem;
+      font-size: 0.5875rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .compare-table th:last-child { color: #888; }
+
+    .compare-table td {
+      padding: 0.75rem 1rem;
+      border-bottom: var(--rule);
+      color: var(--gray);
+    }
+    .compare-table tr:nth-child(even) td { background: var(--light); }
+    .compare-table td:first-child { color: var(--black); font-weight: 500; }
+
+    .check { color: var(--red); font-weight: 900; }
+    .cross  { color: #BBBBBB; }
+
+    /* ── DICTIONARY GRID ── */
+    .dict-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 2rem;
+      background: var(--black);
+    }
+
+    .dict-card {
+      background: var(--white);
+      padding: 1.5rem;
+      transition: background 0.12s;
+    }
+    .dict-card:hover { background: var(--light); }
+
+    .dict-number {
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: var(--light);
+      line-height: 1;
+      margin-bottom: 0.375rem;
+    }
+
+    .dict-tag {
+      display: block;
+      font-size: 0.5rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 0.375rem;
+    }
+
+    .dict-name {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--black);
+      margin-bottom: 0.375rem;
+    }
+
+    .dict-desc {
+      font-size: 0.8125rem;
+      color: var(--gray);
+      line-height: 1.5;
+    }
+
+    /* ── ROADMAP ── */
+    .roadmap {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 2rem;
+      background: var(--black);
+    }
+
+    .roadmap-item {
+      background: var(--white);
+      padding: 2rem 1.5rem;
+    }
+
+    .roadmap-version {
+      font-size: 2.25rem;
+      font-weight: 900;
+      color: var(--black);
+      line-height: 1;
+    }
+    .roadmap-version span { color: var(--red); }
+
+    .roadmap-date {
+      font-size: 0.5875rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin: 0.5rem 0 1rem;
+    }
+
+    .roadmap-desc {
+      font-size: 0.875rem;
+      color: var(--gray);
+      line-height: 1.6;
+      max-width: none;
+      margin: 0;
+    }
+
+    /* ── COLLABORATE TAB ── */
+    .collab-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+      margin-top: 2.5rem;
+    }
+
+    .what-list {
+      list-style: none;
+      margin: 1.25rem 0;
+    }
+
+    .what-list li {
+      padding: 0.75rem 0;
+      border-bottom: var(--rule);
+      color: var(--gray);
+      font-size: 0.9375rem;
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+    .what-list li::before {
+      content: '\2014';
+      color: var(--red);
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .credit-block {
+      background: var(--black);
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .credit-block h3 { color: var(--white); margin-bottom: 1rem; }
+
+    .credit-block p {
+      color: #AAAAAA;
+      max-width: none;
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+    }
+    .credit-block p:last-child { margin-bottom: 0; }
+
+    /* ── FORM ── */
+    .form-section { padding: 4.5rem 0; }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.375rem;
+    }
+    .form-group.full { grid-column: 1 / -1; }
+
+    label {
+      font-size: 0.5875rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--black);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      font-family: var(--font);
+      font-size: 0.9375rem;
+      border: var(--rule);
+      border-radius: 0;
+      padding: 0.625rem 0.75rem;
+      outline: none;
+      width: 100%;
+      background: var(--white);
+      color: var(--black);
+      appearance: none;
+      -webkit-appearance: none;
+    }
+    input:focus, select:focus, textarea:focus { border-color: var(--red); }
+    textarea { resize: vertical; min-height: 130px; }
+
+    /* dictionary checkbox block */
+    .dict-checkboxes {
+      border: var(--rule);
+      margin-top: 0.5rem;
+    }
+
+    .dict-group-label {
+      display: block;
+      font-size: 0.5rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--red);
+      padding: 0.625rem 1rem 0.375rem;
+      background: var(--light);
+      border-bottom: var(--rule);
+    }
+
+    .dict-group-items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-bottom: var(--rule);
+      font-size: 0.8125rem;
+      color: var(--gray);
+      cursor: pointer;
+      transition: background 0.1s;
+    }
+    .checkbox-item:hover { background: var(--light); }
+    .checkbox-item input[type="checkbox"] {
+      width: auto;
+      accent-color: var(--red);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .checkbox-item.any-item {
+      background: var(--black);
+      color: var(--white);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.6875rem;
+      border-bottom: 2px solid var(--red);
+      grid-column: 1 / -1;
+    }
+    .checkbox-item.any-item:hover { background: #1a1a1a; }
+
+    .btn-submit {
+      display: inline-block;
+      background: var(--black);
+      color: var(--white);
+      border: none;
+      padding: 1rem 2.5rem;
+      font-family: var(--font);
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      transition: background 0.15s;
+    }
+    .btn-submit:hover { background: var(--red); }
+
+    .form-note {
+      font-size: 0.75rem;
+      color: var(--gray);
+      margin-top: 0.75rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--black);
+      border-top: 4px solid var(--red);
+      padding: 2rem 0;
+      margin-top: 4rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-inner p,
+    .footer-inner a {
+      color: var(--gray);
+      font-size: 0.6875rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      max-width: none;
+      margin: 0;
+      text-decoration: none;
+    }
+    .footer-inner a:hover { color: var(--red); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      .header-inner       { grid-template-columns: 1fr; }
+      .header-right       { flex-direction: row; align-items: flex-start; }
+      .dict-grid          { grid-template-columns: repeat(2, 1fr); }
+      .roadmap            { grid-template-columns: repeat(2, 1fr); }
+      .collab-grid        { grid-template-columns: 1fr; gap: 2rem; }
+      .form-grid          { grid-template-columns: 1fr; }
+      .dict-group-items   { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      h1              { font-size: 3rem; }
+      .dict-grid      { grid-template-columns: 1fr; }
+      .roadmap        { grid-template-columns: 1fr; }
+      .footer-inner   { flex-direction: column; gap: 0.5rem; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════ -->
+  <header>
+    <div class="header-inner">
+      <div>
+        <a href="https://sim-dad.github.io" class="back-link">&larr; SIM DAD LLC</a>
+        <h1>T<span>A</span>SS</h1>
+        <p class="tagline">Text Analysis for Social Scientists</p>
+      </div>
+      <div class="header-right">
+        <span class="pill pill-status">Pre-Release</span>
+        <span class="pill pill-version">v1.0 &mdash; Summer 2026</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <nav>
+    <div class="nav-inner">
+      <a class="tab-link active" data-tab="overview">Overview</a>
+      <a class="tab-link" data-tab="collaborate">Collaborate</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       MAIN
+  ══════════════════════════════════════════ -->
+  <main>
+
+    <!-- ╔══════════════════════════════╗
+         ║       OVERVIEW TAB          ║
+         ╚══════════════════════════════╝ -->
+    <div id="tab-overview" class="tab-panel active">
+
+      <!-- ABOUT -->
+      <section class="content-section">
+        <p class="section-label">About</p>
+        <h2>Professional NLP for Researchers<br>Who Don&rsquo;t Write Code</h2>
+        <p>TASS is a native Windows desktop application that makes text analysis accessible to social scientists, humanities scholars, and data journalists. It combines dictionary-based scoring, group statistical comparisons, and publication-quality visualizations &mdash; with no Python, R, or terminal required.</p>
+        <p>All analysis runs entirely on your machine. No data leaves your device. Every export includes a pre-formatted citation block so your methods are fully documented from the moment you finish.</p>
+      </section>
+
+      <!-- COMPARISON -->
+      <section class="content-section">
+        <p class="section-label">Why TASS</p>
+        <h2>TASS vs. LIWC</h2>
+        <p>LIWC has been the default tool for dictionary-based text analysis in social science for decades. TASS is built to do everything LIWC does &mdash; and a great deal it cannot.</p>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Capability</th>
+              <th>TASS</th>
+              <th>LIWC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>No coding required</td>
+              <td class="check">Yes</td>
+              <td class="check">Yes</td>
+            </tr>
+            <tr>
+              <td>Large dataset support (100k+ entries)</td>
+              <td class="check">Yes</td>
+              <td class="cross">No</td>
+            </tr>
+            <tr>
+              <td>Open, transparent dictionaries</td>
+              <td class="check">Yes</td>
+              <td class="cross">No</td>
+            </tr>
+            <tr>
+              <td>Built-in group comparisons (t-test, ANOVA)</td>
+              <td class="check">Yes</td>
+              <td class="cross">No</td>
+            </tr>
+            <tr>
+              <td>Publication-quality visualizations</td>
+              <td class="check">Yes</td>
+              <td class="cross">Limited</td>
+            </tr>
+            <tr>
+              <td>Custom dictionary import</td>
+              <td class="check">Yes</td>
+              <td class="cross">Limited</td>
+            </tr>
+            <tr>
+              <td>Offline, local analysis</td>
+              <td class="check">Yes</td>
+              <td class="check">Yes</td>
+            </tr>
+            <tr>
+              <td>Annual license price</td>
+              <td class="check">$49 / year</td>
+              <td class="cross">$89+ / year</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="content-section">
+        <p class="section-label">Features</p>
+        <h2>What TASS Does</h2>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--black);margin-top:2rem">
+          <div style="background:var(--white);padding:2rem">
+            <h3>Data Import</h3>
+            <p style="max-width:none;font-size:0.875rem">CSV, TXT, and XLSX support. Batch file processing. A column-mapping wizard lets you designate your text, group, and metadata columns. Rows are previewed read-only before analysis begins.</p>
+          </div>
+          <div style="background:var(--white);padding:2rem">
+            <h3>Analysis Engine</h3>
+            <p style="max-width:none;font-size:0.875rem">Dictionary scoring at word, entry, and document level. Multi-threaded processing distributes work across all CPU cores. Real-time progress display with time estimates.</p>
+          </div>
+          <div style="background:var(--white);padding:2rem">
+            <h3>Group Comparisons</h3>
+            <p style="max-width:none;font-size:0.875rem">Define groups by column values. Descriptive statistics, t-test, Mann-Whitney U, one-way ANOVA, Cohen&rsquo;s d, and eta-squared &mdash; computed and visualized per category, per group.</p>
+          </div>
+          <div style="background:var(--white);padding:2rem">
+            <h3>Export</h3>
+            <p style="max-width:none;font-size:0.875rem">CSV (full entry-level scores), Excel (multi-sheet workbook), and high-resolution PNG + SVG visualizations at 300 DPI. Every export includes a pre-formatted APA citation block.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DICTIONARIES -->
+      <section class="content-section">
+        <p class="section-label">Dictionary Library</p>
+        <h2>Open Lexicons, Original Research</h2>
+        <p>TASS ships with eight commercially-licensed third-party dictionaries at launch and is building 18 original T-Lex lexicons &mdash; each independently citable and freely available for academic and non-commercial use.</p>
+
+        <div style="margin-top:3rem">
+          <h3>Bundled at Launch &mdash; v1.0</h3>
+          <table class="compare-table" style="margin-top:1rem">
+            <thead>
+              <tr>
+                <th>Dictionary</th>
+                <th>Coverage</th>
+                <th>License</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AFINN-165</td>
+                <td>Sentiment valence</td>
+                <td>MIT</td>
+              </tr>
+              <tr>
+                <td>VADER Lexicon</td>
+                <td>Sentiment valence + intensity</td>
+                <td>MIT</td>
+              </tr>
+              <tr>
+                <td>Moral Foundations Dictionary 2.0</td>
+                <td>Care, Fairness, Loyalty, Authority, Purity</td>
+                <td>CC-BY</td>
+              </tr>
+              <tr>
+                <td>Brysbaert Concreteness Norms</td>
+                <td>Concreteness ratings (~40k words)</td>
+                <td>CC-BY</td>
+              </tr>
+              <tr>
+                <td>HurtLex</td>
+                <td>Hurtful and offensive language by category</td>
+                <td>CC-BY-SA</td>
+              </tr>
+              <tr>
+                <td>WordNet 3.1</td>
+                <td>Full English lexicon + part-of-speech tags</td>
+                <td>Princeton (commercial-compatible)</td>
+              </tr>
+              <tr>
+                <td>NLTK Stopwords</td>
+                <td>Function words, pronouns, prepositions, articles</td>
+                <td>Apache 2.0</td>
+              </tr>
+              <tr>
+                <td>SentiWordNet 3.0</td>
+                <td>Synset-level positive / negative / objective scores</td>
+                <td>CC-BY-SA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin-top:3.5rem">
+          <h3>TASS-Native Dictionaries &mdash; In Development</h3>
+          <p style="margin-bottom:0">Eighteen original T-Lex lexicons built and owned by SIM DAD LLC. Each dictionary is freely available for academic research and is expected to yield one or more peer-reviewed publications. See the <a href="#" class="tab-link" data-tab="collaborate" style="color:var(--red);text-decoration:none;font-weight:700">T-Lex Project tab</a> if you want to help build them.</p>
+          <div class="dict-grid">
+            <div class="dict-card">
+              <div class="dict-number">01</div>
+              <span class="dict-tag">v1.1 &middot; Aug 2026</span>
+              <div class="dict-name">Affective Norms</div>
+              <div class="dict-desc">Valence, arousal, and dominance ratings for 40,000+ English words</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">02</div>
+              <span class="dict-tag">v1.1 &middot; Aug 2026</span>
+              <div class="dict-name">Discrete Emotions</div>
+              <div class="dict-desc">Anger, fear, joy, sadness, anticipation, trust, surprise, disgust</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">03</div>
+              <span class="dict-tag">v1.1 &middot; Aug 2026</span>
+              <div class="dict-name">Psychosocial Process Lexicon</div>
+              <div class="dict-desc">Cognitive, social, biological, perceptual, and temporal process categories</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">04</div>
+              <span class="dict-tag">v1.1 &middot; Aug 2026</span>
+              <div class="dict-name">Opinion &amp; Stance</div>
+              <div class="dict-desc">Evaluative language calibrated for social science text corpora</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">05</div>
+              <span class="dict-tag">v1.1 &middot; Aug 2026</span>
+              <div class="dict-name">Power &amp; Status</div>
+              <div class="dict-desc">Authority, dominance, submission, and political arena language</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">06</div>
+              <span class="dict-tag">v1.1 &middot; Aug 2026</span>
+              <div class="dict-name">Hedging &amp; Epistemic Stance</div>
+              <div class="dict-desc">Modal verbs, approximators, evidentials, hedges, and boosters</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">07</div>
+              <span class="dict-tag">v1.1 &middot; Aug 2026</span>
+              <div class="dict-name">Modal Language</div>
+              <div class="dict-desc">Deontic (obligation, permission) and epistemic (certainty, possibility) modals</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">08</div>
+              <span class="dict-tag">v2.0 &middot; Spring 2027</span>
+              <div class="dict-name">Agency &amp; Communion</div>
+              <div class="dict-desc">Agentic and communal language across competence, warmth, and affiliation</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">09</div>
+              <span class="dict-tag">v2.0 &middot; Spring 2027</span>
+              <div class="dict-name">Narrative &amp; Temporal Orientation</div>
+              <div class="dict-desc">Past/future focus, causal reasoning, and narrative sequencing markers</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">10</div>
+              <span class="dict-tag">v2.0 &middot; Spring 2027</span>
+              <div class="dict-name">Collective Identity &amp; Social Boundaries</div>
+              <div class="dict-desc">In-group/out-group markers, solidarity language, othering vocabulary</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">11</div>
+              <span class="dict-tag">v2.0 &middot; Spring 2027</span>
+              <div class="dict-name">Formality &amp; Register</div>
+              <div class="dict-desc">Formal vs. informal register markers across social contexts</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">12</div>
+              <span class="dict-tag">v2.0 &middot; Spring 2027</span>
+              <div class="dict-name">Political &amp; Ideological Language</div>
+              <div class="dict-desc">Populist framing, partisan cues, threat rhetoric, democratic norms vocabulary</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">13</div>
+              <span class="dict-tag">v2.0 &middot; Spring 2027</span>
+              <div class="dict-name">Health &amp; Illness Communication</div>
+              <div class="dict-desc">Mental health stigma language, health literacy levels, illness narrative framing</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">14</div>
+              <span class="dict-tag">v2.0 &middot; Spring 2027</span>
+              <div class="dict-name">Deception &amp; Trust Cues</div>
+              <div class="dict-desc">Distancing language, verbal credibility signals, linguistic deception markers</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">15</div>
+              <span class="dict-tag">v2.0 &middot; Spring 2027</span>
+              <div class="dict-name">Crisis &amp; Uncertainty Language</div>
+              <div class="dict-desc">Risk framing, ambiguity markers, and domain-calibrated epistemic hedging</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">16</div>
+              <span class="dict-tag">v2.0 &middot; Spring 2027</span>
+              <div class="dict-name">Financial &amp; Economic Sentiment</div>
+              <div class="dict-desc">Optimism, caution, and urgency in organizational and financial communication</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">17</div>
+              <span class="dict-tag">v2.0 &middot; Spring 2027</span>
+              <div class="dict-name">Academic &amp; Scientific Register</div>
+              <div class="dict-desc">Hedging in scientific writing, citation language, certainty and uncertainty claims</div>
+            </div>
+            <div class="dict-card">
+              <div class="dict-number">18</div>
+              <span class="dict-tag">v2.0 &middot; Spring 2027</span>
+              <div class="dict-name">Interpersonal Dominance &amp; Deference</div>
+              <div class="dict-desc">Assertiveness, compliance, and face-threatening acts in dyadic interaction</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ROADMAP -->
+      <section class="content-section">
+        <p class="section-label">Roadmap</p>
+        <h2>Release Timeline</h2>
+        <div class="roadmap">
+          <div class="roadmap-item">
+            <div class="roadmap-version">v<span>1.0</span></div>
+            <div class="roadmap-date">Summer 2026</div>
+            <p class="roadmap-desc">Core tool: dictionary analysis, group comparisons, static visualizations, CSV/Excel export, saved projects, license system. Eight third-party dictionaries ship at launch.</p>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-version">v<span>1.1</span></div>
+            <div class="roadmap-date">Fall 2026</div>
+            <p class="roadmap-desc">Machine learning models (DistilBERT, LDA, NER), custom dictionary import, interactive dashboards, auto-updates, Linux support. TASS-native dictionaries 01&ndash;07 ship.</p>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-version">v<span>2.0</span></div>
+            <div class="roadmap-date">Spring 2027</div>
+            <p class="roadmap-desc">LLM integration (user API key), cloud-assisted processing for large corpora, Spanish NLP, SQL data connectors. Full 26-dictionary library complete.</p>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /tab-overview -->
+
+
+    <!-- ╔══════════════════════════════╗
+         ║      COLLABORATE TAB        ║
+         ╚══════════════════════════════╝ -->
+    <div id="tab-collaborate" class="tab-panel">
+
+      <!-- PITCH -->
+      <section class="content-section">
+        <p class="section-label">The T-Lex Project</p>
+        <h2>Build the T-Lex<br>Dictionary Library</h2>
+
+        <div class="collab-grid">
+          <div>
+            <p>The T-Lex Project is developing 18 original, open-access lexicons for social science text analysis &mdash; each a citable, independently documented contribution to the field. T-Lex dictionaries will ship with TASS and be freely available to the research community.</p>
+            <p>This is an opportunity to participate in the full lifecycle of a lexicon development project, working alongside modern LLM-assisted corpus construction methods &mdash; from theoretical grounding and seed list generation through human validation, expert scoring, and peer review. Projects are designed to yield one or more publications.</p>
+
+            <h3 style="margin-top:2rem">What collaboration involves</h3>
+            <ul class="what-list">
+              <li>Reviewing and validating AI-generated word lists against published measurement frameworks</li>
+              <li>Re-scoring or re-categorizing items that require domain expertise or judgment</li>
+              <li>Supplementing seed lists with terms from your area of specialization</li>
+              <li>Providing feedback on category definitions and construct validity</li>
+            </ul>
+
+            <div class="credit-block">
+              <h3>Credit &amp; Licensing</h3>
+              <p>Contributors who make substantive contributions will be offered co-authorship on associated dictionary papers and are named in all published dictionary metadata and documentation.</p>
+              <p>All TASS-native dictionaries are freely available for academic and non-commercial research use. TASS is developed and commercially licensed by SIM DAD LLC. Contributors who participate in building a dictionary are eligible to discuss commercial licensing arrangements directly with SIM DAD LLC.</p>
+            </div>
+          </div>
+
+          <div>
+            <h3>Who we&rsquo;re looking for</h3>
+            <ul class="what-list">
+              <li>Social scientists with domain expertise in one or more of the target constructs</li>
+              <li>Graduate students and early-career researchers interested in computational methods and lexicon development</li>
+              <li>Anyone curious about how large language models are used in modern corpus construction and validation</li>
+            </ul>
+
+            <h3 style="margin-top:2rem">Time commitment</h3>
+            <ul class="what-list">
+              <li>Variable &mdash; you may contribute to a single dictionary or several</li>
+              <li>Validation tasks are asynchronous and self-paced via shared documents</li>
+              <li>No minimum hours required; credit is proportional to contribution</li>
+            </ul>
+
+            <h3 style="margin-top:2rem">The process</h3>
+            <ul class="what-list">
+              <li>LLMs generate a seed lexicon grounded in published theoretical frameworks</li>
+              <li>Human collaborators review, validate, and extend the list</li>
+              <li>Validated entries are scored, normed, and documented for publication</li>
+              <li>Dictionaries are deposited openly and integrated into TASS</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORM -->
+      <div class="form-section">
+        <p class="section-label">Express Interest</p>
+        <h2>Join the T-Lex Project</h2>
+        <p>Complete the form below and click Submit. Your email client will open with your responses pre-populated &mdash; just send the message to confirm your interest. We will follow up with more detail about timeline, process, and the specific dictionaries you selected.</p>
+
+        <form id="collab-form">
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label for="f-name">Full Name</label>
+              <input type="text" id="f-name" placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+              <label for="f-email">Email Address</label>
+              <input type="email" id="f-email" placeholder="your@institution.edu">
+            </div>
+
+            <div class="form-group">
+              <label for="f-institution">Institution / Affiliation</label>
+              <input type="text" id="f-institution" placeholder="University or organization">
+            </div>
+
+            <div class="form-group">
+              <label for="f-role">Academic Role</label>
+              <select id="f-role">
+                <option value="" disabled selected>Select role</option>
+                <option>Graduate Student (MA / MS)</option>
+                <option>Doctoral Student (PhD)</option>
+                <option>Postdoctoral Researcher</option>
+                <option>Assistant Professor</option>
+                <option>Associate Professor</option>
+                <option>Full Professor</option>
+                <option>Independent Researcher</option>
+                <option>Data Journalist</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group full">
+              <label>Dictionaries of Interest</label>
+              <div class="dict-checkboxes">
+
+                <div class="dict-group-items" style="border-bottom:2px solid var(--red)">
+                  <label class="checkbox-item any-item">
+                    <input type="checkbox" id="f-any"> Any / All &mdash; I am open to contributing wherever I can be useful
+                  </label>
+                </div>
+
+                <span class="dict-group-label">v1.1 &mdash; August 2026</span>
+                <div class="dict-group-items">
+                  <label class="checkbox-item"><input type="checkbox" value="01 — Affective Norms"> Affective Norms</label>
+                  <label class="checkbox-item"><input type="checkbox" value="02 — Discrete Emotions"> Discrete Emotions</label>
+                  <label class="checkbox-item"><input type="checkbox" value="03 — Psychosocial Process Lexicon"> Psychosocial Process Lexicon</label>
+                  <label class="checkbox-item"><input type="checkbox" value="04 — Opinion &amp; Stance"> Opinion &amp; Stance</label>
+                  <label class="checkbox-item"><input type="checkbox" value="05 — Power &amp; Status"> Power &amp; Status</label>
+                  <label class="checkbox-item"><input type="checkbox" value="06 — Hedging &amp; Epistemic Stance"> Hedging &amp; Epistemic Stance</label>
+                  <label class="checkbox-item" style="grid-column:1/-1"><input type="checkbox" value="07 — Modal Language"> Modal Language</label>
+                </div>
+
+                <span class="dict-group-label" style="border-top:var(--rule)">v2.0 &mdash; Spring 2027</span>
+                <div class="dict-group-items">
+                  <label class="checkbox-item"><input type="checkbox" value="08 — Agency &amp; Communion"> Agency &amp; Communion</label>
+                  <label class="checkbox-item"><input type="checkbox" value="09 — Narrative &amp; Temporal Orientation"> Narrative &amp; Temporal Orientation</label>
+                  <label class="checkbox-item"><input type="checkbox" value="10 — Collective Identity &amp; Social Boundaries"> Collective Identity &amp; Social Boundaries</label>
+                  <label class="checkbox-item"><input type="checkbox" value="11 — Formality &amp; Register"> Formality &amp; Register</label>
+                  <label class="checkbox-item"><input type="checkbox" value="12 — Political &amp; Ideological Language"> Political &amp; Ideological Language</label>
+                  <label class="checkbox-item"><input type="checkbox" value="13 — Health &amp; Illness Communication"> Health &amp; Illness Communication</label>
+                  <label class="checkbox-item"><input type="checkbox" value="14 — Deception &amp; Trust Cues"> Deception &amp; Trust Cues</label>
+                  <label class="checkbox-item"><input type="checkbox" value="15 — Crisis &amp; Uncertainty Language"> Crisis &amp; Uncertainty Language</label>
+                  <label class="checkbox-item"><input type="checkbox" value="16 — Financial &amp; Economic Sentiment"> Financial &amp; Economic Sentiment</label>
+                  <label class="checkbox-item"><input type="checkbox" value="17 — Academic &amp; Scientific Register"> Academic &amp; Scientific Register</label>
+                  <label class="checkbox-item" style="grid-column:1/-1"><input type="checkbox" value="18 — Interpersonal Dominance &amp; Deference"> Interpersonal Dominance &amp; Deference</label>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="form-group full">
+              <label for="f-message">Background &amp; Interest</label>
+              <textarea id="f-message" placeholder="Briefly describe your background, area of expertise, and what draws you to this project..."></textarea>
+            </div>
+
+          </div>
+
+          <button type="button" class="btn-submit" onclick="submitForm()">Submit via Email</button>
+          <p class="form-note">Clicking Submit opens your email client with your responses pre-filled. No data is transmitted automatically.</p>
+        </form>
+      </div>
+
+    </div><!-- /tab-collaborate -->
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; 2026 SIM DAD LLC</p>
+      <a href="https://sim-dad.github.io">sim-dad.github.io</a>
+    </div>
+  </footer>
+
+  <script>
+    // ── Tab switching (nav + any inline tab links)
+    function activateTab(tabName) {
+      document.querySelectorAll('.tab-link').forEach(l => l.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-link[data-tab="' + tabName + '"]').forEach(l => l.classList.add('active'));
+      document.getElementById('tab-' + tabName).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.querySelectorAll('.tab-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        activateTab(this.dataset.tab);
+      });
+    });
+
+    // ── "Any / All" disables individual checkboxes
+    document.getElementById('f-any').addEventListener('change', function () {
+      document.querySelectorAll('.dict-checkboxes input[type="checkbox"]:not(#f-any)').forEach(cb => {
+        cb.disabled = this.checked;
+        if (this.checked) cb.checked = false;
+      });
+    });
+
+    // ── Build mailto and open
+    function submitForm() {
+      const name        = document.getElementById('f-name').value.trim();
+      const email       = document.getElementById('f-email').value.trim();
+      const institution = document.getElementById('f-institution').value.trim();
+      const role        = document.getElementById('f-role').value;
+      const message     = document.getElementById('f-message').value.trim();
+      const anyChecked  = document.getElementById('f-any').checked;
+
+      const selected = anyChecked
+        ? ['Any / All Dictionaries']
+        : Array.from(
+            document.querySelectorAll('.dict-checkboxes input[type="checkbox"]:not(#f-any):checked')
+          ).map(cb => cb.value);
+
+      const dictList = selected.length > 0
+        ? selected.map(d => '  - ' + d).join('\n')
+        : '  (none selected)';
+
+      const body = [
+        'T-Lex Project — Expression of Interest',
+        '========================================',
+        '',
+        'Name:        ' + (name        || '[not provided]'),
+        'Email:       ' + (email       || '[not provided]'),
+        'Institution: ' + (institution || '[not provided]'),
+        'Role:        ' + (role        || '[not provided]'),
+        '',
+        'Dictionaries of Interest:',
+        dictList,
+        '',
+        'Background & Interest:',
+        (message || '[not provided]'),
+      ].join('\n');
+
+      const subject = 'T-Lex Project \u2014 Expression of Interest';
+      window.location.href =
+        'mailto:ap@simdadllc.com'
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body='    + encodeURIComponent(body);
+    }
+  </script>
+
+</body>
+</html>
