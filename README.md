@@ -4,7 +4,7 @@
 lexicons: deterministic, provenance-first, driveable by humans (CLI) and by AI
 agents (MCP server). Apache-2.0, zero runtime dependencies, Node 18+.
 
-TASS is built by [SIM DAD LLC](https://usetass.app). This repository is the full
+[TASS](https://usetass.app) is built by [SIM DAD LLC](https://simdadllc.com). This repository is the full
 Community Edition: the scoring engine, the `tass` CLI, the MCP server, the minimal
 local web GUI, and the reproducible-project container. The commercial GUI Edition
 adds a no-code desktop workbench, the inferential statistics suite, publication
