@@ -31,6 +31,7 @@ import {
     Metric, METRICS, isMetric, metricValue, safeName, fmt, secondsToStamp, Acc,
     buildScoreManifest, packageVersion,
     stringifyCsv, parseCsv, parseTranscript, parseChatLog, vaderRuleScore, valenceMap,
+    prepareCorpus, parseFilterSpec,
     parseLexiconCsv, LEXICON_CSV_TEMPLATE,
 } from '@simdad/tass-core';
 import { commandBooleans } from './spec';
@@ -480,6 +481,82 @@ function cmdIngest(args: ParsedArgs, io: Io): number {
     }
     writeFileSync(output, stringifyCsv(rows));
     io.err(`${rows.length - 1} turns from ${sessions} session(s) -> ${output}`);
+    return 0;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// prepare — deterministic corpus cleaning before scoring (fixed operation order:
+// trim -> drop-blank -> min-tokens -> filter -> dedup; the engine owns the semantics)
+// ─────────────────────────────────────────────────────────────────────────────
+
+function cmdPrepare(args: ParsedArgs, io: Io): number {
+    const input = one(args, '--input');
+    if (!input) { throw new UsageError('prepare needs -i/--input (the corpus CSV)'); }
+    const textColumn = one(args, '--text-column');
+    if (!textColumn) { throw new UsageError('prepare needs --text-column (the CSV column holding the document text)'); }
+    const output = one(args, '--output');
+    if (!output) { throw new UsageError('prepare needs -o/--output (path for the cleaned CSV)'); }
+
+    const trim = args.flags.has('--trim');
+    const dropBlank = args.flags.has('--drop-blank');
+    const dedup = args.flags.has('--dedup');
+    const minTokensSpec = one(args, '--min-tokens');
+    const minTokens = minTokensSpec === undefined ? undefined : Number(minTokensSpec);
+    if (minTokens !== undefined && (!Number.isInteger(minTokens) || minTokens < 1)) {
+        throw new UsageError('--min-tokens must be a positive integer');
+    }
+    const filterSpecs = args.flags.get('--filter') ?? [];
+    if (!trim && !dropBlank && !dedup && minTokens === undefined && filterSpecs.length === 0) {
+        throw new UsageError('prepare needs at least one operation: '
+            + '--trim, --drop-blank, --min-tokens N, --filter col=value (or col!=value), --dedup');
+    }
+
+    const rows = parseCsv(readFileSync(input, 'utf8'));
+    if (rows.length < 2) {
+        throw TassError.usage('corpus/empty-csv', `${input}: needs a header row + at least one data row`);
+    }
+    const header = rows[0];
+    const { rows: cleaned, report } = prepareCorpus(header, rows.slice(1), textColumn, {
+        trim, dropBlank, minTokens, filters: filterSpecs.map(parseFilterSpec), dedup,
+    });
+    writeFileSync(output, stringifyCsv([header, ...cleaned]));
+
+    // Human summary on stdout: "kept 940 of 1000 rows: 12 blank, 8 under 3 tokens, ...".
+    const label = (d: { op: string; dropped: number }) => {
+        switch (d.op) {
+            case 'drop-blank': return `${d.dropped} blank`;
+            case 'min-tokens': return `${d.dropped} under ${minTokens} tokens`;
+            case 'filter': return `${d.dropped} filtered out`;
+            default: return `${d.dropped} duplicates`;
+        }
+    };
+    const parts = report.drops.map(label);
+    io.out(`kept ${report.rowsOut} of ${report.rowsIn} rows${parts.length ? ': ' + parts.join(', ') : ''}`);
+    io.err(`cleaned CSV (${header.length} columns, unchanged) -> ${output}`);
+
+    const reportPath = one(args, '--report');
+    if (reportPath) {
+        writeFileSync(reportPath, JSON.stringify(report, null, 1) + '\n');
+        io.err(`prepare report (drop counts + example row indexes) -> ${reportPath}`);
+    }
+
+    const manifestPath = `${output}.manifest.json`;
+    const manifest = buildScoreManifest({
+        tool: '@simdad/tass-cli', toolVersion: VERSION, command: 'prepare',
+        settings: {
+            textColumn,
+            operationOrder: ['trim', 'drop-blank', 'min-tokens', 'filter', 'dedup'],
+            trim, dropBlank,
+            minTokens: minTokens ?? null,
+            filters: filterSpecs,
+            dedup,
+        },
+        inputs: [input], lexicons: [], academicOnlyUsed: [],
+        outputs: [output, reportPath].filter((p): p is string => Boolean(p)),
+        namedOutputs: { prepared: output, report: reportPath ?? null },
+    });
+    writeFileSync(manifestPath, JSON.stringify(manifest, null, 1) + '\n');
+    io.err(`run manifest (provenance block) -> ${manifestPath}`);
     return 0;
 }
 
@@ -976,6 +1053,18 @@ usage:
       IRC/Twitch-style chat logs ([stamp] <user> text  or  [stamp] user: text; one message
       per line; seconds are relative to each session's first message).
 
+  tass prepare -i in.csv --text-column text -o cleaned.csv
+               [--trim] [--drop-blank] [--min-tokens N]
+               [--filter col=value ...] [--dedup] [--report report.json]
+      Clean a corpus CSV before scoring. Operations apply in a fixed order: trim (trim ends,
+      collapse internal whitespace runs in the text column), drop-blank (whitespace-only
+      counts as blank), min-tokens (the engine tokenizer), filter (col=value keeps matching
+      rows: same-column includes OR, cross-column includes AND; col!=value excludes always
+      apply), dedup (keep the first of exact duplicate texts, compared after trim when trim
+      is on). Same columns out, nothing added. At least one operation is required. A run
+      manifest lands beside the output; --report writes rows in/out, per-operation drop
+      counts, and example dropped row indexes as JSON.
+
   tass score -i turns.csv --text-column text -o scored.csv
              [--lexicons afinn,vader,… | path/to/lexicon.json]
              [--metrics percent,hits,weighted,mean]      (default: percent; mean = weighted/hits)
@@ -1056,8 +1145,9 @@ usage:
 
   tass mcp
       Serve the engine over the Model Context Protocol (stdio, JSON-RPC 2.0) so AI agents can
-      drive TASS as tools: tass_dicts, tass_analyze_text, tass_score_file, tass_ingest,
-      tass_exemplars, tass_kwic (+ tass_stats_* when @simdad/tass-stats is installed).
+      drive TASS as tools: tass_dicts, tass_analyze_text, tass_prepare_file, tass_score_file,
+      tass_ingest, tass_exemplars, tass_kwic (+ tass_stats_* when @simdad/tass-stats is
+      installed).
       Register e.g.: claude mcp add tass -- tass mcp
 
   tass gui [--port 7770] [--no-open]
@@ -1175,6 +1265,7 @@ export function main(argv: string[], io?: Io): number {
             case 'dicts': return cmdDicts(args, realIo);
             case 'analyze': return cmdAnalyze(args, realIo);
             case 'ingest': return cmdIngest(args, realIo);
+            case 'prepare': return cmdPrepare(args, realIo);
             case 'score': return cmdScore(args, realIo);
             case 'exemplars': return cmdExemplars(args, realIo);
             case 'kwic': return cmdKwic(args, realIo);
@@ -1218,7 +1309,7 @@ export function main(argv: string[], io?: Io): number {
                 return 0;
             }
             default: {
-                const known = ['dicts', 'analyze', 'ingest', 'score', 'exemplars', 'kwic', 'cite',
+                const known = ['dicts', 'analyze', 'ingest', 'prepare', 'score', 'exemplars', 'kwic', 'cite',
                     'template', 'import-csv', 'import-dic', 'import-nrc', 'import-socialsent',
                     'merge-labels', 'search', 'install', 'project', 'validation', 'stats', 'viz',
                     'mcp', 'gui', 'help'];

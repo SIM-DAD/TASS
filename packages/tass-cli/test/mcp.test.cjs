@@ -55,15 +55,15 @@ test('notifications produce no response; ping answers; unknown method errors', (
     assert.equal(res.error.code, -32601);
 });
 
-test('tools/list exposes the six core tools (plus stats tools when the plugin is installed)', () => {
+test('tools/list exposes the core tools (plus stats tools when the plugin is installed)', () => {
     const { tools } = rpc('tools/list').result;
     const names = tools.map(t => t.name).sort();
-    for (const core of ['tass_analyze_text', 'tass_dicts', 'tass_exemplars', 'tass_ingest', 'tass_kwic', 'tass_merge_labels', 'tass_score_file']) {
+    for (const core of ['tass_analyze_text', 'tass_dicts', 'tass_exemplars', 'tass_ingest', 'tass_kwic', 'tass_merge_labels', 'tass_prepare_file', 'tass_score_file']) {
         assert.ok(names.includes(core), core);
     }
     // Every non-core tool must come from the project/validation groups or a plugin.
     for (const extra of names.filter(n => !n.startsWith('tass_stats_') && !n.startsWith('tass_project_') && !n.startsWith('tass_validation_') && !n.startsWith('tass_viz_'))) {
-        assert.ok(['tass_analyze_text', 'tass_dicts', 'tass_exemplars', 'tass_ingest', 'tass_kwic', 'tass_merge_labels', 'tass_score_file'].includes(extra), extra);
+        assert.ok(['tass_analyze_text', 'tass_dicts', 'tass_exemplars', 'tass_ingest', 'tass_kwic', 'tass_merge_labels', 'tass_prepare_file', 'tass_score_file'].includes(extra), extra);
     }
     for (const t of tools) {
         assert.equal(t.inputSchema.type, 'object', t.name);
@@ -117,6 +117,28 @@ test('tass_score_file writes scored CSV + manifest and reports the log', () => {
     const manifest = JSON.parse(readFileSync(`${out}.manifest.json`, 'utf8'));
     assert.equal(manifest.command, 'score');
     assert.equal(manifest.inputs.length, 1);
+});
+
+test('tass_prepare_file cleans a CSV and reports the kept-row summary', () => {
+    const messy = join(dir, 'messy.csv');
+    writeFileSync(messy, [
+        'id,text,cond',
+        '1,"  happy   happy  joy ",treat',
+        '2,"   ",control',
+        '3,"happy happy joy",treat',
+        '',
+    ].join('\n'));
+    const out = join(dir, 'messy-prepared.csv');
+    const result = callTool('tass_prepare_file', {
+        input: messy, output: out, text_column: 'text',
+        trim: true, drop_blank: true, dedup: true, filter: ['cond=treat'],
+    });
+    assert.notEqual(result.isError, true, result.content[0].text);
+    const body = JSON.parse(result.content[0].text);
+    assert.equal(body.ok, true);
+    assert.ok(body.output.some(l => l.includes('kept 1 of 3 rows')), body.output.join('\n'));
+    assert.ok(existsSync(out));
+    assert.ok(existsSync(`${out}.manifest.json`));
 });
 
 test('tass_kwic returns concordance lines', () => {

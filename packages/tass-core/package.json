@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "build": "tsc -b",
-    "test": "node --test test/tass-core.test.cjs test/lexicons.test.cjs test/phrases-vader.test.cjs test/csv.test.cjs test/contracts.test.cjs test/lexicon-csv.test.cjs"
+    "test": "node --test test/tass-core.test.cjs test/lexicons.test.cjs test/phrases-vader.test.cjs test/csv.test.cjs test/contracts.test.cjs test/lexicon-csv.test.cjs test/prepare.test.cjs"
   },
   "exports": {
     ".": {

@@ -29,14 +29,23 @@ citations, and R-benchmark reports are public even where its code is not.
 
 ## Quick start
 
+The fastest route is npm (Node 18+):
+
+```
+npm install -g @simdad/tass-cli
+tass help
+```
+
+Or from this repository:
+
 ```
 npm install && npm run build
 node packages/tass-cli/bin/tass.js help
 ```
 
-To get a `tass` command on your PATH: on Windows run
+To put the repo build on your PATH: on Windows run
 `powershell -File packages/tass-cli/scripts/install-cli.ps1`; on macOS or Linux run
-`npm link` inside `packages/tass-cli` (or alias the bin path). Then:
+`npm link` inside `packages/tass-cli`. Then:
 
 Score a CSV of documents against bundled sentiment lexicons:
 

@@ -75,7 +75,18 @@ ingested by "tass ingest" have one):
 Blank text scores blank, never zero: a missing document is not a neutral document. Every run
 writes a manifest next to the output; keep it with your data, it is your methods paragraph.
 
-Large files: add --workers 4 to use four threads. Output is byte-identical either way.`,
+Large files: add --workers 4 to use four threads. Output is byte-identical either way.
+
+Preparing a corpus: real exports arrive messy. "tass prepare" cleans a CSV before scoring:
+trim stray whitespace, drop blank rows (whitespace-only counts as blank), drop rows under a
+token minimum, keep or exclude rows by exact column value, and drop duplicate texts, always
+in that fixed order.
+
+    tass prepare -i raw.csv --text-column text -o cleaned.csv --trim --drop-blank --dedup
+
+The cleaned file keeps your columns unchanged, the summary says what was dropped and why,
+and a manifest beside the output records the exact operations. In the GUI Edition the
+Prepare stage previews the effect before anything is written.`,
     },
     {
         id: 'dictionaries',

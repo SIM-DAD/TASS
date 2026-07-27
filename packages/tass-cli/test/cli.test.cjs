@@ -375,3 +375,54 @@ test('import-socialsent: folder + --subreddit -> usable commercial-ok lexicon', 
     const parsed = JSON.parse(a.out.join('\n'));
     assert.equal(parsed.lexicons[0].categories[0].hits, 2);
 });
+
+test('prepare: cleans in the fixed order, writes manifest + report, summarizes on stdout', () => {
+    const messy = join(dir, 'messy.csv');
+    writeFileSync(messy, [
+        'id,text,cond',
+        '1,"  happy   happy  joy ",treat',
+        '2,"   ",treat',
+        '3,hm,treat',
+        '4,"happy happy joy",treat',
+        '5,"three word text",control',
+        '',
+    ].join('\n'));
+    const out = join(dir, 'messy-prepared.csv');
+    const report = join(dir, 'messy-prepared-report.json');
+    const r = run(['prepare', '-i', messy, '--text-column', 'text', '-o', out,
+        '--trim', '--drop-blank', '--min-tokens', '2', '--filter', 'cond=treat', '--dedup',
+        '--report', report]);
+    assert.equal(r.code, 0, r.err.join('\n'));
+    // Human summary on stdout.
+    assert.equal(r.out.join('\n'), 'kept 1 of 5 rows: 1 blank, 1 under 2 tokens, 1 filtered out, 1 duplicates');
+    // Cleaned CSV: same columns, trim rewrote the surviving text cell, nothing added.
+    assert.equal(readFileSync(out, 'utf8'), 'id,text,cond\n1,happy happy joy,treat\n');
+    // Report JSON: per-operation drops with example row indexes.
+    const rep = JSON.parse(readFileSync(report, 'utf8'));
+    assert.equal(rep.rowsIn, 5);
+    assert.equal(rep.rowsOut, 1);
+    assert.equal(rep.trimApplied, true);
+    assert.deepEqual(rep.drops.map(d => [d.op, d.dropped]),
+        [['drop-blank', 1], ['min-tokens', 1], ['filter', 1], ['dedup', 1]]);
+    // Manifest: prepare command, operations recorded, input hashed.
+    const man = JSON.parse(readFileSync(`${out}.manifest.json`, 'utf8'));
+    assert.equal(man.command, 'prepare');
+    assert.deepEqual(man.settings.operationOrder, ['trim', 'drop-blank', 'min-tokens', 'filter', 'dedup']);
+    assert.deepEqual(man.settings.filters, ['cond=treat']);
+    assert.equal(man.inputs.length, 1);
+    assert.ok(man.inputs[0].sha256);
+    assert.deepEqual(man.namedOutputs, { prepared: out, report });
+    // Determinism: a second run is byte-identical.
+    const out2 = join(dir, 'messy-prepared-2.csv');
+    const r2 = run(['prepare', '-i', messy, '--text-column', 'text', '-o', out2,
+        '--trim', '--drop-blank', '--min-tokens', '2', '--filter', 'cond=treat', '--dedup']);
+    assert.equal(r2.code, 0, r2.err.join('\n'));
+    assert.equal(readFileSync(out2, 'utf8'), readFileSync(out, 'utf8'));
+});
+
+test('prepare: no operations selected is a usage error listing the operations', () => {
+    const r = run(['prepare', '-i', join(dir, 'corpus.csv'), '--text-column', 'text',
+        '-o', join(dir, 'nope.csv')]);
+    assert.equal(r.code, 1);
+    assert.match(r.err.join('\n'), /--trim, --drop-blank, --min-tokens N, --filter col=value \(or col!=value\), --dedup/);
+});

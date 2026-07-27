@@ -99,6 +99,21 @@ export const TOOL_SPECS: ToolSpec[] = [
         ],
     },
     {
+        tool: 'tass_prepare_file', command: 'prepare', render: 'envelope',
+        description: 'Clean a corpus CSV before scoring, in a fixed order: trim whitespace in the text column, drop blank rows (whitespace-only counts as blank), drop rows under a token minimum, include/exclude rows by exact column value, and drop duplicate texts (keep first). Writes the cleaned CSV (same columns, nothing added) plus <output>.manifest.json recording the operations and the input hash; the optional report is a JSON breakdown of what was dropped. At least one operation must be selected. Paths must be absolute.',
+        args: [
+            { name: 'input', flag: '--input', kind: 'string', required: true, description: 'The corpus CSV to clean.' },
+            { ...TEXT_COLUMN, required: true, description: 'CSV column holding the document text (required).' },
+            { name: 'output', flag: '--output', kind: 'string', required: true, description: 'Path for the cleaned CSV.' },
+            { name: 'trim', flag: '--trim', kind: 'boolean', description: 'Trim leading/trailing whitespace and collapse internal whitespace runs to one space in the text column.' },
+            { name: 'drop_blank', flag: '--drop-blank', kind: 'boolean', description: 'Drop rows whose text is blank after trimming (whitespace-only counts as blank).' },
+            { name: 'min_tokens', flag: '--min-tokens', kind: 'int', description: 'Drop rows with fewer than N tokens (the engine tokenizer, matching what score sees).' },
+            { name: 'filter', flag: '--filter', kind: 'list', repeat: true, description: "Row filters by exact column value: 'col=value' keeps matching rows, 'col!=value' drops them. Multiple includes on one column OR together; includes on different columns AND; excludes always apply. Repeatable." },
+            { name: 'dedup', flag: '--dedup', kind: 'boolean', description: 'Drop rows whose text exactly duplicates an earlier row (keep first; compared after trim when trim is on).' },
+            { name: 'report', flag: '--report', kind: 'string', description: 'Optional path for a JSON report: rows in/out, per-operation drop counts, and up to 20 example dropped row indexes per operation.' },
+        ],
+    },
+    {
         tool: 'tass_exemplars', command: 'exemplars', render: 'envelope',
         description: 'Trace-back: the highest/lowest-scoring documents for one lexicon category, with the exact matched terms; turns any score into quotable text. Input is a CSV (with text_column) or TXT files.',
         args: [

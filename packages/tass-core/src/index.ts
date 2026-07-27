@@ -387,6 +387,8 @@ export { METRICS, isMetric, metricValue, safeName, fmt, secondsToStamp, Acc } fr
 export type { Metric } from './metrics';
 export { parseLexiconCsv, LEXICON_CSV_TEMPLATE } from './lexicon-csv';
 export type { LexiconCsvMeta, LexiconCsvResult } from './lexicon-csv';
+export { prepareCorpus, parseFilterSpec } from './prepare';
+export type { PrepareFilter, PrepareOptions, PrepareDrop, PrepareDropOp, PrepareReport } from './prepare';
 export { MANIFEST_VERSION, sha256File, buildScoreManifest } from './manifest';
 export type { ScoreManifestArgs } from './manifest';
 export { ENGINE_VERSION, packageVersion } from './version';
