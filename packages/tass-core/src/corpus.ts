@@ -36,10 +36,10 @@ export function splitCorpusInputs(inputs: string[]): { csv?: string; txts: strin
     const csvs = inputs.filter(p => p.toLowerCase().endsWith('.csv'));
     const txts = inputs.filter(p => !p.toLowerCase().endsWith('.csv'));
     if (csvs.length > 0 && txts.length > 0) {
-        throw TassError.usage('corpus/mixed-input', 'mix of CSV and TXT inputs — score them in separate runs');
+        throw TassError.usage('corpus/mixed-input', 'mix of CSV and TXT inputs; score them in separate runs');
     }
     if (csvs.length > 1) {
-        throw TassError.usage('corpus/multiple-csv', 'multiple CSV inputs — merge them first or run per file');
+        throw TassError.usage('corpus/multiple-csv', 'multiple CSV inputs; merge them first or run per file');
     }
     return { csv: csvs[0], txts };
 }
@@ -55,13 +55,13 @@ function csvColumns(
         const i = header.indexOf(name);
         if (i < 0) {
             throw TassError.usage('corpus/column-not-found',
-                `${what} '${name}' not found — columns: ${header.join(', ')}`);
+                `${what} '${name}' not found; columns: ${header.join(', ')}`);
         }
         return i;
     };
     if (!textColumn) {
         throw TassError.usage('corpus/missing-text-column',
-            `--text-column is required for CSV input — columns: ${header.join(', ')}`);
+            `--text-column is required for CSV input; columns: ${header.join(', ')}`);
     }
     return {
         textIdx: colIdx(textColumn, 'text column'),
@@ -84,7 +84,7 @@ function toCorpusRow(
         seconds = Number(r[timeIdx]);
         if (!Number.isFinite(seconds)) {
             throw TassError.usage('corpus/bad-time-value',
-                `time column '${timeColumn}' has a non-numeric value '${r[timeIdx]}' — use the numeric seconds column (ingest emits one)`);
+                `time column '${timeColumn}' has a non-numeric value '${r[timeIdx]}'; use the numeric seconds column (ingest emits one)`);
         }
     }
     return {

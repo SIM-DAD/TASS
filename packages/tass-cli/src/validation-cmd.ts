@@ -64,13 +64,13 @@ function scoredContext(project: Project, projectPath: string): ScoredContext {
     const data = entryName ? project.entries.get(entryName) : undefined;
     if (!entryName || !data) {
         throw TassError.usage('validation/no-scored-output',
-            `${projectPath}: no scored CSV in results/ — validation needs a saved score run`);
+            `${projectPath}: no scored CSV in results/; validation needs a saved score run`);
     }
     const s = config.settings as Record<string, unknown>;
     const textColumn = typeof s.textColumn === 'string' && s.textColumn ? s.textColumn : undefined;
     if (!textColumn) {
         throw TassError.usage('validation/no-text-column',
-            `${projectPath}: the saved run has no text column (TXT corpus?) — the scored CSV carries no text to derive match units from`);
+            `${projectPath}: the saved run has no text column (TXT corpus?); the scored CSV carries no text to derive match units from`);
     }
 
     const work = mkdtempSync(join(tmpdir(), 'tass-validation-'));
@@ -160,7 +160,7 @@ function cmdImport(argv: string[], io: Io): number {
 
     const rows = parseCsv(readFileSync(input, 'utf8'));
     if (rows.length === 0) {
-        throw TassError.usage('validation/empty-sheet', `${input}: empty file — expected the review sheet from: tass validation sample`);
+        throw TassError.usage('validation/empty-sheet', `${input}: empty file; expected the review sheet from: tass validation sample`);
     }
     const header = rows[0].map(h => h.trim().toLowerCase());
     const idx = (name: string) => header.indexOf(name);
@@ -200,7 +200,7 @@ function cmdImport(argv: string[], io: Io): number {
         }
         const expected = validationId(docId, category, term, occurrence);
         if (id !== expected) {
-            errors.push(`line ${line}: validation_id '${id}' does not match its row content (expected ${expected}) — do not edit id/doc_id/category/term/occurrence cells`);
+            errors.push(`line ${line}: validation_id '${id}' does not match its row content (expected ${expected}); do not edit id/doc_id/category/term/occurrence cells`);
             continue;
         }
         const first = seen.get(id);
@@ -221,7 +221,7 @@ function cmdImport(argv: string[], io: Io): number {
     }
     if (imported.length === 0) {
         throw TassError.usage('validation/no-verdicts',
-            `${input}: no coded rows (every verdict is blank) — fill the verdict column first`);
+            `${input}: no coded rows (every verdict is blank); fill the verdict column first`);
     }
 
     // Merge: the sheet wins per id; untouched existing records survive.
@@ -265,7 +265,7 @@ function cmdExport(argv: string[], io: Io): number {
     writeFileSync(output, stringifyCsv(rows));
     io.err(`${records.length} record(s): ${attached.length} attached, ${orphaned.length} orphaned -> ${output}`);
     if (orphaned.length > 0) {
-        io.err(`note: ${orphaned.length} verdict(s) are from a previous run — the current scored output no longer derives their id`);
+        io.err(`note: ${orphaned.length} verdict(s) are from a previous run; the current scored output no longer derives their id`);
     }
     return 0;
 }
@@ -303,7 +303,7 @@ function cmdSummary(argv: string[], io: Io): number {
         records: records.length,
         categories: [...byCategory.keys()].sort().map(cat => shape(cat, byCategory.get(cat)!)),
         overall: shape(null, overall),
-        note: 'precisionProxy = correct / (correct + incorrect) over human-coded matches — a precision estimate for the sampled units, not corpus recall',
+        note: 'precisionProxy = correct / (correct + incorrect) over human-coded matches: a precision estimate for the sampled units, not corpus recall',
     }, null, 1));
     return 0;
 }
@@ -312,14 +312,14 @@ function cmdSummary(argv: string[], io: Io): number {
 // entry
 // ─────────────────────────────────────────────────────────────────────────────
 
-const USAGE = `tass validation — human validation of match units, inside the .tassproj
+const USAGE = `tass validation: human validation of match units, inside the .tassproj
 
   tass validation sample --project study.tassproj -o review.csv [--per-category 10]
                          [--categories afinn:sentiment,…]
   tass validation sample --input scored.csv --text-column text -o review.csv
                          [--lexicons afinn,…] [--per-category 10] [--categories …]
       Deterministic review sheet: per category, the top-scoring matches plus an evenly
-      strided spread (no RNG — two runs are byte-identical). Columns: validation_id, doc_id,
+      strided spread (no RNG; two runs are byte-identical). Columns: validation_id, doc_id,
       category, term, occurrence, text_excerpt, metric_value, verdict, memo. A human fills
       verdict (${VERDICTS.join('/')}) and memo.
 
@@ -330,7 +330,7 @@ const USAGE = `tass validation — human validation of match units, inside the .
 
   tass validation export --project study.tassproj -o records.csv
       Dump every stored verdict with its status: attached (derivable from the current scored
-      output) or ${ORPHANED} — changed inputs orphan verdicts VISIBLY, never silently.
+      output) or ${ORPHANED}; changed inputs orphan verdicts VISIBLY, never silently.
 
   tass validation summary --project study.tassproj
       Per-category verdict counts and precision proxy (correct / (correct + incorrect)) as JSON.
@@ -350,6 +350,6 @@ export function runValidationCommand(argv: string[], io: Io): number {
         case 'summary': return cmdSummary(argv.slice(1), io);
         default:
             throw TassError.usage('validation/unknown-subcommand',
-                `unknown validation subcommand '${sub}' — valid: sample, import, export, summary`);
+                `unknown validation subcommand '${sub}'; valid: sample, import, export, summary`);
     }
 }

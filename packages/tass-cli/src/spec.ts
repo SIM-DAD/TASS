@@ -66,12 +66,12 @@ export const TOOL_SPECS: ToolSpec[] = [
             { name: 'text', flag: '--text', kind: 'string', required: true, description: 'The text to analyze.' },
             LEXICONS,
             { name: 'include_zero', flag: '--all', kind: 'boolean', description: 'Include categories with zero hits (default false).' },
-            { name: 'vader_rules', flag: '--vader-rules', kind: 'boolean', description: 'Also compute the TASS VADER-rules sentiment (negation, boosters, caps, punctuation, but-clauses) — returned as a vaderRules block.' },
+            { name: 'vader_rules', flag: '--vader-rules', kind: 'boolean', description: 'Also compute the TASS VADER-rules sentiment (negation, boosters, caps, punctuation, but-clauses); returned as a vaderRules block.' },
         ],
     },
     {
         tool: 'tass_score_file', command: 'score', render: 'envelope',
-        description: 'Score a CSV (row = document; requires text_column) or one/more TXT files against TASS lexicons, writing a scored CSV plus optional group summary, windowed trajectories, JSON rows, and citations. Every run also writes <output>.manifest.json — input SHA-256 hashes and full lexicon provenance. Paths must be absolute.',
+        description: 'Score a CSV (row = document; requires text_column) or one/more TXT files against TASS lexicons, writing a scored CSV plus optional group summary, windowed trajectories, JSON rows, and citations. Every run also writes <output>.manifest.json: input SHA-256 hashes and full lexicon provenance. Paths must be absolute.',
         args: [
             INPUT('one CSV, or one or more TXT files.'),
             { name: 'output', flag: '--output', kind: 'string', required: true, description: 'Path for the scored CSV.' },
@@ -91,7 +91,7 @@ export const TOOL_SPECS: ToolSpec[] = [
     },
     {
         tool: 'tass_ingest', command: 'ingest', render: 'envelope',
-        description: 'Convert speaker-labeled transcripts ([M:SS] **SPEAKER:** … lines; .md/.txt files or folders of them) — or, with format "chat", IRC/Twitch-style chat logs ([stamp] <user> text or [stamp] user: text) — into a turn-level CSV with session, turn, timestamp, seconds, speaker, text columns — the shape tass_score_file expects. Paths must be absolute.',
+        description: 'Convert speaker-labeled transcripts ([M:SS] **SPEAKER:** … lines; .md/.txt files or folders of them), or, with format "chat", IRC/Twitch-style chat logs ([stamp] <user> text or [stamp] user: text), into a turn-level CSV with session, turn, timestamp, seconds, speaker, text columns (the shape tass_score_file expects). Paths must be absolute.',
         args: [
             INPUT('transcript/chat-log file(s) and/or folder(s).'),
             { name: 'output', flag: '--output', kind: 'string', required: true, description: 'Path for the turns CSV.' },
@@ -100,7 +100,7 @@ export const TOOL_SPECS: ToolSpec[] = [
     },
     {
         tool: 'tass_exemplars', command: 'exemplars', render: 'envelope',
-        description: 'Trace-back: the highest/lowest-scoring documents for one lexicon category, with the exact matched terms — turns any score into quotable text. Input is a CSV (with text_column) or TXT files.',
+        description: 'Trace-back: the highest/lowest-scoring documents for one lexicon category, with the exact matched terms; turns any score into quotable text. Input is a CSV (with text_column) or TXT files.',
         args: [
             INPUT('one CSV, or TXT files.'),
             TEXT_COLUMN,
@@ -171,7 +171,7 @@ export { PROJECT_SPECS };
 const VALIDATION_SPECS: ToolSpec[] = [
     {
         tool: 'tass_validation_sample', command: 'validation', fixedArgv: ['sample'], render: 'envelope',
-        description: 'Write a deterministic human-review sheet (CSV) of match-level units — per category, the top-scoring matches plus an evenly strided spread; no RNG, two runs are byte-identical. Source is a .tassproj (project) OR a scored CSV (input + text_column). A human fills the verdict (correct/incorrect/unsure) and memo columns, then tass_validation_import writes them into the project. Paths must be absolute.',
+        description: 'Write a deterministic human-review sheet (CSV) of match-level units: per category, the top-scoring matches plus an evenly strided spread; no RNG, two runs are byte-identical. Source is a .tassproj (project) OR a scored CSV (input + text_column). A human fills the verdict (correct/incorrect/unsure) and memo columns, then tass_validation_import writes them into the project. Paths must be absolute.',
         args: [
             { name: 'project', flag: '--project', kind: 'string', description: 'The .tassproj to sample from (uses its saved scored output and config).' },
             { name: 'input', flag: '--input', kind: 'string', description: 'A scored CSV to sample from directly (alternative to project; needs text_column).' },
@@ -192,7 +192,7 @@ const VALIDATION_SPECS: ToolSpec[] = [
     },
     {
         tool: 'tass_validation_export', command: 'validation', fixedArgv: ['export'], render: 'envelope',
-        description: "Export every stored validation record with its status: attached (id derivable from the current scored output) or orphaned (from a previous run — changed inputs orphan verdicts visibly, never silently). Paths must be absolute.",
+        description: "Export every stored validation record with its status: attached (id derivable from the current scored output) or orphaned (from a previous run; changed inputs orphan verdicts visibly, never silently). Paths must be absolute.",
         args: [
             { name: 'project', flag: '--project', kind: 'string', required: true, description: 'The .tassproj holding validation records.' },
             { name: 'output', flag: '--output', kind: 'string', required: true, description: 'Path for the records CSV (with a status column).' },

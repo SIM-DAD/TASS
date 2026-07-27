@@ -73,7 +73,7 @@ function rebuildArgv(project: Project, workdir: string): { argv: string[]; produ
     const named = config.namedOutputs as Record<string, string | null> | undefined;
     if (!named) {
         throw TassError.usage('project/legacy-manifest',
-            'this project was saved from a manifest without namedOutputs — re-run the original score with TASS >= 0.5.2 and save again');
+            'this project was saved from a manifest without namedOutputs; re-run the original score with TASS >= 0.5.2 and save again');
     }
     const s = config.settings as Record<string, unknown>;
 
@@ -97,11 +97,11 @@ function rebuildArgv(project: Project, workdir: string): { argv: string[]; produ
         for (const input of config.inputs) {
             if (!existsSync(input.path)) {
                 throw TassError.runtime('project/input-missing',
-                    `referenced corpus ${input.path} not found — rerun needs the original file (or a project saved with --embed-corpus)`);
+                    `referenced corpus ${input.path} not found; rerun needs the original file (or a project saved with --embed-corpus)`);
             }
             if (sha256(readFileSync(input.path)) !== input.sha256) {
                 throw TassError.runtime('project/input-changed',
-                    `${input.path} has changed since the saved run (sha256 mismatch) — a rerun would not be a reproduction`);
+                    `${input.path} has changed since the saved run (sha256 mismatch); a rerun would not be a reproduction`);
             }
             inputs.push(input.path);
         }
@@ -120,7 +120,7 @@ function rebuildArgv(project: Project, workdir: string): { argv: string[]; produ
         const candidates = byBase.get(basename(spec)) ?? [];
         if (candidates.length !== 1) {
             throw TassError.runtime('project/ambiguous-lexicon',
-                `cannot uniquely match archived lexicon for '${spec}' (${candidates.length} candidates) — reruns of projects with duplicate lexicon file names are not supported in schema 1`);
+                `cannot uniquely match archived lexicon for '${spec}' (${candidates.length} candidates); reruns of projects with duplicate lexicon file names are not supported in schema 1`);
         }
         const p = join(workdir, 'lexicons', basename(candidates[0]));
         mkdirSync(join(workdir, 'lexicons'), { recursive: true });
@@ -178,8 +178,8 @@ function cmdRerun(argv: string[], io: Io): number {
         io.out(`REPRODUCED: all ${identical} artifact(s) byte-identical (outputs in ${workdir})`);
         return 0;
     }
-    io.err(`NOT REPRODUCED: ${different} different, ${missing} missing of ${identical + different + missing} — `
-        + `same TASS version? same engine? (archive: ${project.meta.engineVersion})`);
+    io.err(`NOT REPRODUCED: ${different} different, ${missing} missing of ${identical + different + missing}. `
+        + `Same TASS version? same engine? (archive: ${project.meta.engineVersion})`);
     return 2;
 }
 
@@ -213,7 +213,7 @@ function cmdDiff(argv: string[], io: Io): number {
     return 0;
 }
 
-const USAGE = `tass project — reproducible .tassproj containers
+const USAGE = `tass project: reproducible .tassproj containers
 
   tass project save --manifest scored.csv.manifest.json -o study.tassproj [--embed-corpus]
       Archive a completed run: config + input hashes + lexicon snapshots + every artifact.
@@ -240,6 +240,6 @@ export function runProjectCommand(argv: string[], io: Io): number {
         case 'rerun': return cmdRerun(argv.slice(1), io);
         case 'diff': return cmdDiff(argv.slice(1), io);
         default:
-            throw TassError.usage('project/unknown-subcommand', `unknown project subcommand '${sub}' — valid: save, show, rerun, diff`);
+            throw TassError.usage('project/unknown-subcommand', `unknown project subcommand '${sub}'; valid: save, show, rerun, diff`);
     }
 }

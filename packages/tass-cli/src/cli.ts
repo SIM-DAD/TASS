@@ -141,7 +141,7 @@ function vaderValences(): Map<string, number> {
 
 const VADER_RULES_NOTE = 'vader-rules columns are the TASS implementation of the published VADER heuristics '
     + '(negation, boosters, ALL-CAPS, punctuation, but-clauses, emoticons, idiom tables) over the bundled '
-    + 'vader lexicon — report as "TASS VADER-rules compound", not canonical "VADER compound".';
+    + 'vader lexicon; report as "TASS VADER-rules compound", not canonical "VADER compound".';
 
 function cmdScore(args: ParsedArgs, io: Io): number {
     const inputs = args.flags.get('--input') ?? [];
@@ -151,7 +151,7 @@ function cmdScore(args: ParsedArgs, io: Io): number {
 
     const metricsSpec = one(args, '--metrics') ?? 'percent';
     const metrics: Metric[] = metricsSpec.split(',').map(m => m.trim()).filter(Boolean).map(m => {
-        if (!isMetric(m)) { throw new UsageError(`unknown metric '${m}' — valid: ${METRICS.join(', ')}`); }
+        if (!isMetric(m)) { throw new UsageError(`unknown metric '${m}'; valid: ${METRICS.join(', ')}`); }
         return m;
     });
 
@@ -161,7 +161,7 @@ function cmdScore(args: ParsedArgs, io: Io): number {
 
     const academicOnly = lexicons.filter(l => l.licenseClass === 'academic-only').map(l => l.id);
     for (const id of academicOnly) {
-        io.err(`ACADEMIC-ONLY lexicon in this run: ${id} — fine for scholarly use, never redistributable; flagged in the manifest.`);
+        io.err(`ACADEMIC-ONLY lexicon in this run: ${id} (fine for scholarly use, never redistributable; flagged in the manifest).`);
     }
 
     const groupColumns = one(args, '--group-column')?.split(',').map(s => s.trim()).filter(Boolean) ?? [];
@@ -392,7 +392,7 @@ function cmdScore(args: ParsedArgs, io: Io): number {
     const citationsPath = one(args, '--citations');
     if (citationsPath) {
         const lines = lexicons.map(l =>
-            `${l.name}${l.license ? ` [${l.license}]` : ''}${l.citation ? ` — ${l.citation}` : ''}`);
+            `${l.name}${l.license ? ` [${l.license}]` : ''}${l.citation ? `: ${l.citation}` : ''}`);
         writeFileSync(citationsPath, lines.join('\n') + '\n');
         io.err(`citations -> ${citationsPath}`);
     }
@@ -442,7 +442,7 @@ function cmdIngest(args: ParsedArgs, io: Io): number {
     if (!output) { throw new UsageError('ingest needs -o/--output (path for the turns CSV)'); }
     const format = one(args, '--format') ?? 'transcript';
     if (format !== 'transcript' && format !== 'chat') {
-        throw new UsageError(`unknown --format '${format}' — valid: transcript (speaker-labeled), chat ([stamp] <user>/user: logs)`);
+        throw new UsageError(`unknown --format '${format}'; valid: transcript (speaker-labeled), chat ([stamp] <user>/user: logs)`);
     }
     const parse = format === 'chat' ? parseChatLog : parseTranscript;
     const extRe = format === 'chat' ? /\.(log|txt)$/i : /\.(md|txt)$/i;
@@ -475,8 +475,8 @@ function cmdIngest(args: ParsedArgs, io: Io): number {
     }
     if (rows.length === 1) {
         throw new Error(format === 'chat'
-            ? 'no messages found in any input — expected chat-log lines ([stamp] <user> … or [stamp] user: …)'
-            : 'no turns found in any input — is this the speaker-labeled format ([M:SS] **SPEAKER:** …)?');
+            ? 'no messages found in any input; expected chat-log lines ([stamp] <user> … or [stamp] user: …)'
+            : 'no turns found in any input. Is this the speaker-labeled format ([M:SS] **SPEAKER:** …)?');
     }
     writeFileSync(output, stringifyCsv(rows));
     io.err(`${rows.length - 1} turns from ${sessions} session(s) -> ${output}`);
@@ -495,14 +495,14 @@ function cmdExemplars(args: ParsedArgs, io: Io): number {
     const lexicon = resolveLexicon(lexSpec);
     const categoryId = one(args, '--category');
     if (!categoryId) {
-        throw new UsageError(`exemplars needs --category — ${lexicon.id} has: ${lexicon.categories.map(c => c.id).join(', ')}`);
+        throw new UsageError(`exemplars needs --category; ${lexicon.id} has: ${lexicon.categories.map(c => c.id).join(', ')}`);
     }
     const catIndex = lexicon.categories.findIndex(c => c.id === categoryId);
     if (catIndex < 0) {
-        throw new UsageError(`category '${categoryId}' not in ${lexicon.id} — has: ${lexicon.categories.map(c => c.id).join(', ')}`);
+        throw new UsageError(`category '${categoryId}' not in ${lexicon.id}; has: ${lexicon.categories.map(c => c.id).join(', ')}`);
     }
     const metricSpec = one(args, '--metric') ?? 'percent';
-    if (!isMetric(metricSpec)) { throw new UsageError(`unknown metric '${metricSpec}' — valid: ${METRICS.join(', ')}`); }
+    if (!isMetric(metricSpec)) { throw new UsageError(`unknown metric '${metricSpec}'; valid: ${METRICS.join(', ')}`); }
     const metric: Metric = metricSpec;
     const top = Number(one(args, '--top') ?? 10);
     const bottom = Number(one(args, '--bottom') ?? 0);
@@ -565,7 +565,7 @@ function cmdDicts(args: ParsedArgs, io: Io): number {
     }
     for (const lex of bundle) {
         const terms = lex.categories.reduce((n, c) => n + c.terms, 0);
-        io.out(`${lex.id}  —  ${lex.name}`);
+        io.out(`${lex.id}: ${lex.name}`);
         io.out(`    license: ${lex.license} [${lex.licenseClass}]   categories: ${lex.categories.length}   terms: ${terms}`);
         io.out(`    cite: ${lex.citation}`);
     }
@@ -595,7 +595,7 @@ function cmdAnalyze(args: ParsedArgs, io: Io): number {
 
     const academicOnly = lexicons.filter(l => l.licenseClass === 'academic-only').map(l => l.id);
     for (const id of academicOnly) {
-        io.err(`ACADEMIC-ONLY lexicon in this run: ${id} — fine for scholarly use, never redistributable.`);
+        io.err(`ACADEMIC-ONLY lexicon in this run: ${id} (fine for scholarly use, never redistributable).`);
     }
 
     let totalTokens = 0;
@@ -688,11 +688,11 @@ function cmdImportDic(args: ParsedArgs, io: Io): number {
 
     const { lexicon, skippedLines } = parseDic(readFileSync(input, 'utf8'), id, name);
     const terms = lexicon.categories.reduce((n, c) => n + c.terms.length, 0);
-    if (terms === 0) { throw new Error(`${input}: no usable entries (skipped ${skippedLines} lines) — is this LIWC .dic format?`); }
+    if (terms === 0) { throw new Error(`${input}: no usable entries (skipped ${skippedLines} lines). Is this LIWC .dic format?`); }
     writeFileSync(output, JSON.stringify(lexicon, null, 1) + '\n');
     io.err(`imported ${lexicon.categories.length} categories, ${terms} terms -> ${output}`
         + (skippedLines > 0 ? ` (${skippedLines} malformed line(s) skipped)` : ''));
-    io.err('note: the source dictionary stays under ITS license — imported lexicons are for your own use.');
+    io.err('note: the source dictionary stays under ITS license; imported lexicons are for your own use.');
     return 0;
 }
 
@@ -715,12 +715,12 @@ function cmdImportNrc(args: ParsedArgs, io: Io): number {
         catTerms.set(affect, list);
     }
     if (associations === 0) {
-        throw new Error(`${input}: no `.concat('word<TAB>affect<TAB>1 lines found — expected the NRC EmoLex wordlevel file'));
+        throw new Error(`${input}: no `.concat('word<TAB>affect<TAB>1 lines found; expected the NRC EmoLex wordlevel file'));
     }
     const lexicon: Lexicon = {
         id,
-        name: 'NRC Word-Emotion Association Lexicon (EmoLex) — user import',
-        license: 'NRC Research License — free for research, commercial use requires an NRC license',
+        name: 'NRC Word-Emotion Association Lexicon (EmoLex), user import',
+        license: 'NRC Research License: free for research; commercial use requires an NRC license',
         licenseClass: 'academic-only',
         citation: 'Mohammad, S.M., & Turney, P.D. (2013). Crowdsourcing a Word-Emotion Association Lexicon. Computational Intelligence, 29(3), 436-465. https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm',
         categories: [...catTerms.entries()].sort(([a], [b]) => a.localeCompare(b))
@@ -743,7 +743,7 @@ function cmdImportSocialsent(args: ParsedArgs, io: Io): number {
     const subreddit = one(args, '--subreddit');
     let file = input;
     if (statSync(input).isDirectory()) {
-        if (!subreddit) { throw new UsageError('import-socialsent: -i is a folder — pick one with --subreddit NAME (resolves NAME.tsv inside it)'); }
+        if (!subreddit) { throw new UsageError('import-socialsent: -i is a folder; pick one with --subreddit NAME (resolves NAME.tsv inside it)'); }
         file = join(input, `${subreddit}.tsv`);
     }
     const output = one(args, '--output');
@@ -759,19 +759,19 @@ function cmdImportSocialsent(args: ParsedArgs, io: Io): number {
         if (!Number.isFinite(weight)) { continue; }
         terms.push({ term: word, weight });
     }
-    if (terms.length === 0) { throw new Error(`${file}: no word<TAB>mean lines found — expected a SocialSent lexicon TSV`); }
+    if (terms.length === 0) { throw new Error(`${file}: no word<TAB>mean lines found; expected a SocialSent lexicon TSV`); }
     terms.sort((a, b) => a.term.localeCompare(b.term));
 
     const lexicon: Lexicon = {
         id,
-        name: `SocialSent sentiment (${community}) — user import`,
+        name: `SocialSent sentiment (${community}), user import`,
         license: 'ODC-PDDL-1.0',
         licenseClass: 'commercial-ok',
         citation: 'Hamilton, W.L., Clark, K., Leskovec, J., & Jurafsky, D. (2016). Inducing Domain-Specific Sentiment Lexicons from Unlabeled Corpora. EMNLP 2016. https://nlp.stanford.edu/projects/socialsent/',
         categories: [{ id: 'sentiment', label: `SentProp sentiment (${community})`, terms }],
     };
     writeFileSync(output, JSON.stringify(lexicon, null, 1) + '\n');
-    io.err(`imported ${terms.length} terms (${community}) -> ${output} — use via --lexicons ${output}`);
+    io.err(`imported ${terms.length} terms (${community}) -> ${output}; use via --lexicons ${output}`);
     return 0;
 }
 
@@ -795,7 +795,7 @@ function tassCitation(style: string): string {
 function cmdCite(args: ParsedArgs, io: Io): number {
     const style = one(args, '--style') ?? 'apa';
     if (!['apa', 'mla', 'chicago'].includes(style)) {
-        throw new UsageError(`unknown --style '${style}' — valid: apa (default), mla, chicago`);
+        throw new UsageError(`unknown --style '${style}'; valid: apa (default), mla, chicago`);
     }
     const manifestPath = one(args, '--manifest');
     const lines: string[] = [];
@@ -814,11 +814,11 @@ function cmdCite(args: ParsedArgs, io: Io): number {
         if (lexicons.length) {
             lines.push('Cite each lexicon as published (canonical citation strings, reproduced verbatim):');
             for (const l of lexicons) {
-                lines.push(`- ${l.name}${l.license ? ` [${l.license}]` : ''}${l.citation ? ` — ${l.citation}` : ' — (no citation recorded)'}`);
+                lines.push(`- ${l.name}${l.license ? ` [${l.license}]` : ''}${l.citation ? `: ${l.citation}` : ' (no citation recorded)'}`);
             }
         }
         if (manifest.academicOnlyUsed?.length) {
-            lines.push(`ACADEMIC-ONLY lexicons in this run: ${manifest.academicOnlyUsed.join(', ')} — check the resource's license before any commercial reporting.`);
+            lines.push(`ACADEMIC-ONLY lexicons in this run: ${manifest.academicOnlyUsed.join(', ')}. Check the resource's license before any commercial reporting.`);
         }
         // Statistics method citations, when the stats plugin is present and this was a stats run.
         const stats = loadStats() as (ReturnType<typeof loadStats> & { SUBSTANTIATION?: Array<{ method: string; status: string; citation: string; note?: string }> }) | undefined;
@@ -844,7 +844,7 @@ function cmdCite(args: ParsedArgs, io: Io): number {
         lines.push('== Bundled lexicons (cite the ones you used; per-run: tass cite --manifest <output>.manifest.json) ==');
         for (const id of listBundled()) {
             const l = loadBundled(id);
-            lines.push(`- ${l.name}${l.license ? ` [${l.license}]` : ''}${l.citation ? ` — ${l.citation}` : ''}`);
+            lines.push(`- ${l.name}${l.license ? ` [${l.license}]` : ''}${l.citation ? `: ${l.citation}` : ''}`);
         }
     }
     const output = one(args, '--output');
@@ -878,19 +878,19 @@ function cmdMergeLabels(args: ParsedArgs, io: Io): number {
     const labels = parseCsv(readFileSync(labelsPath, 'utf8'));
     if (corpus.length < 2 || labels.length < 1) { throw new UsageError('merge-labels: both CSVs need a header row (and the corpus needs data)'); }
     const cKey = corpus[0].indexOf(key);
-    if (cKey < 0) { throw new UsageError(`key '${key}' not in corpus — columns: ${corpus[0].join(', ')}`); }
+    if (cKey < 0) { throw new UsageError(`key '${key}' not in corpus; columns: ${corpus[0].join(', ')}`); }
     const lKey = labels[0].indexOf(key);
-    if (lKey < 0) { throw new UsageError(`key '${key}' not in labels — columns: ${labels[0].join(', ')}`); }
+    if (lKey < 0) { throw new UsageError(`key '${key}' not in labels; columns: ${labels[0].join(', ')}`); }
 
     const labelCols = labels[0].map((h, i) => ({ h: prefix + h, i })).filter(c => c.i !== lKey);
     const collisions = labelCols.filter(c => corpus[0].includes(c.h)).map(c => c.h);
     if (collisions.length) {
-        throw new UsageError(`label column(s) already exist in the corpus: ${collisions.join(', ')} — use --prefix to namespace them`);
+        throw new UsageError(`label column(s) already exist in the corpus: ${collisions.join(', ')}; use --prefix to namespace them`);
     }
     const byKey = new Map<string, string[]>();
     for (let r = 1; r < labels.length; r++) {
         const k = labels[r][lKey] ?? '';
-        if (byKey.has(k)) { throw new UsageError(`labels: duplicate key '${k}' (row ${r + 1}) — one label row per key`); }
+        if (byKey.has(k)) { throw new UsageError(`labels: duplicate key '${k}' (row ${r + 1}); one label row per key`); }
         byKey.set(k, labels[r]);
     }
 
@@ -925,7 +925,7 @@ function cmdMergeLabels(args: ParsedArgs, io: Io): number {
 
 function cmdImportCsv(args: ParsedArgs, io: Io): number {
     const input = one(args, '--input');
-    if (!input) { throw new UsageError('import-csv needs -i/--input (a dictionary CSV — get a starting point via: tass template)'); }
+    if (!input) { throw new UsageError('import-csv needs -i/--input (a dictionary CSV; get a starting point via: tass template)'); }
     const output = one(args, '--output');
     if (!output) { throw new UsageError('import-csv needs -o/--output (lexicon JSON path)'); }
     const { lexicon, warnings } = parseLexiconCsv(readFileSync(input, 'utf8'), {
@@ -939,7 +939,7 @@ function cmdImportCsv(args: ParsedArgs, io: Io): number {
     for (const w of warnings) { io.err(`warning: ${w}`); }
     writeFileSync(output, JSON.stringify(lexicon, null, 1) + '\n');
     const terms = lexicon.categories.reduce((n, c) => n + c.terms.length, 0);
-    io.err(`imported ${lexicon.categories.length} categories, ${terms} terms -> ${output} — use via --lexicons ${output}`);
+    io.err(`imported ${lexicon.categories.length} categories, ${terms} terms -> ${output}; use via --lexicons ${output}`);
     return 0;
 }
 
@@ -947,7 +947,7 @@ function cmdTemplate(args: ParsedArgs, io: Io): number {
     const output = one(args, '--output');
     if (output) {
         writeFileSync(output, LEXICON_CSV_TEMPLATE);
-        io.err(`dictionary template -> ${output} — fill in Excel/Sheets, save as CSV, then: tass import-csv`);
+        io.err(`dictionary template -> ${output}; fill in Excel/Sheets, save as CSV, then: tass import-csv`);
     } else {
         io.out(LEXICON_CSV_TEMPLATE);
     }
@@ -958,7 +958,7 @@ function cmdTemplate(args: ParsedArgs, io: Io): number {
 // entry
 // ─────────────────────────────────────────────────────────────────────────────
 
-const USAGE = `TASS — Text Analysis for Social Scientists (CLI ${VERSION})
+const USAGE = `TASS: Text Analysis for Social Scientists (CLI ${VERSION})
 
 usage:
   tass dicts [--json]
@@ -968,12 +968,12 @@ usage:
                [--lexicons afinn,vader,…] [--all]
       Score raw text directly and print JSON to stdout (totalTokens + per-category hits,
       weighted, percent, mean, matched forms). Zero-hit categories are omitted unless --all.
-      The direct machine/AI surface — no CSV round-trip needed.
+      The direct machine/AI surface; no CSV round-trip needed.
 
   tass ingest -i transcripts-folder -o turns.csv [--format transcript|chat]
       Turn-level CSV (session, turn, timestamp, seconds, speaker, text) from either
       speaker-labeled transcripts ([M:SS] **SPEAKER:** …; the default) or, with --format chat,
-      IRC/Twitch-style chat logs ([stamp] <user> text  or  [stamp] user: text — one message
+      IRC/Twitch-style chat logs ([stamp] <user> text  or  [stamp] user: text; one message
       per line; seconds are relative to each session's first message).
 
   tass score -i turns.csv --text-column text -o scored.csv
@@ -984,14 +984,14 @@ usage:
              [--json rows.json] [--citations cites.txt] [--workers 4]
       Score documents (CSV rows, or TXT files via repeated -i). Output = input columns +
       tass_tokens + one column per lexicon_category_metric. Every run writes
-      <output>.manifest.json — input hashes + full lexicon provenance (Confirmed Packet).
+      <output>.manifest.json: input hashes + full lexicon provenance (Confirmed Packet).
       CSV input streams row-at-a-time (memory stays flat at any corpus size); --workers N
       (1-32) scores in parallel worker threads with byte-identical output (default: single-
       threaded).
 
   tass exemplars -i turns.csv --text-column text --lexicon empath --category health
                  [--metric percent] [--top 10] [--bottom 5] [-o exemplars.csv]
-      Highest/lowest-scoring documents with their matched terms — score-to-quote trace-back.
+      Highest/lowest-scoring documents with their matched terms; score-to-quote trace-back.
 
   tass kwic -i turns.csv --text-column text -q "happi*" [--window 7] [--max 100]
       Keyword-in-context concordance (stem wildcard with trailing *).
@@ -1031,7 +1031,7 @@ usage:
 
   tass import-socialsent -i subreddits/ --subreddit gaming -o gaming.json [--id ID]
       Convert a SocialSent community/decade TSV (word mean std; PDDL, commercial-ok) into a
-      lexicon JSON — -i may be the .tsv itself or the unzipped subreddits folder.
+      lexicon JSON; -i may be the .tsv itself or the unzipped subreddits folder.
 
   tass project <save|show|rerun|diff> …
       Reproducible .tassproj containers: archive a run (config + hashes + lexicon snapshots
@@ -1061,14 +1061,47 @@ usage:
       Register e.g.: claude mcp add tass -- tass mcp
 
   tass gui [--port 7770] [--no-open]
-      The human GUI: a local web app (127.0.0.1 only) over the same engine — analyze text,
+      The human GUI: a local web app (127.0.0.1 only) over the same engine; analyze text,
       score files, KWIC, exemplars, browse the dictionary bundle. Opens your browser.
 
 Sentiment flags (analyze + score): --vader-rules adds the TASS implementation of the published
 VADER heuristics (negation, boosters, ALL-CAPS, punctuation, but-clauses, emoticons, idiom
-tables) over the bundled vader lexicon. Report as "TASS VADER-rules compound" — tokenizer
+tables) over the bundled vader lexicon. Report as "TASS VADER-rules compound"; tokenizer
 corner cases and emoji handling differ, so values can deviate slightly from the reference.
 `;
+
+/**
+ * Per-command usage: the paragraph block(s) of USAGE that document one command, so
+ * `tass score --help` answers the actual question instead of printing the whole wall.
+ */
+export function usageFor(cmd: string): string | null {
+    const blocks = USAGE.split('\n\n').filter(b =>
+        b.startsWith(`  tass ${cmd} `) || b.startsWith(`  tass ${cmd}\n`) || b === `  tass ${cmd}`);
+    if (blocks.length === 0) { return null; }
+    return `usage:\n${blocks.join('\n\n')}\n\nMore: "tass help" lists task guides; "tass --help" shows every command.`;
+}
+
+/** Closest command by edit distance, for "did you mean" on typos (max distance 2). */
+export function nearestCommand(input: string, commands: string[]): string | null {
+    const dist = (a: string, b: string): number => {
+        const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...new Array(b.length).fill(0)]);
+        for (let j = 1; j <= b.length; j++) { d[0][j] = j; }
+        for (let i = 1; i <= a.length; i++) {
+            for (let j = 1; j <= b.length; j++) {
+                d[i][j] = Math.min(
+                    d[i - 1][j] + 1, d[i][j - 1] + 1,
+                    d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+            }
+        }
+        return d[a.length][b.length];
+    };
+    let best: string | null = null, bestD = 3;
+    for (const c of commands) {
+        const dd = dist(input.toLowerCase(), c);
+        if (dd < bestD) { best = c; bestD = dd; }
+    }
+    return best;
+}
 
 /** CLI entry. Returns the process exit code (0 ok, 1 usage, 2 runtime). */
 export function main(argv: string[], io?: Io): number {
@@ -1109,7 +1142,7 @@ export function main(argv: string[], io?: Io): number {
         if (cmd === 'viz') {
             const viz = loadViz();
             if (!viz) {
-                throw new UsageError('tass viz requires @simdad/tass-viz (the TASS chart engine) — not installed in this edition');
+                throw new UsageError('tass viz requires @simdad/tass-viz (the TASS chart engine); not installed in this edition');
             }
             return viz.runVizCommand(argv.slice(1), realIo);
         }
@@ -1117,13 +1150,19 @@ export function main(argv: string[], io?: Io): number {
             // Plugin seam (Modern Build Plan Section 5): the stats package owns its own argv.
             const stats = loadStats();
             if (!stats) {
-                throw new UsageError('tass stats requires @simdad/tass-stats (the TASS statistics engine) — not installed in this edition');
+                throw new UsageError('tass stats requires @simdad/tass-stats (the TASS statistics engine); not installed in this edition');
             }
             return stats.runStatsCommand(argv.slice(1), realIo);
         }
         const args = parseArgs(flagFirst ? argv : argv.slice(1),
             new Set(COMMAND_BOOLEANS[cmd ?? ''] ?? []));
         if (!cmd && args.flags.has('--version')) { realIo.out(VERSION); return 0; }
+        if (cmd && cmd !== 'help' && args.flags.has('--help')) {
+            // Per-command help first; the full wall only when the command is unknown.
+            const block = usageFor(cmd);
+            realIo.out(block ?? USAGE);
+            return 0;
+        }
         if (!cmd || cmd === 'help' || args.flags.has('--help')) {
             realIo.out(USAGE);
             // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -1156,7 +1195,7 @@ export function main(argv: string[], io?: Io): number {
                 const task = cmd === 'install'
                     ? (() => {
                         const spec = args.positional[0];
-                        if (!spec) { throw new UsageError('install needs a lexicon name — see: tass search'); }
+                        if (!spec) { throw new UsageError('install needs a lexicon name; see: tass search'); }
                         return registry.installLexicon(spec, realIo);
                     })()
                     : registry.searchRegistry(args.positional[0], realIo);
@@ -1178,8 +1217,14 @@ export function main(argv: string[], io?: Io): number {
                 require('./gui').serveGui(port, !args.flags.has('--no-open'), realIo);
                 return 0;
             }
-            default:
-                throw new UsageError(`unknown command '${cmd}' — run: tass help`);
+            default: {
+                const known = ['dicts', 'analyze', 'ingest', 'score', 'exemplars', 'kwic', 'cite',
+                    'template', 'import-csv', 'import-dic', 'import-nrc', 'import-socialsent',
+                    'merge-labels', 'search', 'install', 'project', 'validation', 'stats', 'viz',
+                    'mcp', 'gui', 'help'];
+                const near = nearestCommand(cmd ?? '', known);
+                throw new UsageError(`unknown command '${cmd}'${near ? ` (did you mean: tass ${near}?)` : ''}; run: tass help`);
+            }
         }
     } catch (e) {
         return renderError(e, realIo);

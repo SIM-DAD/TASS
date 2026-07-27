@@ -74,10 +74,10 @@ export function parseLexiconCsv(content: string, overrides: LexiconCsvMeta = {})
     const rows = parseCsv(useSemicolon ? csvText.replace(/;/g, ',') : csvText);
     const errors: string[] = [];
     const warnings: string[] = [];
-    if (useSemicolon) { warnings.push('semicolon-delimited CSV detected — parsed with ; as the separator'); }
+    if (useSemicolon) { warnings.push('semicolon-delimited CSV detected (parsed with ; as the separator)'); }
 
     if (rows.length === 0) {
-        throw TassError.usage('lexicon-csv/empty', 'dictionary CSV has no header row — expected columns: category, term[, weight, category_label]');
+        throw TassError.usage('lexicon-csv/empty', 'dictionary CSV has no header row; expected columns: category, term[, weight, category_label]');
     }
     const header = rows[0].map(h => h.trim().toLowerCase());
     const idx = (name: string) => header.indexOf(name);
@@ -86,7 +86,7 @@ export function parseLexiconCsv(content: string, overrides: LexiconCsvMeta = {})
     }
     for (const h of header) {
         if (h !== '' && !COLUMNS.has(h)) {
-            errors.push(`line ${lineOf(0)}: unknown column '${h}' — valid: category, term, weight, category_label`);
+            errors.push(`line ${lineOf(0)}: unknown column '${h}'; valid: category, term, weight, category_label`);
         }
     }
     if (errors.length) {
@@ -111,9 +111,9 @@ export function parseLexiconCsv(content: string, overrides: LexiconCsvMeta = {})
             const star = w.indexOf('*');
             if (star < 0) { return; }
             if (wi < words.length - 1) {
-                errors.push(`line ${line}: '${term}' — only the FINAL word of a phrase may carry the * wildcard`);
+                errors.push(`line ${line}: '${term}': only the FINAL word of a phrase may carry the * wildcard`);
             } else if (star !== w.length - 1 || w.length === 1) {
-                errors.push(`line ${line}: '${term}' — * is only valid as a trailing stem wildcard (like happi*)`);
+                errors.push(`line ${line}: '${term}': * is only valid as a trailing stem wildcard (like happi*)`);
             }
         });
 
@@ -135,7 +135,7 @@ export function parseLexiconCsv(content: string, overrides: LexiconCsvMeta = {})
         const label = labelIdx < 0 ? '' : (row[labelIdx] ?? '').trim();
         if (label && !cat.label) { cat.label = label; }
         if (cat.seen.has(term)) {
-            warnings.push(`line ${line}: duplicate term '${term}' in category '${category}' — kept the first occurrence`);
+            warnings.push(`line ${line}: duplicate term '${term}' in category '${category}'; kept the first occurrence`);
             continue;
         }
         cat.seen.add(term);
@@ -151,7 +151,7 @@ export function parseLexiconCsv(content: string, overrides: LexiconCsvMeta = {})
     }
     for (const [id, cat] of categories) {
         if (cat.weighted > 0 && cat.unweighted > 0) {
-            warnings.push(`category '${id}' mixes weighted (${cat.weighted}) and unweighted (${cat.unweighted}) terms — unweighted terms count as weight 1, which skews weighted/mean metrics`);
+            warnings.push(`category '${id}' mixes weighted (${cat.weighted}) and unweighted (${cat.unweighted}) terms; unweighted terms count as weight 1, which skews weighted/mean metrics`);
         }
     }
 
@@ -170,7 +170,7 @@ export function parseLexiconCsv(content: string, overrides: LexiconCsvMeta = {})
         categories: cats,
     };
     if (!merged.license || !merged.citation) {
-        warnings.push('license and/or citation metadata missing — fine for private use; REQUIRED before publishing to the registry (runs will record license as unspecified)');
+        warnings.push('license and/or citation metadata missing: fine for private use; REQUIRED before publishing to the registry (runs will record license as unspecified)');
     }
     return { lexicon, warnings };
 }
@@ -180,7 +180,7 @@ function definedOnly<T extends object>(o: T): Partial<T> {
 }
 
 /** The downloadable authoring template (also shipped at the registry and on the site). */
-export const LEXICON_CSV_TEMPLATE = `# TASS dictionary template — fill in Excel/Google Sheets, save as CSV, then:
+export const LEXICON_CSV_TEMPLATE = `# TASS dictionary template: fill in Excel/Google Sheets, save as CSV, then:
 #   tass import-csv -i my-dictionary.csv -o my-dictionary.json
 # Metadata (edit the values; lines starting with # are ignored by the spreadsheet):
 #id: my-dictionary

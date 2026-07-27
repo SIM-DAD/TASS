@@ -41,7 +41,7 @@ test('dicts lists the bundle with license and citation', () => {
     const r = run(['dicts']);
     assert.equal(r.code, 0);
     const text = r.out.join('\n');
-    for (const id of ['afinn', 'vader', 'empath']) { assert.match(text, new RegExp(`^${id} `, 'm')); }
+    for (const id of ['afinn', 'vader', 'empath']) { assert.match(text, new RegExp(`^${id}: `, 'm')); }
     assert.match(text, /license: MIT/);
     assert.match(text, /cite: /);
 });

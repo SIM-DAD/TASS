@@ -70,13 +70,13 @@ export async function installLexicon(spec: string, io: Io, fetcher: Fetcher = fe
     if (!entry) {
         const known = Object.keys(index.lexicons).sort();
         throw TassError.usage('registry/unknown-lexicon',
-            `'${name}' is not in the registry — available: ${known.join(', ') || '(none yet)'}`);
+            `'${name}' is not in the registry; available: ${known.join(', ') || '(none yet)'}`);
     }
     const version = wantVersion ?? entry.latest;
     const ver = entry.versions[version];
     if (!ver) {
         throw TassError.usage('registry/unknown-version',
-            `'${name}' has no version ${version} — available: ${Object.keys(entry.versions).sort().join(', ')} (latest: ${entry.latest})`);
+            `'${name}' has no version ${version}; available: ${Object.keys(entry.versions).sort().join(', ')} (latest: ${entry.latest})`);
     }
 
     const url = `${registryBase()}/${ver.path}`;
@@ -88,7 +88,7 @@ export async function installLexicon(spec: string, io: Io, fetcher: Fetcher = fe
     const hash = createHash('sha256').update(Buffer.from(body, 'utf8')).digest('hex');
     if (hash !== ver.sha256) {
         throw TassError.runtime('registry/hash-mismatch',
-            `${name}@${version}: downloaded content does not match the registry's sha256 — refusing to install`,
+            `${name}@${version}: downloaded content does not match the registry's sha256; refusing to install`,
             'retry; if it persists, report it to tass@simdadllc.com');
     }
     // Validate as bundled-grade: registry lexicons MUST carry license + citation (the mandate).
@@ -97,7 +97,7 @@ export async function installLexicon(spec: string, io: Io, fetcher: Fetcher = fe
         throw TassError.runtime('registry/id-mismatch', `${name}@${version}: lexicon id inside the file is '${lexicon.id}'`);
     }
     if (listBundled().includes(name)) {
-        io.err(`note: '${name}' is also a BUNDLED lexicon — the bundled copy wins for bare-id resolution; use the file path to force the installed one.`);
+        io.err(`note: '${name}' is also a BUNDLED lexicon. The bundled copy wins for bare-id resolution; use the file path to force the installed one.`);
     }
     mkdirSync(userLexiconDir(), { recursive: true });
     const dest = join(userLexiconDir(), `${name}.json`);
@@ -125,6 +125,6 @@ export async function searchRegistry(term: string | undefined, io: Io, fetcher: 
         if (e.description) { io.out(`    ${e.description}`); }
         io.out(`    cite: ${e.citation}`);
     }
-    io.err(`${ids.length} lexicon(s) — install by name: tass install <name>[@version]`);
+    io.err(`${ids.length} lexicon(s); install by name: tass install <name>[@version]`);
     return 0;
 }

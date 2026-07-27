@@ -59,7 +59,7 @@ export function resolveLexicon(spec: string): Lexicon {
     }
     const installed = listInstalled();
     throw TassError.usage('lexicon/unknown',
-        `unknown lexicon '${spec}' — bundled: ${ids.join(', ')}`
+        `unknown lexicon '${spec}'; bundled: ${ids.join(', ')}`
         + (installed.length ? `; installed: ${installed.join(', ')}` : '')
         + ` (or pass a .json path, or: tass install ${spec})`);
 }

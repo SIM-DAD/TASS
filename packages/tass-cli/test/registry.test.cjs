@@ -66,10 +66,10 @@ test('install: sha256 mismatch refuses to install', async () => {
 test('install: unknown name and unknown version are usage errors listing options', async () => {
     await assert.rejects(
         () => installLexicon('nope', io(), fetcher({ 'index.json': INDEX })),
-        /not in the registry — available: test-lex/);
+        /not in the registry; available: test-lex/);
     await assert.rejects(
         () => installLexicon('test-lex@9.9.9', io(), fetcher({ 'index.json': INDEX })),
-        /no version 9\.9\.9 — available: 1\.0\.0/);
+        /no version 9\.9\.9; available: 1\.0\.0/);
 });
 
 test('search: lists and filters', async () => {

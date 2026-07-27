@@ -136,7 +136,7 @@ export function writeValidation(projectPath: string, records: readonly Validatio
 
     const entries = readZip(readFileSync(projectPath));
     if (!entries.has('tassproj.json')) {
-        throw TassError.runtime('project/corrupt', `${projectPath}: no tassproj.json — not a TASS project`);
+        throw TassError.runtime('project/corrupt', `${projectPath}: no tassproj.json, so this is not a TASS project`);
     }
     entries.set(VALIDATION_MEMBER, json);
     const rest = [...entries.keys()].filter(n => n !== 'tassproj.json').sort();
@@ -213,7 +213,7 @@ export function deriveMatchUnits(scoredCsvPath: string, opts: MatchUnitOptions):
     const textIdx = header.indexOf(opts.textColumn);
     if (textIdx < 0) {
         throw TassError.usage('validation/text-column',
-            `text column '${opts.textColumn}' not in ${scoredCsvPath} — columns: ${header.join(', ')}`,
+            `text column '${opts.textColumn}' not in ${scoredCsvPath}; columns: ${header.join(', ')}`,
             'TXT-mode scored CSVs carry no text; validation sampling needs a CSV corpus run');
     }
     const idIdx = header.indexOf('id');

@@ -34,6 +34,10 @@ npm install && npm run build
 node packages/tass-cli/bin/tass.js help
 ```
 
+To get a `tass` command on your PATH: on Windows run
+`powershell -File packages/tass-cli/scripts/install-cli.ps1`; on macOS or Linux run
+`npm link` inside `packages/tass-cli` (or alias the bin path). Then:
+
 Score a CSV of documents against bundled sentiment lexicons:
 
 ```

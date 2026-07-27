@@ -11,7 +11,9 @@
  *    accent text 6.4:1, primary button 6.7:1; dark mode validated separately), real tab
  *    semantics with arrow-key navigation, labels on every field, fieldsets for groups,
  *    aria-live result regions, role=alert errors, skip link, visible focus, color never the
- *    only signal (license classes carry text badges).
+ *    only signal (license classes carry text badges). axe-core WCAG 2.2 AA pass 2026-07-27:
+ *    wordmark promoted to the page h1 and the tablist wrapped in a <nav> landmark so every
+ *    element sits inside a landmark (axe page-has-heading-one + region).
  *  - System font stack only (obligation-free: no bundled webfonts).
  */
 import { createServer } from 'node:http';
@@ -46,7 +48,7 @@ const PAGE = `<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TASS ${VERSION} — local analysis instrument</title>
+<title>TASS ${VERSION}: local analysis instrument</title>
 <style>
  :root {
   color-scheme: light dark;
@@ -77,11 +79,11 @@ const PAGE = `<!DOCTYPE html>
 
  header.top { display: flex; align-items: baseline; gap: .75rem; flex-wrap: wrap; padding: 1.4rem 0 1rem; border-bottom: 1px solid var(--border); }
  .mark { width: .7em; height: .7em; background: var(--accent); display: inline-block; transform: translateY(.02em); }
- .wordmark { font-size: 1.35rem; font-weight: 700; letter-spacing: .02em; }
+ .wordmark { font-size: 1.35rem; font-weight: 700; letter-spacing: .02em; margin: 0; }
  .wordmark small { font-weight: 400; color: var(--muted); font-size: .8rem; margin-left: .45rem; }
  .trust { margin-left: auto; color: var(--muted); font-size: .8rem; }
 
- nav[role=tablist] { display: flex; gap: .25rem; flex-wrap: wrap; padding: .8rem 0; border-bottom: 1px solid var(--border); }
+ nav [role=tablist] { display: flex; gap: .25rem; flex-wrap: wrap; padding: .8rem 0; border-bottom: 1px solid var(--border); }
  nav [role=tab] {
   appearance: none; font: inherit; font-size: .9rem; cursor: pointer;
   background: transparent; color: var(--muted);
@@ -108,6 +110,11 @@ const PAGE = `<!DOCTYPE html>
 
  fieldset { border: 1px solid var(--border); border-radius: 4px; padding: .6rem .9rem .8rem; margin: .9rem 0 0; }
  legend { font-weight: 600; font-size: .84rem; padding: 0 .35rem; }
+ .pickall { margin-left: .6rem; font-weight: 400; }
+ button.linkish {
+  appearance: none; background: none; border: 0; padding: 0 .3rem; font: inherit; font-size: .78rem;
+  color: var(--accent-text); text-decoration: underline; cursor: pointer;
+ }
  .checks { display: flex; gap: .35rem 1.1rem; flex-wrap: wrap; }
  .checks label { display: inline-flex; gap: .4rem; align-items: center; font-weight: 400; font-size: .88rem; margin: .15rem 0; }
  .lexset { columns: 3 11rem; } .lexset label { display: block; font-weight: 400; font-size: .88rem; margin: .12rem 0; }
@@ -131,7 +138,7 @@ const PAGE = `<!DOCTYPE html>
  .matched { color: var(--muted); font-size: .8rem; }
 
  .card { border: 1px solid var(--border); border-radius: 4px; padding: .8rem 1rem; margin-top: .8rem; background: var(--surface); }
- .card h3 { margin: 0 0 .15rem; font-size: .95rem; }
+ .card h2 { margin: 0 0 .15rem; font-size: .95rem; }
  .badge { display: inline-block; font-size: .72rem; font-weight: 600; padding: .05rem .45rem; border: 1px solid var(--border-strong); border-radius: 3px; margin-left: .5rem; vertical-align: middle; }
  .badge.ok { color: var(--accent-text); border-color: var(--accent-text); }
  .badge.restricted { color: var(--warn-ink); border-color: var(--warn-border); background: var(--warn-surface); }
@@ -151,17 +158,19 @@ const PAGE = `<!DOCTYPE html>
 <div class="shell">
 
 <header class="top">
- <span class="wordmark"><span class="mark" aria-hidden="true"></span> TASS<small>Text Analysis for Social Scientists · ${VERSION}</small></span>
- <span class="trust">Local instrument — nothing leaves this machine.</span>
+ <h1 class="wordmark"><span class="mark" aria-hidden="true"></span> TASS<small>Text Analysis for Social Scientists · ${VERSION}</small></h1>
+ <span class="trust">Local instrument. Nothing leaves this machine.</span>
 </header>
 
-<nav role="tablist" aria-label="Workspace">
- <button role="tab" id="tab-analyze" aria-controls="analyze" aria-selected="true">Analyze text</button>
- <button role="tab" id="tab-score" aria-controls="score" aria-selected="false" tabindex="-1">Score a file</button>
- <button role="tab" id="tab-kwic" aria-controls="kwic" aria-selected="false" tabindex="-1">Concordance</button>
- <button role="tab" id="tab-exemplars" aria-controls="exemplars" aria-selected="false" tabindex="-1">Exemplars</button>
- <button role="tab" id="tab-dicts" aria-controls="dicts" aria-selected="false" tabindex="-1">Dictionaries</button>
- <button role="tab" id="tab-help" aria-controls="help" aria-selected="false" tabindex="-1">Help</button>
+<nav aria-label="Workspace">
+ <div role="tablist" aria-label="Workspace">
+  <button role="tab" id="tab-analyze" aria-controls="analyze" aria-selected="true">Analyze text</button>
+  <button role="tab" id="tab-score" aria-controls="score" aria-selected="false" tabindex="-1">Score a file</button>
+  <button role="tab" id="tab-kwic" aria-controls="kwic" aria-selected="false" tabindex="-1">Concordance</button>
+  <button role="tab" id="tab-exemplars" aria-controls="exemplars" aria-selected="false" tabindex="-1">Exemplars</button>
+  <button role="tab" id="tab-dicts" aria-controls="dicts" aria-selected="false" tabindex="-1">Dictionaries</button>
+  <button role="tab" id="tab-help" aria-controls="help" aria-selected="false" tabindex="-1">Help</button>
+ </div>
 </nav>
 
 <main id="main">
@@ -322,20 +331,40 @@ var bundle = [];
 call('tass_dicts', {}).then(function (r) {
   if (!r.ok) { renderError($('d-out'), r.text); return; }
   bundle = JSON.parse(r.text);
+  // Starter selection: sentiment + politeness. Ten dictionaries at once buries a first
+  // result under psycholinguistic norms; "All" is one click away for the full sweep.
+  var STARTER = { vader: 1, afinn: 1, politeness: 1 };
   var boxes = function (cls) {
     return bundle.map(function (l) {
-      return '<label><input type="checkbox" class="' + cls + '" value="' + esc(l.id) + '" checked> ' + esc(l.id) + '</label>';
+      return '<label><input type="checkbox" class="' + cls + '" value="' + esc(l.id) + '"'
+        + (STARTER[l.id] ? ' checked' : '') + '> ' + esc(l.id) + '</label>';
     }).join('');
+  };
+  var setAll = function (cls, on) {
+    document.querySelectorAll('.' + cls).forEach(function (b) { b.checked = on; });
+  };
+  var pickerControls = function (cls) {
+    var wrap = document.createElement('span');
+    wrap.className = 'pickall';
+    [['All', true], ['None', false]].forEach(function (p) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'linkish'; b.textContent = p[0];
+      b.addEventListener('click', function () { setAll(cls, p[1]); });
+      wrap.appendChild(b);
+    });
+    return wrap;
   };
   $('a-lex').innerHTML = boxes('a-lexbox'); $('a-lex').classList.remove('note');
   $('s-lex').innerHTML = boxes('s-lexbox'); $('s-lex').classList.remove('note');
+  $('a-lex').parentNode.querySelector('legend').appendChild(pickerControls('a-lexbox'));
+  $('s-lex').parentNode.querySelector('legend').appendChild(pickerControls('s-lexbox'));
   $('d-out').innerHTML = bundle.map(function (l) {
     var terms = l.categories.reduce(function (n, c) { return n + c.terms; }, 0);
     var restricted = l.licenseClass !== 'commercial-ok';
-    return '<div class="card"><h3>' + esc(l.id)
+    return '<div class="card"><h2>' + esc(l.id)
       + '<span class="badge ' + (restricted ? 'restricted' : 'ok') + '">' + esc(l.licenseClass) + '</span>'
-      + '<span class="badge">' + esc(l.license || 'license unspecified') + '</span></h3>'
-      + '<div>' + esc(l.name) + ' — ' + l.categories.length + ' categories, ' + terms + ' terms</div>'
+      + '<span class="badge">' + esc(l.license || 'license unspecified') + '</span></h2>'
+      + '<div>' + esc(l.name) + ': ' + l.categories.length + ' categories, ' + terms + ' terms</div>'
       + '<div class="cite">Cite: ' + esc(l.citation || '(no citation recorded)') + '</div></div>';
   }).join('');
 });
@@ -347,7 +376,7 @@ function picked(cls) {
 $('a-go').addEventListener('click', function () {
   var out = $('a-out');
   if (!$('a-text').value.trim()) {
-    renderError(out, 'Nothing to analyze yet — paste some text above.');
+    renderError(out, 'Nothing to analyze yet; paste some text above.');
     return;
   }
   busy(this, true, 'Analyze', 'Analyzing…');
@@ -359,12 +388,17 @@ $('a-go').addEventListener('click', function () {
     busy(btn, false, 'Analyze', 'Analyzing…');
     if (!r.ok) { renderError(out, r.text); return; }
     var d = JSON.parse(r.text);
+    // Display rounding only (4 decimals, trailing zeros trimmed); exports keep full precision.
+    var num = function (v) {
+      if (v === null || v === undefined) { return v; }
+      return String(Math.round(v * 10000) / 10000);
+    };
     var h = '<p class="note">' + d.totalTokens + ' tokens · deterministic (same text, same numbers)</p>';
     if (d.vaderRules) {
       h += '<table><caption>TASS VADER-rules sentiment</caption>'
         + '<tr><th class="num">compound</th><th class="num">positive</th><th class="num">neutral</th><th class="num">negative</th><th>contributing tokens</th></tr>'
-        + '<tr><td class="num"><strong>' + d.vaderRules.compound + '</strong></td><td class="num">' + d.vaderRules.positive
-        + '</td><td class="num">' + d.vaderRules.neutral + '</td><td class="num">' + d.vaderRules.negative + '</td>'
+        + '<tr><td class="num"><strong>' + num(d.vaderRules.compound) + '</strong></td><td class="num">' + num(d.vaderRules.positive)
+        + '</td><td class="num">' + num(d.vaderRules.neutral) + '</td><td class="num">' + num(d.vaderRules.negative) + '</td>'
         + '<td class="matched">' + esc((d.vaderRules.matchedForms || []).join(', ')) + '</td></tr></table>'
         + '<p class="note">Report as "TASS VADER-rules compound" (see Methods).</p>';
     }
@@ -378,9 +412,9 @@ $('a-go').addEventListener('click', function () {
         + lex.categories.map(function (c) {
           var w = Math.max(2, Math.round(60 * c.percent / maxPct));
           return '<tr><td>' + esc(c.label) + '</td>'
-            + '<td class="num"><span class="bar" style="width:' + w + 'px" aria-hidden="true"></span>' + c.percent + '</td>'
-            + '<td class="num">' + c.hits + '</td><td class="num">' + c.weighted + '</td>'
-            + '<td class="num">' + (c.mean === null ? '—' : c.mean) + '</td>'
+            + '<td class="num"><span class="bar" style="width:' + w + 'px" aria-hidden="true"></span>' + num(c.percent) + '</td>'
+            + '<td class="num">' + c.hits + '</td><td class="num">' + num(c.weighted) + '</td>'
+            + '<td class="num">' + (c.mean === null ? '&middot;' : num(c.mean)) + '</td>'
             + '<td class="matched">' + esc(c.matchedForms.join(', ')) + '</td></tr>';
         }).join('') + '</table>';
     });

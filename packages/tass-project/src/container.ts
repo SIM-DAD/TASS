@@ -79,7 +79,7 @@ export function saveProject(opts: SaveOptions): string[] {
     }
     if (!config.settings || !Array.isArray(config.inputs) || !Array.isArray(config.outputs)) {
         throw TassError.usage('project/bad-manifest',
-            `${opts.manifestPath}: missing manifest fields (settings/inputs/outputs) — pass the <output>.manifest.json a score run wrote`);
+            `${opts.manifestPath}: missing manifest fields (settings/inputs/outputs); pass the <output>.manifest.json a score run wrote`);
     }
 
     const entries = new Map<string, Buffer>();
@@ -95,7 +95,7 @@ export function saveProject(opts: SaveOptions): string[] {
             const hash = sha256(bytes);
             if (hash !== input.sha256) {
                 throw TassError.runtime('project/input-changed',
-                    `${input.path} has changed since the run (sha256 mismatch) — re-run before saving, or save by reference`);
+                    `${input.path} has changed since the run (sha256 mismatch); re-run before saving, or save by reference`);
             }
             entries.set(`corpus/${uniqueName(entries, 'corpus/', basename(input.path))}`, bytes);
         }
@@ -106,7 +106,7 @@ export function saveProject(opts: SaveOptions): string[] {
     for (const spec of specs) {
         if (!/[\\/]|\.json$/i.test(spec)) { continue; }
         if (!existsSync(spec)) {
-            throw TassError.usage('project/missing-lexicon', `lexicon file ${spec} not found — cannot snapshot it into the project`);
+            throw TassError.usage('project/missing-lexicon', `lexicon file ${spec} not found, so it cannot be snapshotted into the project`);
         }
         entries.set(`lexicons/${uniqueName(entries, 'lexicons/', basename(spec))}`, readFileSync(spec));
     }
@@ -114,7 +114,7 @@ export function saveProject(opts: SaveOptions): string[] {
     // Results: every artifact the run wrote, by basename (content is path-free by design).
     for (const out of config.outputs) {
         if (!existsSync(out)) {
-            throw TassError.usage('project/missing-output', `run artifact ${out} not found — save from the directory the run wrote to`);
+            throw TassError.usage('project/missing-output', `run artifact ${out} not found; save from the directory the run wrote to`);
         }
         entries.set(`results/${uniqueName(entries, 'results/', basename(out))}`, readFileSync(out));
     }
@@ -153,11 +153,11 @@ function uniqueName(entries: Map<string, Buffer>, prefix: string, name: string):
 export function loadProject(path: string): Project {
     const entries = readZip(readFileSync(path));
     const metaBuf = entries.get('tassproj.json');
-    if (!metaBuf) { throw TassError.runtime('project/corrupt', `${path}: no tassproj.json — not a TASS project`); }
+    if (!metaBuf) { throw TassError.runtime('project/corrupt', `${path}: no tassproj.json, so this is not a TASS project`); }
     const meta = JSON.parse(metaBuf.toString('utf8')) as ProjectMeta;
     if (meta.tassproj !== TASSPROJ_SCHEMA) {
         throw TassError.usage('project/schema',
-            `${path}: schema generation ${meta.tassproj} is newer than this TASS understands (${TASSPROJ_SCHEMA}) — update TASS`);
+            `${path}: schema generation ${meta.tassproj} is newer than this TASS understands (${TASSPROJ_SCHEMA}); update TASS`);
     }
     for (const [name, hash] of Object.entries(meta.contentHashes)) {
         // validation/* is reviewer-mutable: edits there must never trip tamper detection
@@ -167,7 +167,7 @@ export function loadProject(path: string): Project {
         if (!data) { throw TassError.runtime('project/corrupt', `${path}: missing entry ${name}`); }
         if (sha256(data) !== hash) {
             throw TassError.runtime('project/tampered',
-                `${path}: content hash mismatch for ${name} — the archive was modified outside TASS`);
+                `${path}: content hash mismatch for ${name}; the archive was modified outside TASS`);
         }
     }
     const configBuf = entries.get('config.json');
