@@ -1,0 +1,5 @@
+@simdad/tass-cli — part of TASS (Text Analysis for Social Scientists), SIM DAD LLC.
+Proprietary. Bundled lexicon data lives in @simdad/tass-core (see its NOTICE for the
+per-lexicon licenses and citations); every scoring run writes a manifest that repeats the
+provenance of exactly the lexicons used. User-imported dictionaries (LIWC .dic, NRC EmoLex)
+remain under their own licenses and are never redistributed by TASS.

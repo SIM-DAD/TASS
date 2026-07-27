@@ -1,0 +1,16 @@
+TASS Community Edition
+Copyright 2026 SIM DAD LLC
+
+This product includes software developed by SIM DAD LLC (https://usetass.app).
+
+"TASS" is a trademark of SIM DAD LLC. This license does not grant permission to
+use the trade names, trademarks, service marks, or product names of SIM DAD LLC,
+except as required for reasonable and customary use in describing the origin of
+the work and reproducing the content of this NOTICE file.
+
+Bundled lexicon data is re-derived from open upstream sources; each lexicon
+carries its own license and required citation, listed in
+packages/tass-core/NOTICE and surfaced by `tass dicts` and in every run
+manifest. The bundled set is verified commercial-ok; restricted resources
+(NRC, LIWC, General Inquirer, and similar) are never bundled and user imports
+of them are flagged academic-only in every run's provenance.

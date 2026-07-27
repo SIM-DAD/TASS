@@ -1,0 +1,10 @@
+@simdad/tass-core — SIM DAD LLC. All rights reserved (pre-release).
+
+This package's ENGINE is first-party code with zero runtime dependencies.
+
+Lexicon DATA is governed separately: only lexicons verified free-for-commercial-redistribution may
+ever be bundled (see meta/sprint/research-2026-07-04/tass.md for the verified list and the
+landmine list — NRC, LIWC, Loughran-McDonald, Harvard General Inquirer, SEANCE-as-bundle, Brown
+corpus, COCA/BNC are NEVER bundled). Every bundled lexicon must carry its citation + license tag
+in the Lexicon record so attribution surfaces in-app and in exports. The .dic importer is a
+file-format reader for dictionaries the USER licensed — importing does not redistribute.

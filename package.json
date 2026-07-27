@@ -1,0 +1,19 @@
+{
+  "name": "tass-community",
+  "version": "0.5.1",
+  "private": true,
+  "license": "Apache-2.0",
+  "workspaces": [
+    "packages/tass-core",
+    "packages/tass-project",
+    "packages/tass-cli"
+  ],
+  "scripts": {
+    "build": "tsc -b packages/tass-cli",
+    "test": "node --test packages/tass-core/test/tass-core.test.cjs packages/tass-core/test/lexicons.test.cjs packages/tass-core/test/phrases-vader.test.cjs packages/tass-core/test/csv.test.cjs packages/tass-core/test/contracts.test.cjs packages/tass-core/test/lexicon-csv.test.cjs packages/tass-cli/test/cli.test.cjs packages/tass-cli/test/determinism.test.cjs packages/tass-cli/test/mcp.test.cjs packages/tass-cli/test/gui.test.cjs packages/tass-project/test/project.test.cjs packages/tass-project/test/validation.test.cjs packages/tass-cli/test/validation-cli.test.cjs packages/tass-cli/test/merge-labels.test.cjs packages/tass-cli/test/registry.test.cjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "~5.4.5"
+  }
+}

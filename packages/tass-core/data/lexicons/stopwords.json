@@ -1,0 +1,3909 @@
+{
+ "id": "stopwords",
+ "name": "English stopwords (stopwords-iso)",
+ "license": "MIT",
+ "citation": "Diaz, G. et al. stopwords-iso: collection of stopwords in multiple languages. https://github.com/stopwords-iso/stopwords-en",
+ "categories": [
+  {
+   "id": "stopwords",
+   "label": "Function words / stopwords",
+   "terms": [
+    {
+     "term": "'ll"
+    },
+    {
+     "term": "'tis"
+    },
+    {
+     "term": "'twas"
+    },
+    {
+     "term": "'ve"
+    },
+    {
+     "term": "10"
+    },
+    {
+     "term": "39"
+    },
+    {
+     "term": "a"
+    },
+    {
+     "term": "a's"
+    },
+    {
+     "term": "able"
+    },
+    {
+     "term": "ableabout"
+    },
+    {
+     "term": "about"
+    },
+    {
+     "term": "above"
+    },
+    {
+     "term": "abroad"
+    },
+    {
+     "term": "abst"
+    },
+    {
+     "term": "accordance"
+    },
+    {
+     "term": "according"
+    },
+    {
+     "term": "accordingly"
+    },
+    {
+     "term": "across"
+    },
+    {
+     "term": "act"
+    },
+    {
+     "term": "actually"
+    },
+    {
+     "term": "ad"
+    },
+    {
+     "term": "added"
+    },
+    {
+     "term": "adj"
+    },
+    {
+     "term": "adopted"
+    },
+    {
+     "term": "ae"
+    },
+    {
+     "term": "af"
+    },
+    {
+     "term": "affected"
+    },
+    {
+     "term": "affecting"
+    },
+    {
+     "term": "affects"
+    },
+    {
+     "term": "after"
+    },
+    {
+     "term": "afterwards"
+    },
+    {
+     "term": "ag"
+    },
+    {
+     "term": "again"
+    },
+    {
+     "term": "against"
+    },
+    {
+     "term": "ago"
+    },
+    {
+     "term": "ah"
+    },
+    {
+     "term": "ahead"
+    },
+    {
+     "term": "ai"
+    },
+    {
+     "term": "ain't"
+    },
+    {
+     "term": "aint"
+    },
+    {
+     "term": "al"
+    },
+    {
+     "term": "all"
+    },
+    {
+     "term": "allow"
+    },
+    {
+     "term": "allows"
+    },
+    {
+     "term": "almost"
+    },
+    {
+     "term": "alone"
+    },
+    {
+     "term": "along"
+    },
+    {
+     "term": "alongside"
+    },
+    {
+     "term": "already"
+    },
+    {
+     "term": "also"
+    },
+    {
+     "term": "although"
+    },
+    {
+     "term": "always"
+    },
+    {
+     "term": "am"
+    },
+    {
+     "term": "amid"
+    },
+    {
+     "term": "amidst"
+    },
+    {
+     "term": "among"
+    },
+    {
+     "term": "amongst"
+    },
+    {
+     "term": "amoungst"
+    },
+    {
+     "term": "amount"
+    },
+    {
+     "term": "an"
+    },
+    {
+     "term": "and"
+    },
+    {
+     "term": "announce"
+    },
+    {
+     "term": "another"
+    },
+    {
+     "term": "any"
+    },
+    {
+     "term": "anybody"
+    },
+    {
+     "term": "anyhow"
+    },
+    {
+     "term": "anymore"
+    },
+    {
+     "term": "anyone"
+    },
+    {
+     "term": "anything"
+    },
+    {
+     "term": "anyway"
+    },
+    {
+     "term": "anyways"
+    },
+    {
+     "term": "anywhere"
+    },
+    {
+     "term": "ao"
+    },
+    {
+     "term": "apart"
+    },
+    {
+     "term": "apparently"
+    },
+    {
+     "term": "appear"
+    },
+    {
+     "term": "appreciate"
+    },
+    {
+     "term": "appropriate"
+    },
+    {
+     "term": "approximately"
+    },
+    {
+     "term": "aq"
+    },
+    {
+     "term": "ar"
+    },
+    {
+     "term": "are"
+    },
+    {
+     "term": "area"
+    },
+    {
+     "term": "areas"
+    },
+    {
+     "term": "aren"
+    },
+    {
+     "term": "aren't"
+    },
+    {
+     "term": "arent"
+    },
+    {
+     "term": "arise"
+    },
+    {
+     "term": "around"
+    },
+    {
+     "term": "arpa"
+    },
+    {
+     "term": "as"
+    },
+    {
+     "term": "aside"
+    },
+    {
+     "term": "ask"
+    },
+    {
+     "term": "asked"
+    },
+    {
+     "term": "asking"
+    },
+    {
+     "term": "asks"
+    },
+    {
+     "term": "associated"
+    },
+    {
+     "term": "at"
+    },
+    {
+     "term": "au"
+    },
+    {
+     "term": "auth"
+    },
+    {
+     "term": "available"
+    },
+    {
+     "term": "aw"
+    },
+    {
+     "term": "away"
+    },
+    {
+     "term": "awfully"
+    },
+    {
+     "term": "az"
+    },
+    {
+     "term": "b"
+    },
+    {
+     "term": "ba"
+    },
+    {
+     "term": "back"
+    },
+    {
+     "term": "backed"
+    },
+    {
+     "term": "backing"
+    },
+    {
+     "term": "backs"
+    },
+    {
+     "term": "backward"
+    },
+    {
+     "term": "backwards"
+    },
+    {
+     "term": "bb"
+    },
+    {
+     "term": "bd"
+    },
+    {
+     "term": "be"
+    },
+    {
+     "term": "became"
+    },
+    {
+     "term": "because"
+    },
+    {
+     "term": "become"
+    },
+    {
+     "term": "becomes"
+    },
+    {
+     "term": "becoming"
+    },
+    {
+     "term": "been"
+    },
+    {
+     "term": "before"
+    },
+    {
+     "term": "beforehand"
+    },
+    {
+     "term": "began"
+    },
+    {
+     "term": "begin"
+    },
+    {
+     "term": "beginning"
+    },
+    {
+     "term": "beginnings"
+    },
+    {
+     "term": "begins"
+    },
+    {
+     "term": "behind"
+    },
+    {
+     "term": "being"
+    },
+    {
+     "term": "beings"
+    },
+    {
+     "term": "believe"
+    },
+    {
+     "term": "below"
+    },
+    {
+     "term": "beside"
+    },
+    {
+     "term": "besides"
+    },
+    {
+     "term": "best"
+    },
+    {
+     "term": "better"
+    },
+    {
+     "term": "between"
+    },
+    {
+     "term": "beyond"
+    },
+    {
+     "term": "bf"
+    },
+    {
+     "term": "bg"
+    },
+    {
+     "term": "bh"
+    },
+    {
+     "term": "bi"
+    },
+    {
+     "term": "big"
+    },
+    {
+     "term": "bill"
+    },
+    {
+     "term": "billion"
+    },
+    {
+     "term": "biol"
+    },
+    {
+     "term": "bj"
+    },
+    {
+     "term": "bm"
+    },
+    {
+     "term": "bn"
+    },
+    {
+     "term": "bo"
+    },
+    {
+     "term": "both"
+    },
+    {
+     "term": "bottom"
+    },
+    {
+     "term": "br"
+    },
+    {
+     "term": "brief"
+    },
+    {
+     "term": "briefly"
+    },
+    {
+     "term": "bs"
+    },
+    {
+     "term": "bt"
+    },
+    {
+     "term": "but"
+    },
+    {
+     "term": "buy"
+    },
+    {
+     "term": "bv"
+    },
+    {
+     "term": "bw"
+    },
+    {
+     "term": "by"
+    },
+    {
+     "term": "bz"
+    },
+    {
+     "term": "c"
+    },
+    {
+     "term": "c'mon"
+    },
+    {
+     "term": "c's"
+    },
+    {
+     "term": "ca"
+    },
+    {
+     "term": "call"
+    },
+    {
+     "term": "came"
+    },
+    {
+     "term": "can"
+    },
+    {
+     "term": "can't"
+    },
+    {
+     "term": "cannot"
+    },
+    {
+     "term": "cant"
+    },
+    {
+     "term": "caption"
+    },
+    {
+     "term": "case"
+    },
+    {
+     "term": "cases"
+    },
+    {
+     "term": "cause"
+    },
+    {
+     "term": "causes"
+    },
+    {
+     "term": "cc"
+    },
+    {
+     "term": "cd"
+    },
+    {
+     "term": "certain"
+    },
+    {
+     "term": "certainly"
+    },
+    {
+     "term": "cf"
+    },
+    {
+     "term": "cg"
+    },
+    {
+     "term": "ch"
+    },
+    {
+     "term": "changes"
+    },
+    {
+     "term": "ci"
+    },
+    {
+     "term": "ck"
+    },
+    {
+     "term": "cl"
+    },
+    {
+     "term": "clear"
+    },
+    {
+     "term": "clearly"
+    },
+    {
+     "term": "click"
+    },
+    {
+     "term": "cm"
+    },
+    {
+     "term": "cmon"
+    },
+    {
+     "term": "cn"
+    },
+    {
+     "term": "co"
+    },
+    {
+     "term": "co."
+    },
+    {
+     "term": "com"
+    },
+    {
+     "term": "come"
+    },
+    {
+     "term": "comes"
+    },
+    {
+     "term": "computer"
+    },
+    {
+     "term": "con"
+    },
+    {
+     "term": "concerning"
+    },
+    {
+     "term": "consequently"
+    },
+    {
+     "term": "consider"
+    },
+    {
+     "term": "considering"
+    },
+    {
+     "term": "contain"
+    },
+    {
+     "term": "containing"
+    },
+    {
+     "term": "contains"
+    },
+    {
+     "term": "copy"
+    },
+    {
+     "term": "corresponding"
+    },
+    {
+     "term": "could"
+    },
+    {
+     "term": "could've"
+    },
+    {
+     "term": "couldn"
+    },
+    {
+     "term": "couldn't"
+    },
+    {
+     "term": "couldnt"
+    },
+    {
+     "term": "course"
+    },
+    {
+     "term": "cr"
+    },
+    {
+     "term": "cry"
+    },
+    {
+     "term": "cs"
+    },
+    {
+     "term": "cu"
+    },
+    {
+     "term": "currently"
+    },
+    {
+     "term": "cv"
+    },
+    {
+     "term": "cx"
+    },
+    {
+     "term": "cy"
+    },
+    {
+     "term": "cz"
+    },
+    {
+     "term": "d"
+    },
+    {
+     "term": "dare"
+    },
+    {
+     "term": "daren't"
+    },
+    {
+     "term": "darent"
+    },
+    {
+     "term": "date"
+    },
+    {
+     "term": "de"
+    },
+    {
+     "term": "dear"
+    },
+    {
+     "term": "definitely"
+    },
+    {
+     "term": "describe"
+    },
+    {
+     "term": "described"
+    },
+    {
+     "term": "despite"
+    },
+    {
+     "term": "detail"
+    },
+    {
+     "term": "did"
+    },
+    {
+     "term": "didn"
+    },
+    {
+     "term": "didn't"
+    },
+    {
+     "term": "didnt"
+    },
+    {
+     "term": "differ"
+    },
+    {
+     "term": "different"
+    },
+    {
+     "term": "differently"
+    },
+    {
+     "term": "directly"
+    },
+    {
+     "term": "dj"
+    },
+    {
+     "term": "dk"
+    },
+    {
+     "term": "dm"
+    },
+    {
+     "term": "do"
+    },
+    {
+     "term": "does"
+    },
+    {
+     "term": "doesn"
+    },
+    {
+     "term": "doesn't"
+    },
+    {
+     "term": "doesnt"
+    },
+    {
+     "term": "doing"
+    },
+    {
+     "term": "don"
+    },
+    {
+     "term": "don't"
+    },
+    {
+     "term": "done"
+    },
+    {
+     "term": "dont"
+    },
+    {
+     "term": "doubtful"
+    },
+    {
+     "term": "down"
+    },
+    {
+     "term": "downed"
+    },
+    {
+     "term": "downing"
+    },
+    {
+     "term": "downs"
+    },
+    {
+     "term": "downwards"
+    },
+    {
+     "term": "due"
+    },
+    {
+     "term": "during"
+    },
+    {
+     "term": "dz"
+    },
+    {
+     "term": "e"
+    },
+    {
+     "term": "each"
+    },
+    {
+     "term": "early"
+    },
+    {
+     "term": "ec"
+    },
+    {
+     "term": "ed"
+    },
+    {
+     "term": "edu"
+    },
+    {
+     "term": "ee"
+    },
+    {
+     "term": "effect"
+    },
+    {
+     "term": "eg"
+    },
+    {
+     "term": "eh"
+    },
+    {
+     "term": "eight"
+    },
+    {
+     "term": "eighty"
+    },
+    {
+     "term": "either"
+    },
+    {
+     "term": "eleven"
+    },
+    {
+     "term": "else"
+    },
+    {
+     "term": "elsewhere"
+    },
+    {
+     "term": "empty"
+    },
+    {
+     "term": "end"
+    },
+    {
+     "term": "ended"
+    },
+    {
+     "term": "ending"
+    },
+    {
+     "term": "ends"
+    },
+    {
+     "term": "enough"
+    },
+    {
+     "term": "entirely"
+    },
+    {
+     "term": "er"
+    },
+    {
+     "term": "es"
+    },
+    {
+     "term": "especially"
+    },
+    {
+     "term": "et"
+    },
+    {
+     "term": "et-al"
+    },
+    {
+     "term": "etc"
+    },
+    {
+     "term": "even"
+    },
+    {
+     "term": "evenly"
+    },
+    {
+     "term": "ever"
+    },
+    {
+     "term": "evermore"
+    },
+    {
+     "term": "every"
+    },
+    {
+     "term": "everybody"
+    },
+    {
+     "term": "everyone"
+    },
+    {
+     "term": "everything"
+    },
+    {
+     "term": "everywhere"
+    },
+    {
+     "term": "ex"
+    },
+    {
+     "term": "exactly"
+    },
+    {
+     "term": "example"
+    },
+    {
+     "term": "except"
+    },
+    {
+     "term": "f"
+    },
+    {
+     "term": "face"
+    },
+    {
+     "term": "faces"
+    },
+    {
+     "term": "fact"
+    },
+    {
+     "term": "facts"
+    },
+    {
+     "term": "fairly"
+    },
+    {
+     "term": "far"
+    },
+    {
+     "term": "farther"
+    },
+    {
+     "term": "felt"
+    },
+    {
+     "term": "few"
+    },
+    {
+     "term": "fewer"
+    },
+    {
+     "term": "ff"
+    },
+    {
+     "term": "fi"
+    },
+    {
+     "term": "fifteen"
+    },
+    {
+     "term": "fifth"
+    },
+    {
+     "term": "fifty"
+    },
+    {
+     "term": "fify"
+    },
+    {
+     "term": "fill"
+    },
+    {
+     "term": "find"
+    },
+    {
+     "term": "finds"
+    },
+    {
+     "term": "fire"
+    },
+    {
+     "term": "first"
+    },
+    {
+     "term": "five"
+    },
+    {
+     "term": "fix"
+    },
+    {
+     "term": "fj"
+    },
+    {
+     "term": "fk"
+    },
+    {
+     "term": "fm"
+    },
+    {
+     "term": "fo"
+    },
+    {
+     "term": "followed"
+    },
+    {
+     "term": "following"
+    },
+    {
+     "term": "follows"
+    },
+    {
+     "term": "for"
+    },
+    {
+     "term": "forever"
+    },
+    {
+     "term": "former"
+    },
+    {
+     "term": "formerly"
+    },
+    {
+     "term": "forth"
+    },
+    {
+     "term": "forty"
+    },
+    {
+     "term": "forward"
+    },
+    {
+     "term": "found"
+    },
+    {
+     "term": "four"
+    },
+    {
+     "term": "fr"
+    },
+    {
+     "term": "free"
+    },
+    {
+     "term": "from"
+    },
+    {
+     "term": "front"
+    },
+    {
+     "term": "full"
+    },
+    {
+     "term": "fully"
+    },
+    {
+     "term": "further"
+    },
+    {
+     "term": "furthered"
+    },
+    {
+     "term": "furthering"
+    },
+    {
+     "term": "furthermore"
+    },
+    {
+     "term": "furthers"
+    },
+    {
+     "term": "fx"
+    },
+    {
+     "term": "g"
+    },
+    {
+     "term": "ga"
+    },
+    {
+     "term": "gave"
+    },
+    {
+     "term": "gb"
+    },
+    {
+     "term": "gd"
+    },
+    {
+     "term": "ge"
+    },
+    {
+     "term": "general"
+    },
+    {
+     "term": "generally"
+    },
+    {
+     "term": "get"
+    },
+    {
+     "term": "gets"
+    },
+    {
+     "term": "getting"
+    },
+    {
+     "term": "gf"
+    },
+    {
+     "term": "gg"
+    },
+    {
+     "term": "gh"
+    },
+    {
+     "term": "gi"
+    },
+    {
+     "term": "give"
+    },
+    {
+     "term": "given"
+    },
+    {
+     "term": "gives"
+    },
+    {
+     "term": "giving"
+    },
+    {
+     "term": "gl"
+    },
+    {
+     "term": "gm"
+    },
+    {
+     "term": "gmt"
+    },
+    {
+     "term": "gn"
+    },
+    {
+     "term": "go"
+    },
+    {
+     "term": "goes"
+    },
+    {
+     "term": "going"
+    },
+    {
+     "term": "gone"
+    },
+    {
+     "term": "good"
+    },
+    {
+     "term": "goods"
+    },
+    {
+     "term": "got"
+    },
+    {
+     "term": "gotten"
+    },
+    {
+     "term": "gov"
+    },
+    {
+     "term": "gp"
+    },
+    {
+     "term": "gq"
+    },
+    {
+     "term": "gr"
+    },
+    {
+     "term": "great"
+    },
+    {
+     "term": "greater"
+    },
+    {
+     "term": "greatest"
+    },
+    {
+     "term": "greetings"
+    },
+    {
+     "term": "group"
+    },
+    {
+     "term": "grouped"
+    },
+    {
+     "term": "grouping"
+    },
+    {
+     "term": "groups"
+    },
+    {
+     "term": "gs"
+    },
+    {
+     "term": "gt"
+    },
+    {
+     "term": "gu"
+    },
+    {
+     "term": "gw"
+    },
+    {
+     "term": "gy"
+    },
+    {
+     "term": "h"
+    },
+    {
+     "term": "had"
+    },
+    {
+     "term": "hadn't"
+    },
+    {
+     "term": "hadnt"
+    },
+    {
+     "term": "half"
+    },
+    {
+     "term": "happens"
+    },
+    {
+     "term": "hardly"
+    },
+    {
+     "term": "has"
+    },
+    {
+     "term": "hasn"
+    },
+    {
+     "term": "hasn't"
+    },
+    {
+     "term": "hasnt"
+    },
+    {
+     "term": "have"
+    },
+    {
+     "term": "haven"
+    },
+    {
+     "term": "haven't"
+    },
+    {
+     "term": "havent"
+    },
+    {
+     "term": "having"
+    },
+    {
+     "term": "he"
+    },
+    {
+     "term": "he'd"
+    },
+    {
+     "term": "he'll"
+    },
+    {
+     "term": "he's"
+    },
+    {
+     "term": "hed"
+    },
+    {
+     "term": "hell"
+    },
+    {
+     "term": "hello"
+    },
+    {
+     "term": "help"
+    },
+    {
+     "term": "hence"
+    },
+    {
+     "term": "her"
+    },
+    {
+     "term": "here"
+    },
+    {
+     "term": "here's"
+    },
+    {
+     "term": "hereafter"
+    },
+    {
+     "term": "hereby"
+    },
+    {
+     "term": "herein"
+    },
+    {
+     "term": "heres"
+    },
+    {
+     "term": "hereupon"
+    },
+    {
+     "term": "hers"
+    },
+    {
+     "term": "herse”"
+    },
+    {
+     "term": "herself"
+    },
+    {
+     "term": "hes"
+    },
+    {
+     "term": "hi"
+    },
+    {
+     "term": "hid"
+    },
+    {
+     "term": "high"
+    },
+    {
+     "term": "higher"
+    },
+    {
+     "term": "highest"
+    },
+    {
+     "term": "him"
+    },
+    {
+     "term": "himse”"
+    },
+    {
+     "term": "himself"
+    },
+    {
+     "term": "his"
+    },
+    {
+     "term": "hither"
+    },
+    {
+     "term": "hk"
+    },
+    {
+     "term": "hm"
+    },
+    {
+     "term": "hn"
+    },
+    {
+     "term": "home"
+    },
+    {
+     "term": "homepage"
+    },
+    {
+     "term": "hopefully"
+    },
+    {
+     "term": "how"
+    },
+    {
+     "term": "how'd"
+    },
+    {
+     "term": "how'll"
+    },
+    {
+     "term": "how's"
+    },
+    {
+     "term": "howbeit"
+    },
+    {
+     "term": "however"
+    },
+    {
+     "term": "hr"
+    },
+    {
+     "term": "ht"
+    },
+    {
+     "term": "htm"
+    },
+    {
+     "term": "html"
+    },
+    {
+     "term": "http"
+    },
+    {
+     "term": "hu"
+    },
+    {
+     "term": "hundred"
+    },
+    {
+     "term": "i"
+    },
+    {
+     "term": "i.e."
+    },
+    {
+     "term": "i'd"
+    },
+    {
+     "term": "i'll"
+    },
+    {
+     "term": "i'm"
+    },
+    {
+     "term": "i've"
+    },
+    {
+     "term": "id"
+    },
+    {
+     "term": "ie"
+    },
+    {
+     "term": "if"
+    },
+    {
+     "term": "ignored"
+    },
+    {
+     "term": "ii"
+    },
+    {
+     "term": "il"
+    },
+    {
+     "term": "ill"
+    },
+    {
+     "term": "im"
+    },
+    {
+     "term": "immediate"
+    },
+    {
+     "term": "immediately"
+    },
+    {
+     "term": "importance"
+    },
+    {
+     "term": "important"
+    },
+    {
+     "term": "in"
+    },
+    {
+     "term": "inasmuch"
+    },
+    {
+     "term": "inc"
+    },
+    {
+     "term": "inc."
+    },
+    {
+     "term": "indeed"
+    },
+    {
+     "term": "index"
+    },
+    {
+     "term": "indicate"
+    },
+    {
+     "term": "indicated"
+    },
+    {
+     "term": "indicates"
+    },
+    {
+     "term": "information"
+    },
+    {
+     "term": "inner"
+    },
+    {
+     "term": "inside"
+    },
+    {
+     "term": "insofar"
+    },
+    {
+     "term": "instead"
+    },
+    {
+     "term": "int"
+    },
+    {
+     "term": "interest"
+    },
+    {
+     "term": "interested"
+    },
+    {
+     "term": "interesting"
+    },
+    {
+     "term": "interests"
+    },
+    {
+     "term": "into"
+    },
+    {
+     "term": "invention"
+    },
+    {
+     "term": "inward"
+    },
+    {
+     "term": "io"
+    },
+    {
+     "term": "iq"
+    },
+    {
+     "term": "ir"
+    },
+    {
+     "term": "is"
+    },
+    {
+     "term": "isn"
+    },
+    {
+     "term": "isn't"
+    },
+    {
+     "term": "isnt"
+    },
+    {
+     "term": "it"
+    },
+    {
+     "term": "it'd"
+    },
+    {
+     "term": "it'll"
+    },
+    {
+     "term": "it's"
+    },
+    {
+     "term": "itd"
+    },
+    {
+     "term": "itll"
+    },
+    {
+     "term": "its"
+    },
+    {
+     "term": "itse”"
+    },
+    {
+     "term": "itself"
+    },
+    {
+     "term": "ive"
+    },
+    {
+     "term": "j"
+    },
+    {
+     "term": "je"
+    },
+    {
+     "term": "jm"
+    },
+    {
+     "term": "jo"
+    },
+    {
+     "term": "join"
+    },
+    {
+     "term": "jp"
+    },
+    {
+     "term": "just"
+    },
+    {
+     "term": "k"
+    },
+    {
+     "term": "ke"
+    },
+    {
+     "term": "keep"
+    },
+    {
+     "term": "keeps"
+    },
+    {
+     "term": "kept"
+    },
+    {
+     "term": "keys"
+    },
+    {
+     "term": "kg"
+    },
+    {
+     "term": "kh"
+    },
+    {
+     "term": "ki"
+    },
+    {
+     "term": "kind"
+    },
+    {
+     "term": "km"
+    },
+    {
+     "term": "kn"
+    },
+    {
+     "term": "knew"
+    },
+    {
+     "term": "know"
+    },
+    {
+     "term": "known"
+    },
+    {
+     "term": "knows"
+    },
+    {
+     "term": "kp"
+    },
+    {
+     "term": "kr"
+    },
+    {
+     "term": "kw"
+    },
+    {
+     "term": "ky"
+    },
+    {
+     "term": "kz"
+    },
+    {
+     "term": "l"
+    },
+    {
+     "term": "la"
+    },
+    {
+     "term": "large"
+    },
+    {
+     "term": "largely"
+    },
+    {
+     "term": "last"
+    },
+    {
+     "term": "lately"
+    },
+    {
+     "term": "later"
+    },
+    {
+     "term": "latest"
+    },
+    {
+     "term": "latter"
+    },
+    {
+     "term": "latterly"
+    },
+    {
+     "term": "lb"
+    },
+    {
+     "term": "lc"
+    },
+    {
+     "term": "least"
+    },
+    {
+     "term": "length"
+    },
+    {
+     "term": "less"
+    },
+    {
+     "term": "lest"
+    },
+    {
+     "term": "let"
+    },
+    {
+     "term": "let's"
+    },
+    {
+     "term": "lets"
+    },
+    {
+     "term": "li"
+    },
+    {
+     "term": "like"
+    },
+    {
+     "term": "liked"
+    },
+    {
+     "term": "likely"
+    },
+    {
+     "term": "likewise"
+    },
+    {
+     "term": "line"
+    },
+    {
+     "term": "little"
+    },
+    {
+     "term": "lk"
+    },
+    {
+     "term": "ll"
+    },
+    {
+     "term": "long"
+    },
+    {
+     "term": "longer"
+    },
+    {
+     "term": "longest"
+    },
+    {
+     "term": "look"
+    },
+    {
+     "term": "looking"
+    },
+    {
+     "term": "looks"
+    },
+    {
+     "term": "low"
+    },
+    {
+     "term": "lower"
+    },
+    {
+     "term": "lr"
+    },
+    {
+     "term": "ls"
+    },
+    {
+     "term": "lt"
+    },
+    {
+     "term": "ltd"
+    },
+    {
+     "term": "lu"
+    },
+    {
+     "term": "lv"
+    },
+    {
+     "term": "ly"
+    },
+    {
+     "term": "m"
+    },
+    {
+     "term": "ma"
+    },
+    {
+     "term": "made"
+    },
+    {
+     "term": "mainly"
+    },
+    {
+     "term": "make"
+    },
+    {
+     "term": "makes"
+    },
+    {
+     "term": "making"
+    },
+    {
+     "term": "man"
+    },
+    {
+     "term": "many"
+    },
+    {
+     "term": "may"
+    },
+    {
+     "term": "maybe"
+    },
+    {
+     "term": "mayn't"
+    },
+    {
+     "term": "maynt"
+    },
+    {
+     "term": "mc"
+    },
+    {
+     "term": "md"
+    },
+    {
+     "term": "me"
+    },
+    {
+     "term": "mean"
+    },
+    {
+     "term": "means"
+    },
+    {
+     "term": "meantime"
+    },
+    {
+     "term": "meanwhile"
+    },
+    {
+     "term": "member"
+    },
+    {
+     "term": "members"
+    },
+    {
+     "term": "men"
+    },
+    {
+     "term": "merely"
+    },
+    {
+     "term": "mg"
+    },
+    {
+     "term": "mh"
+    },
+    {
+     "term": "microsoft"
+    },
+    {
+     "term": "might"
+    },
+    {
+     "term": "might've"
+    },
+    {
+     "term": "mightn't"
+    },
+    {
+     "term": "mightnt"
+    },
+    {
+     "term": "mil"
+    },
+    {
+     "term": "mill"
+    },
+    {
+     "term": "million"
+    },
+    {
+     "term": "mine"
+    },
+    {
+     "term": "minus"
+    },
+    {
+     "term": "miss"
+    },
+    {
+     "term": "mk"
+    },
+    {
+     "term": "ml"
+    },
+    {
+     "term": "mm"
+    },
+    {
+     "term": "mn"
+    },
+    {
+     "term": "mo"
+    },
+    {
+     "term": "more"
+    },
+    {
+     "term": "moreover"
+    },
+    {
+     "term": "most"
+    },
+    {
+     "term": "mostly"
+    },
+    {
+     "term": "move"
+    },
+    {
+     "term": "mp"
+    },
+    {
+     "term": "mq"
+    },
+    {
+     "term": "mr"
+    },
+    {
+     "term": "mrs"
+    },
+    {
+     "term": "ms"
+    },
+    {
+     "term": "msie"
+    },
+    {
+     "term": "mt"
+    },
+    {
+     "term": "mu"
+    },
+    {
+     "term": "much"
+    },
+    {
+     "term": "mug"
+    },
+    {
+     "term": "must"
+    },
+    {
+     "term": "must've"
+    },
+    {
+     "term": "mustn't"
+    },
+    {
+     "term": "mustnt"
+    },
+    {
+     "term": "mv"
+    },
+    {
+     "term": "mw"
+    },
+    {
+     "term": "mx"
+    },
+    {
+     "term": "my"
+    },
+    {
+     "term": "myse”"
+    },
+    {
+     "term": "myself"
+    },
+    {
+     "term": "mz"
+    },
+    {
+     "term": "n"
+    },
+    {
+     "term": "na"
+    },
+    {
+     "term": "name"
+    },
+    {
+     "term": "namely"
+    },
+    {
+     "term": "nay"
+    },
+    {
+     "term": "nc"
+    },
+    {
+     "term": "nd"
+    },
+    {
+     "term": "ne"
+    },
+    {
+     "term": "near"
+    },
+    {
+     "term": "nearly"
+    },
+    {
+     "term": "necessarily"
+    },
+    {
+     "term": "necessary"
+    },
+    {
+     "term": "need"
+    },
+    {
+     "term": "needed"
+    },
+    {
+     "term": "needing"
+    },
+    {
+     "term": "needn't"
+    },
+    {
+     "term": "neednt"
+    },
+    {
+     "term": "needs"
+    },
+    {
+     "term": "neither"
+    },
+    {
+     "term": "net"
+    },
+    {
+     "term": "netscape"
+    },
+    {
+     "term": "never"
+    },
+    {
+     "term": "neverf"
+    },
+    {
+     "term": "neverless"
+    },
+    {
+     "term": "nevertheless"
+    },
+    {
+     "term": "new"
+    },
+    {
+     "term": "newer"
+    },
+    {
+     "term": "newest"
+    },
+    {
+     "term": "next"
+    },
+    {
+     "term": "nf"
+    },
+    {
+     "term": "ng"
+    },
+    {
+     "term": "ni"
+    },
+    {
+     "term": "nine"
+    },
+    {
+     "term": "ninety"
+    },
+    {
+     "term": "nl"
+    },
+    {
+     "term": "no"
+    },
+    {
+     "term": "no-one"
+    },
+    {
+     "term": "nobody"
+    },
+    {
+     "term": "non"
+    },
+    {
+     "term": "none"
+    },
+    {
+     "term": "nonetheless"
+    },
+    {
+     "term": "noone"
+    },
+    {
+     "term": "nor"
+    },
+    {
+     "term": "normally"
+    },
+    {
+     "term": "nos"
+    },
+    {
+     "term": "not"
+    },
+    {
+     "term": "noted"
+    },
+    {
+     "term": "nothing"
+    },
+    {
+     "term": "notwithstanding"
+    },
+    {
+     "term": "novel"
+    },
+    {
+     "term": "now"
+    },
+    {
+     "term": "nowhere"
+    },
+    {
+     "term": "np"
+    },
+    {
+     "term": "nr"
+    },
+    {
+     "term": "nu"
+    },
+    {
+     "term": "null"
+    },
+    {
+     "term": "number"
+    },
+    {
+     "term": "numbers"
+    },
+    {
+     "term": "nz"
+    },
+    {
+     "term": "o"
+    },
+    {
+     "term": "obtain"
+    },
+    {
+     "term": "obtained"
+    },
+    {
+     "term": "obviously"
+    },
+    {
+     "term": "of"
+    },
+    {
+     "term": "off"
+    },
+    {
+     "term": "often"
+    },
+    {
+     "term": "oh"
+    },
+    {
+     "term": "ok"
+    },
+    {
+     "term": "okay"
+    },
+    {
+     "term": "old"
+    },
+    {
+     "term": "older"
+    },
+    {
+     "term": "oldest"
+    },
+    {
+     "term": "om"
+    },
+    {
+     "term": "omitted"
+    },
+    {
+     "term": "on"
+    },
+    {
+     "term": "once"
+    },
+    {
+     "term": "one"
+    },
+    {
+     "term": "one's"
+    },
+    {
+     "term": "ones"
+    },
+    {
+     "term": "only"
+    },
+    {
+     "term": "onto"
+    },
+    {
+     "term": "open"
+    },
+    {
+     "term": "opened"
+    },
+    {
+     "term": "opening"
+    },
+    {
+     "term": "opens"
+    },
+    {
+     "term": "opposite"
+    },
+    {
+     "term": "or"
+    },
+    {
+     "term": "ord"
+    },
+    {
+     "term": "order"
+    },
+    {
+     "term": "ordered"
+    },
+    {
+     "term": "ordering"
+    },
+    {
+     "term": "orders"
+    },
+    {
+     "term": "org"
+    },
+    {
+     "term": "other"
+    },
+    {
+     "term": "others"
+    },
+    {
+     "term": "otherwise"
+    },
+    {
+     "term": "ought"
+    },
+    {
+     "term": "oughtn't"
+    },
+    {
+     "term": "oughtnt"
+    },
+    {
+     "term": "our"
+    },
+    {
+     "term": "ours"
+    },
+    {
+     "term": "ourselves"
+    },
+    {
+     "term": "out"
+    },
+    {
+     "term": "outside"
+    },
+    {
+     "term": "over"
+    },
+    {
+     "term": "overall"
+    },
+    {
+     "term": "owing"
+    },
+    {
+     "term": "own"
+    },
+    {
+     "term": "p"
+    },
+    {
+     "term": "pa"
+    },
+    {
+     "term": "page"
+    },
+    {
+     "term": "pages"
+    },
+    {
+     "term": "part"
+    },
+    {
+     "term": "parted"
+    },
+    {
+     "term": "particular"
+    },
+    {
+     "term": "particularly"
+    },
+    {
+     "term": "parting"
+    },
+    {
+     "term": "parts"
+    },
+    {
+     "term": "past"
+    },
+    {
+     "term": "pe"
+    },
+    {
+     "term": "per"
+    },
+    {
+     "term": "perhaps"
+    },
+    {
+     "term": "pf"
+    },
+    {
+     "term": "pg"
+    },
+    {
+     "term": "ph"
+    },
+    {
+     "term": "pk"
+    },
+    {
+     "term": "pl"
+    },
+    {
+     "term": "place"
+    },
+    {
+     "term": "placed"
+    },
+    {
+     "term": "places"
+    },
+    {
+     "term": "please"
+    },
+    {
+     "term": "plus"
+    },
+    {
+     "term": "pm"
+    },
+    {
+     "term": "pmid"
+    },
+    {
+     "term": "pn"
+    },
+    {
+     "term": "point"
+    },
+    {
+     "term": "pointed"
+    },
+    {
+     "term": "pointing"
+    },
+    {
+     "term": "points"
+    },
+    {
+     "term": "poorly"
+    },
+    {
+     "term": "possible"
+    },
+    {
+     "term": "possibly"
+    },
+    {
+     "term": "potentially"
+    },
+    {
+     "term": "pp"
+    },
+    {
+     "term": "pr"
+    },
+    {
+     "term": "predominantly"
+    },
+    {
+     "term": "present"
+    },
+    {
+     "term": "presented"
+    },
+    {
+     "term": "presenting"
+    },
+    {
+     "term": "presents"
+    },
+    {
+     "term": "presumably"
+    },
+    {
+     "term": "previously"
+    },
+    {
+     "term": "primarily"
+    },
+    {
+     "term": "probably"
+    },
+    {
+     "term": "problem"
+    },
+    {
+     "term": "problems"
+    },
+    {
+     "term": "promptly"
+    },
+    {
+     "term": "proud"
+    },
+    {
+     "term": "provided"
+    },
+    {
+     "term": "provides"
+    },
+    {
+     "term": "pt"
+    },
+    {
+     "term": "put"
+    },
+    {
+     "term": "puts"
+    },
+    {
+     "term": "pw"
+    },
+    {
+     "term": "py"
+    },
+    {
+     "term": "q"
+    },
+    {
+     "term": "qa"
+    },
+    {
+     "term": "que"
+    },
+    {
+     "term": "quickly"
+    },
+    {
+     "term": "quite"
+    },
+    {
+     "term": "qv"
+    },
+    {
+     "term": "r"
+    },
+    {
+     "term": "ran"
+    },
+    {
+     "term": "rather"
+    },
+    {
+     "term": "rd"
+    },
+    {
+     "term": "re"
+    },
+    {
+     "term": "readily"
+    },
+    {
+     "term": "really"
+    },
+    {
+     "term": "reasonably"
+    },
+    {
+     "term": "recent"
+    },
+    {
+     "term": "recently"
+    },
+    {
+     "term": "ref"
+    },
+    {
+     "term": "refs"
+    },
+    {
+     "term": "regarding"
+    },
+    {
+     "term": "regardless"
+    },
+    {
+     "term": "regards"
+    },
+    {
+     "term": "related"
+    },
+    {
+     "term": "relatively"
+    },
+    {
+     "term": "research"
+    },
+    {
+     "term": "reserved"
+    },
+    {
+     "term": "respectively"
+    },
+    {
+     "term": "resulted"
+    },
+    {
+     "term": "resulting"
+    },
+    {
+     "term": "results"
+    },
+    {
+     "term": "right"
+    },
+    {
+     "term": "ring"
+    },
+    {
+     "term": "ro"
+    },
+    {
+     "term": "room"
+    },
+    {
+     "term": "rooms"
+    },
+    {
+     "term": "round"
+    },
+    {
+     "term": "ru"
+    },
+    {
+     "term": "run"
+    },
+    {
+     "term": "rw"
+    },
+    {
+     "term": "s"
+    },
+    {
+     "term": "sa"
+    },
+    {
+     "term": "said"
+    },
+    {
+     "term": "same"
+    },
+    {
+     "term": "saw"
+    },
+    {
+     "term": "say"
+    },
+    {
+     "term": "saying"
+    },
+    {
+     "term": "says"
+    },
+    {
+     "term": "sb"
+    },
+    {
+     "term": "sc"
+    },
+    {
+     "term": "sd"
+    },
+    {
+     "term": "se"
+    },
+    {
+     "term": "sec"
+    },
+    {
+     "term": "second"
+    },
+    {
+     "term": "secondly"
+    },
+    {
+     "term": "seconds"
+    },
+    {
+     "term": "section"
+    },
+    {
+     "term": "see"
+    },
+    {
+     "term": "seeing"
+    },
+    {
+     "term": "seem"
+    },
+    {
+     "term": "seemed"
+    },
+    {
+     "term": "seeming"
+    },
+    {
+     "term": "seems"
+    },
+    {
+     "term": "seen"
+    },
+    {
+     "term": "sees"
+    },
+    {
+     "term": "self"
+    },
+    {
+     "term": "selves"
+    },
+    {
+     "term": "sensible"
+    },
+    {
+     "term": "sent"
+    },
+    {
+     "term": "serious"
+    },
+    {
+     "term": "seriously"
+    },
+    {
+     "term": "seven"
+    },
+    {
+     "term": "seventy"
+    },
+    {
+     "term": "several"
+    },
+    {
+     "term": "sg"
+    },
+    {
+     "term": "sh"
+    },
+    {
+     "term": "shall"
+    },
+    {
+     "term": "shan't"
+    },
+    {
+     "term": "shant"
+    },
+    {
+     "term": "she"
+    },
+    {
+     "term": "she'd"
+    },
+    {
+     "term": "she'll"
+    },
+    {
+     "term": "she's"
+    },
+    {
+     "term": "shed"
+    },
+    {
+     "term": "shell"
+    },
+    {
+     "term": "shes"
+    },
+    {
+     "term": "should"
+    },
+    {
+     "term": "should've"
+    },
+    {
+     "term": "shouldn"
+    },
+    {
+     "term": "shouldn't"
+    },
+    {
+     "term": "shouldnt"
+    },
+    {
+     "term": "show"
+    },
+    {
+     "term": "showed"
+    },
+    {
+     "term": "showing"
+    },
+    {
+     "term": "shown"
+    },
+    {
+     "term": "showns"
+    },
+    {
+     "term": "shows"
+    },
+    {
+     "term": "si"
+    },
+    {
+     "term": "side"
+    },
+    {
+     "term": "sides"
+    },
+    {
+     "term": "significant"
+    },
+    {
+     "term": "significantly"
+    },
+    {
+     "term": "similar"
+    },
+    {
+     "term": "similarly"
+    },
+    {
+     "term": "since"
+    },
+    {
+     "term": "sincere"
+    },
+    {
+     "term": "site"
+    },
+    {
+     "term": "six"
+    },
+    {
+     "term": "sixty"
+    },
+    {
+     "term": "sj"
+    },
+    {
+     "term": "sk"
+    },
+    {
+     "term": "sl"
+    },
+    {
+     "term": "slightly"
+    },
+    {
+     "term": "sm"
+    },
+    {
+     "term": "small"
+    },
+    {
+     "term": "smaller"
+    },
+    {
+     "term": "smallest"
+    },
+    {
+     "term": "sn"
+    },
+    {
+     "term": "so"
+    },
+    {
+     "term": "some"
+    },
+    {
+     "term": "somebody"
+    },
+    {
+     "term": "someday"
+    },
+    {
+     "term": "somehow"
+    },
+    {
+     "term": "someone"
+    },
+    {
+     "term": "somethan"
+    },
+    {
+     "term": "something"
+    },
+    {
+     "term": "sometime"
+    },
+    {
+     "term": "sometimes"
+    },
+    {
+     "term": "somewhat"
+    },
+    {
+     "term": "somewhere"
+    },
+    {
+     "term": "soon"
+    },
+    {
+     "term": "sorry"
+    },
+    {
+     "term": "specifically"
+    },
+    {
+     "term": "specified"
+    },
+    {
+     "term": "specify"
+    },
+    {
+     "term": "specifying"
+    },
+    {
+     "term": "sr"
+    },
+    {
+     "term": "st"
+    },
+    {
+     "term": "state"
+    },
+    {
+     "term": "states"
+    },
+    {
+     "term": "still"
+    },
+    {
+     "term": "stop"
+    },
+    {
+     "term": "strongly"
+    },
+    {
+     "term": "su"
+    },
+    {
+     "term": "sub"
+    },
+    {
+     "term": "substantially"
+    },
+    {
+     "term": "successfully"
+    },
+    {
+     "term": "such"
+    },
+    {
+     "term": "sufficiently"
+    },
+    {
+     "term": "suggest"
+    },
+    {
+     "term": "sup"
+    },
+    {
+     "term": "sure"
+    },
+    {
+     "term": "sv"
+    },
+    {
+     "term": "sy"
+    },
+    {
+     "term": "system"
+    },
+    {
+     "term": "sz"
+    },
+    {
+     "term": "t"
+    },
+    {
+     "term": "t's"
+    },
+    {
+     "term": "take"
+    },
+    {
+     "term": "taken"
+    },
+    {
+     "term": "taking"
+    },
+    {
+     "term": "tc"
+    },
+    {
+     "term": "td"
+    },
+    {
+     "term": "tell"
+    },
+    {
+     "term": "ten"
+    },
+    {
+     "term": "tends"
+    },
+    {
+     "term": "test"
+    },
+    {
+     "term": "text"
+    },
+    {
+     "term": "tf"
+    },
+    {
+     "term": "tg"
+    },
+    {
+     "term": "th"
+    },
+    {
+     "term": "than"
+    },
+    {
+     "term": "thank"
+    },
+    {
+     "term": "thanks"
+    },
+    {
+     "term": "thanx"
+    },
+    {
+     "term": "that"
+    },
+    {
+     "term": "that'll"
+    },
+    {
+     "term": "that's"
+    },
+    {
+     "term": "that've"
+    },
+    {
+     "term": "thatll"
+    },
+    {
+     "term": "thats"
+    },
+    {
+     "term": "thatve"
+    },
+    {
+     "term": "the"
+    },
+    {
+     "term": "their"
+    },
+    {
+     "term": "theirs"
+    },
+    {
+     "term": "them"
+    },
+    {
+     "term": "themselves"
+    },
+    {
+     "term": "then"
+    },
+    {
+     "term": "thence"
+    },
+    {
+     "term": "there"
+    },
+    {
+     "term": "there'd"
+    },
+    {
+     "term": "there'll"
+    },
+    {
+     "term": "there're"
+    },
+    {
+     "term": "there's"
+    },
+    {
+     "term": "there've"
+    },
+    {
+     "term": "thereafter"
+    },
+    {
+     "term": "thereby"
+    },
+    {
+     "term": "thered"
+    },
+    {
+     "term": "therefore"
+    },
+    {
+     "term": "therein"
+    },
+    {
+     "term": "therell"
+    },
+    {
+     "term": "thereof"
+    },
+    {
+     "term": "therere"
+    },
+    {
+     "term": "theres"
+    },
+    {
+     "term": "thereto"
+    },
+    {
+     "term": "thereupon"
+    },
+    {
+     "term": "thereve"
+    },
+    {
+     "term": "these"
+    },
+    {
+     "term": "they"
+    },
+    {
+     "term": "they'd"
+    },
+    {
+     "term": "they'll"
+    },
+    {
+     "term": "they're"
+    },
+    {
+     "term": "they've"
+    },
+    {
+     "term": "theyd"
+    },
+    {
+     "term": "theyll"
+    },
+    {
+     "term": "theyre"
+    },
+    {
+     "term": "theyve"
+    },
+    {
+     "term": "thick"
+    },
+    {
+     "term": "thin"
+    },
+    {
+     "term": "thing"
+    },
+    {
+     "term": "things"
+    },
+    {
+     "term": "think"
+    },
+    {
+     "term": "thinks"
+    },
+    {
+     "term": "third"
+    },
+    {
+     "term": "thirty"
+    },
+    {
+     "term": "this"
+    },
+    {
+     "term": "thorough"
+    },
+    {
+     "term": "thoroughly"
+    },
+    {
+     "term": "those"
+    },
+    {
+     "term": "thou"
+    },
+    {
+     "term": "though"
+    },
+    {
+     "term": "thoughh"
+    },
+    {
+     "term": "thought"
+    },
+    {
+     "term": "thoughts"
+    },
+    {
+     "term": "thousand"
+    },
+    {
+     "term": "three"
+    },
+    {
+     "term": "throug"
+    },
+    {
+     "term": "through"
+    },
+    {
+     "term": "throughout"
+    },
+    {
+     "term": "thru"
+    },
+    {
+     "term": "thus"
+    },
+    {
+     "term": "til"
+    },
+    {
+     "term": "till"
+    },
+    {
+     "term": "tip"
+    },
+    {
+     "term": "tis"
+    },
+    {
+     "term": "tj"
+    },
+    {
+     "term": "tk"
+    },
+    {
+     "term": "tm"
+    },
+    {
+     "term": "tn"
+    },
+    {
+     "term": "to"
+    },
+    {
+     "term": "today"
+    },
+    {
+     "term": "together"
+    },
+    {
+     "term": "too"
+    },
+    {
+     "term": "took"
+    },
+    {
+     "term": "top"
+    },
+    {
+     "term": "toward"
+    },
+    {
+     "term": "towards"
+    },
+    {
+     "term": "tp"
+    },
+    {
+     "term": "tr"
+    },
+    {
+     "term": "tried"
+    },
+    {
+     "term": "tries"
+    },
+    {
+     "term": "trillion"
+    },
+    {
+     "term": "truly"
+    },
+    {
+     "term": "try"
+    },
+    {
+     "term": "trying"
+    },
+    {
+     "term": "ts"
+    },
+    {
+     "term": "tt"
+    },
+    {
+     "term": "turn"
+    },
+    {
+     "term": "turned"
+    },
+    {
+     "term": "turning"
+    },
+    {
+     "term": "turns"
+    },
+    {
+     "term": "tv"
+    },
+    {
+     "term": "tw"
+    },
+    {
+     "term": "twas"
+    },
+    {
+     "term": "twelve"
+    },
+    {
+     "term": "twenty"
+    },
+    {
+     "term": "twice"
+    },
+    {
+     "term": "two"
+    },
+    {
+     "term": "tz"
+    },
+    {
+     "term": "u"
+    },
+    {
+     "term": "ua"
+    },
+    {
+     "term": "ug"
+    },
+    {
+     "term": "uk"
+    },
+    {
+     "term": "um"
+    },
+    {
+     "term": "un"
+    },
+    {
+     "term": "under"
+    },
+    {
+     "term": "underneath"
+    },
+    {
+     "term": "undoing"
+    },
+    {
+     "term": "unfortunately"
+    },
+    {
+     "term": "unless"
+    },
+    {
+     "term": "unlike"
+    },
+    {
+     "term": "unlikely"
+    },
+    {
+     "term": "until"
+    },
+    {
+     "term": "unto"
+    },
+    {
+     "term": "up"
+    },
+    {
+     "term": "upon"
+    },
+    {
+     "term": "ups"
+    },
+    {
+     "term": "upwards"
+    },
+    {
+     "term": "us"
+    },
+    {
+     "term": "use"
+    },
+    {
+     "term": "used"
+    },
+    {
+     "term": "useful"
+    },
+    {
+     "term": "usefully"
+    },
+    {
+     "term": "usefulness"
+    },
+    {
+     "term": "uses"
+    },
+    {
+     "term": "using"
+    },
+    {
+     "term": "usually"
+    },
+    {
+     "term": "uucp"
+    },
+    {
+     "term": "uy"
+    },
+    {
+     "term": "uz"
+    },
+    {
+     "term": "v"
+    },
+    {
+     "term": "va"
+    },
+    {
+     "term": "value"
+    },
+    {
+     "term": "various"
+    },
+    {
+     "term": "vc"
+    },
+    {
+     "term": "ve"
+    },
+    {
+     "term": "versus"
+    },
+    {
+     "term": "very"
+    },
+    {
+     "term": "vg"
+    },
+    {
+     "term": "vi"
+    },
+    {
+     "term": "via"
+    },
+    {
+     "term": "viz"
+    },
+    {
+     "term": "vn"
+    },
+    {
+     "term": "vol"
+    },
+    {
+     "term": "vols"
+    },
+    {
+     "term": "vs"
+    },
+    {
+     "term": "vu"
+    },
+    {
+     "term": "w"
+    },
+    {
+     "term": "want"
+    },
+    {
+     "term": "wanted"
+    },
+    {
+     "term": "wanting"
+    },
+    {
+     "term": "wants"
+    },
+    {
+     "term": "was"
+    },
+    {
+     "term": "wasn"
+    },
+    {
+     "term": "wasn't"
+    },
+    {
+     "term": "wasnt"
+    },
+    {
+     "term": "way"
+    },
+    {
+     "term": "ways"
+    },
+    {
+     "term": "we"
+    },
+    {
+     "term": "we'd"
+    },
+    {
+     "term": "we'll"
+    },
+    {
+     "term": "we're"
+    },
+    {
+     "term": "we've"
+    },
+    {
+     "term": "web"
+    },
+    {
+     "term": "webpage"
+    },
+    {
+     "term": "website"
+    },
+    {
+     "term": "wed"
+    },
+    {
+     "term": "welcome"
+    },
+    {
+     "term": "well"
+    },
+    {
+     "term": "wells"
+    },
+    {
+     "term": "went"
+    },
+    {
+     "term": "were"
+    },
+    {
+     "term": "weren"
+    },
+    {
+     "term": "weren't"
+    },
+    {
+     "term": "werent"
+    },
+    {
+     "term": "weve"
+    },
+    {
+     "term": "wf"
+    },
+    {
+     "term": "what"
+    },
+    {
+     "term": "what'd"
+    },
+    {
+     "term": "what'll"
+    },
+    {
+     "term": "what's"
+    },
+    {
+     "term": "what've"
+    },
+    {
+     "term": "whatever"
+    },
+    {
+     "term": "whatll"
+    },
+    {
+     "term": "whats"
+    },
+    {
+     "term": "whatve"
+    },
+    {
+     "term": "when"
+    },
+    {
+     "term": "when'd"
+    },
+    {
+     "term": "when'll"
+    },
+    {
+     "term": "when's"
+    },
+    {
+     "term": "whence"
+    },
+    {
+     "term": "whenever"
+    },
+    {
+     "term": "where"
+    },
+    {
+     "term": "where'd"
+    },
+    {
+     "term": "where'll"
+    },
+    {
+     "term": "where's"
+    },
+    {
+     "term": "whereafter"
+    },
+    {
+     "term": "whereas"
+    },
+    {
+     "term": "whereby"
+    },
+    {
+     "term": "wherein"
+    },
+    {
+     "term": "wheres"
+    },
+    {
+     "term": "whereupon"
+    },
+    {
+     "term": "wherever"
+    },
+    {
+     "term": "whether"
+    },
+    {
+     "term": "which"
+    },
+    {
+     "term": "whichever"
+    },
+    {
+     "term": "while"
+    },
+    {
+     "term": "whilst"
+    },
+    {
+     "term": "whim"
+    },
+    {
+     "term": "whither"
+    },
+    {
+     "term": "who"
+    },
+    {
+     "term": "who'd"
+    },
+    {
+     "term": "who'll"
+    },
+    {
+     "term": "who's"
+    },
+    {
+     "term": "whod"
+    },
+    {
+     "term": "whoever"
+    },
+    {
+     "term": "whole"
+    },
+    {
+     "term": "wholl"
+    },
+    {
+     "term": "whom"
+    },
+    {
+     "term": "whomever"
+    },
+    {
+     "term": "whos"
+    },
+    {
+     "term": "whose"
+    },
+    {
+     "term": "why"
+    },
+    {
+     "term": "why'd"
+    },
+    {
+     "term": "why'll"
+    },
+    {
+     "term": "why's"
+    },
+    {
+     "term": "widely"
+    },
+    {
+     "term": "width"
+    },
+    {
+     "term": "will"
+    },
+    {
+     "term": "willing"
+    },
+    {
+     "term": "wish"
+    },
+    {
+     "term": "with"
+    },
+    {
+     "term": "within"
+    },
+    {
+     "term": "without"
+    },
+    {
+     "term": "won"
+    },
+    {
+     "term": "won't"
+    },
+    {
+     "term": "wonder"
+    },
+    {
+     "term": "wont"
+    },
+    {
+     "term": "words"
+    },
+    {
+     "term": "work"
+    },
+    {
+     "term": "worked"
+    },
+    {
+     "term": "working"
+    },
+    {
+     "term": "works"
+    },
+    {
+     "term": "world"
+    },
+    {
+     "term": "would"
+    },
+    {
+     "term": "would've"
+    },
+    {
+     "term": "wouldn"
+    },
+    {
+     "term": "wouldn't"
+    },
+    {
+     "term": "wouldnt"
+    },
+    {
+     "term": "ws"
+    },
+    {
+     "term": "www"
+    },
+    {
+     "term": "x"
+    },
+    {
+     "term": "y"
+    },
+    {
+     "term": "ye"
+    },
+    {
+     "term": "year"
+    },
+    {
+     "term": "years"
+    },
+    {
+     "term": "yes"
+    },
+    {
+     "term": "yet"
+    },
+    {
+     "term": "you"
+    },
+    {
+     "term": "you'd"
+    },
+    {
+     "term": "you'll"
+    },
+    {
+     "term": "you're"
+    },
+    {
+     "term": "you've"
+    },
+    {
+     "term": "youd"
+    },
+    {
+     "term": "youll"
+    },
+    {
+     "term": "young"
+    },
+    {
+     "term": "younger"
+    },
+    {
+     "term": "youngest"
+    },
+    {
+     "term": "your"
+    },
+    {
+     "term": "youre"
+    },
+    {
+     "term": "yours"
+    },
+    {
+     "term": "yourself"
+    },
+    {
+     "term": "yourselves"
+    },
+    {
+     "term": "youve"
+    },
+    {
+     "term": "yt"
+    },
+    {
+     "term": "yu"
+    },
+    {
+     "term": "z"
+    },
+    {
+     "term": "za"
+    },
+    {
+     "term": "zero"
+    },
+    {
+     "term": "zm"
+    },
+    {
+     "term": "zr"
+    }
+   ]
+  }
+ ],
+ "licenseClass": "commercial-ok"
+}

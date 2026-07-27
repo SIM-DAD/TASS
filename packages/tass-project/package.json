@@ -1,0 +1,21 @@
+{
+  "name": "@simdad/tass-project",
+  "version": "0.5.1",
+  "private": true,
+  "description": "TASS reproducible project container (.tassproj): deterministic timestamp-free archive of a run's config, corpus provenance, lexicon snapshots, and results; integrity-verified load; byte-identical re-run; compare-runs diff.",
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "src",
+    "NOTICE"
+  ],
+  "dependencies": {
+    "@simdad/tass-core": "0.5.1"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "node --test test/project.test.cjs test/validation.test.cjs"
+  }
+}

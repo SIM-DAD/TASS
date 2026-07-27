@@ -1,0 +1,573 @@
+{
+ "id": "politeness",
+ "name": "TASS politeness markers v1 (lexical + phrase approximation)",
+ "license": "CC-BY-4.0",
+ "citation": "SIM DAD LLC (2026). TASS politeness markers v1: lexical + phrase approximation of the strategy taxonomy in Danescu-Niculescu-Mizil, C., Sudhof, M., Jurafsky, D., Leskovec, J., & Potts, C. (2013). A computational approach to politeness with application to social factors. ACL 2013. Released under CC-BY-4.0. https://www.cs.cornell.edu/~cristian/Politeness.html",
+ "categories": [
+  {
+   "id": "affirmation",
+   "label": "Affirmation / agreement",
+   "terms": [
+    {
+     "term": "absolutely"
+    },
+    {
+     "term": "agreed"
+    },
+    {
+     "term": "certainly"
+    },
+    {
+     "term": "definitely"
+    },
+    {
+     "term": "exactly"
+    },
+    {
+     "term": "ok"
+    },
+    {
+     "term": "okay"
+    },
+    {
+     "term": "right"
+    },
+    {
+     "term": "sure"
+    },
+    {
+     "term": "true"
+    },
+    {
+     "term": "yeah"
+    },
+    {
+     "term": "yep"
+    },
+    {
+     "term": "yes"
+    }
+   ]
+  },
+  {
+   "id": "apology",
+   "label": "Apologizing",
+   "terms": [
+    {
+     "term": "apologies"
+    },
+    {
+     "term": "apologize"
+    },
+    {
+     "term": "apology"
+    },
+    {
+     "term": "excuse"
+    },
+    {
+     "term": "excuse me"
+    },
+    {
+     "term": "forgive"
+    },
+    {
+     "term": "forgive me"
+    },
+    {
+     "term": "i am sorry"
+    },
+    {
+     "term": "i'm sorry"
+    },
+    {
+     "term": "my apologies"
+    },
+    {
+     "term": "my bad"
+    },
+    {
+     "term": "regret"
+    },
+    {
+     "term": "sorry"
+    }
+   ]
+  },
+  {
+   "id": "counterfactual_modal",
+   "label": "Counterfactual modal (could/would you…)",
+   "terms": [
+    {
+     "term": "could you"
+    },
+    {
+     "term": "could you please"
+    },
+    {
+     "term": "would it be possible"
+    },
+    {
+     "term": "would you"
+    },
+    {
+     "term": "would you mind"
+    },
+    {
+     "term": "would you please"
+    }
+   ]
+  },
+  {
+   "id": "deference",
+   "label": "Deference",
+   "terms": [
+    {
+     "term": "good job"
+    },
+    {
+     "term": "good point"
+    },
+    {
+     "term": "good work"
+    },
+    {
+     "term": "great job"
+    },
+    {
+     "term": "great point"
+    },
+    {
+     "term": "interesting point"
+    },
+    {
+     "term": "nice work"
+    },
+    {
+     "term": "well done"
+    },
+    {
+     "term": "well said"
+    }
+   ]
+  },
+  {
+   "id": "factuality",
+   "label": "Factuality (impoliteness marker)",
+   "terms": [
+    {
+     "term": "actually"
+    },
+    {
+     "term": "honestly"
+    },
+    {
+     "term": "in fact"
+    },
+    {
+     "term": "really"
+    },
+    {
+     "term": "the fact is"
+    },
+    {
+     "term": "the reality is"
+    },
+    {
+     "term": "the truth is"
+    },
+    {
+     "term": "to be honest"
+    }
+   ]
+  },
+  {
+   "id": "first_person",
+   "label": "First person",
+   "terms": [
+    {
+     "term": "i"
+    },
+    {
+     "term": "i'd"
+    },
+    {
+     "term": "i'll"
+    },
+    {
+     "term": "i'm"
+    },
+    {
+     "term": "i've"
+    },
+    {
+     "term": "me"
+    },
+    {
+     "term": "mine"
+    },
+    {
+     "term": "my"
+    },
+    {
+     "term": "myself"
+    }
+   ]
+  },
+  {
+   "id": "first_person_plural",
+   "label": "First person plural (solidarity)",
+   "terms": [
+    {
+     "term": "let us"
+    },
+    {
+     "term": "let's"
+    },
+    {
+     "term": "our"
+    },
+    {
+     "term": "ours"
+    },
+    {
+     "term": "ourselves"
+    },
+    {
+     "term": "us"
+    },
+    {
+     "term": "we"
+    },
+    {
+     "term": "we'd"
+    },
+    {
+     "term": "we'll"
+    },
+    {
+     "term": "we're"
+    },
+    {
+     "term": "we've"
+    }
+   ]
+  },
+  {
+   "id": "gratitude",
+   "label": "Gratitude",
+   "terms": [
+    {
+     "term": "appreciate"
+    },
+    {
+     "term": "appreciated"
+    },
+    {
+     "term": "appreciation"
+    },
+    {
+     "term": "grateful"
+    },
+    {
+     "term": "much appreciated"
+    },
+    {
+     "term": "thank"
+    },
+    {
+     "term": "thank you"
+    },
+    {
+     "term": "thank you so much"
+    },
+    {
+     "term": "thankful"
+    },
+    {
+     "term": "thanks"
+    },
+    {
+     "term": "thanks so much"
+    }
+   ]
+  },
+  {
+   "id": "greeting",
+   "label": "Greeting",
+   "terms": [
+    {
+     "term": "good afternoon"
+    },
+    {
+     "term": "good evening"
+    },
+    {
+     "term": "good morning"
+    },
+    {
+     "term": "greetings"
+    },
+    {
+     "term": "hello"
+    },
+    {
+     "term": "hey"
+    },
+    {
+     "term": "hi"
+    },
+    {
+     "term": "how are you"
+    },
+    {
+     "term": "welcome"
+    },
+    {
+     "term": "what's up"
+    }
+   ]
+  },
+  {
+   "id": "hedge",
+   "label": "Hedges",
+   "terms": [
+    {
+     "term": "apparently"
+    },
+    {
+     "term": "arguably"
+    },
+    {
+     "term": "guess"
+    },
+    {
+     "term": "i believe"
+    },
+    {
+     "term": "i guess"
+    },
+    {
+     "term": "i suppose"
+    },
+    {
+     "term": "i think"
+    },
+    {
+     "term": "i wonder"
+    },
+    {
+     "term": "in my opinion"
+    },
+    {
+     "term": "it appears"
+    },
+    {
+     "term": "it seems"
+    },
+    {
+     "term": "kind of"
+    },
+    {
+     "term": "kinda"
+    },
+    {
+     "term": "maybe"
+    },
+    {
+     "term": "might"
+    },
+    {
+     "term": "more or less"
+    },
+    {
+     "term": "partially"
+    },
+    {
+     "term": "perhaps"
+    },
+    {
+     "term": "possibly"
+    },
+    {
+     "term": "presumably"
+    },
+    {
+     "term": "probably"
+    },
+    {
+     "term": "roughly"
+    },
+    {
+     "term": "seemed"
+    },
+    {
+     "term": "seems"
+    },
+    {
+     "term": "somewhat"
+    },
+    {
+     "term": "sort of"
+    },
+    {
+     "term": "sorta"
+    },
+    {
+     "term": "suggest"
+    },
+    {
+     "term": "suppose"
+    }
+   ]
+  },
+  {
+   "id": "indicative_modal",
+   "label": "Indicative modal (can/will you…)",
+   "terms": [
+    {
+     "term": "can you"
+    },
+    {
+     "term": "can you please"
+    },
+    {
+     "term": "will you"
+    },
+    {
+     "term": "will you please"
+    }
+   ]
+  },
+  {
+   "id": "indirect_btw",
+   "label": "Indirect opener (by the way)",
+   "terms": [
+    {
+     "term": "by the way"
+    },
+    {
+     "term": "incidentally"
+    },
+    {
+     "term": "just wondering"
+    },
+    {
+     "term": "quick question"
+    }
+   ]
+  },
+  {
+   "id": "negation",
+   "label": "Negation",
+   "terms": [
+    {
+     "term": "aren't"
+    },
+    {
+     "term": "can't"
+    },
+    {
+     "term": "cannot"
+    },
+    {
+     "term": "couldn't"
+    },
+    {
+     "term": "didn't"
+    },
+    {
+     "term": "doesn't"
+    },
+    {
+     "term": "don't"
+    },
+    {
+     "term": "isn't"
+    },
+    {
+     "term": "never"
+    },
+    {
+     "term": "no"
+    },
+    {
+     "term": "nobody"
+    },
+    {
+     "term": "none"
+    },
+    {
+     "term": "not"
+    },
+    {
+     "term": "nothing"
+    },
+    {
+     "term": "shouldn't"
+    },
+    {
+     "term": "wasn't"
+    },
+    {
+     "term": "weren't"
+    },
+    {
+     "term": "won't"
+    },
+    {
+     "term": "wouldn't"
+    }
+   ]
+  },
+  {
+   "id": "please",
+   "label": "Please",
+   "terms": [
+    {
+     "term": "if possible"
+    },
+    {
+     "term": "if you please"
+    },
+    {
+     "term": "kindly"
+    },
+    {
+     "term": "please"
+    }
+   ]
+  },
+  {
+   "id": "second_person",
+   "label": "Second person",
+   "terms": [
+    {
+     "term": "you"
+    },
+    {
+     "term": "you'd"
+    },
+    {
+     "term": "you'll"
+    },
+    {
+     "term": "you're"
+    },
+    {
+     "term": "you've"
+    },
+    {
+     "term": "your"
+    },
+    {
+     "term": "yours"
+    },
+    {
+     "term": "yourself"
+    }
+   ]
+  }
+ ],
+ "licenseClass": "commercial-ok"
+}

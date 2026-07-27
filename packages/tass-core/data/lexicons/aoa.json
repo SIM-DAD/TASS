@@ -1,0 +1,10471 @@
+{
+ "id": "aoa",
+ "name": "Kuperman age-of-acquisition norms (NoRaRe subset)",
+ "license": "CC-BY-4.0",
+ "citation": "Kuperman, V., Stadthagen-Gonzalez, H., & Brysbaert, M. (2012). Age-of-acquisition ratings for 30,000 English words. Behavior Research Methods, 44, 978-990. Data via NoRaRe (https://norare.clld.org), CC-BY 4.0.",
+ "categories": [
+  {
+   "id": "aoa",
+   "label": "Age of acquisition (Kuperman mean rating, years)",
+   "terms": [
+    {
+     "term": "abacus",
+     "weight": 8.69
+    },
+    {
+     "term": "abandon",
+     "weight": 8.32
+    },
+    {
+     "term": "ability",
+     "weight": 8.84
+    },
+    {
+     "term": "abortion",
+     "weight": 13.21
+    },
+    {
+     "term": "above",
+     "weight": 4.548568000000001
+    },
+    {
+     "term": "abstain",
+     "weight": 12.95
+    },
+    {
+     "term": "abuse",
+     "weight": 8.61
+    },
+    {
+     "term": "accompany",
+     "weight": 10.75
+    },
+    {
+     "term": "accordion",
+     "weight": 8.61
+    },
+    {
+     "term": "accuse",
+     "weight": 9.1
+    },
+    {
+     "term": "ache",
+     "weight": 5.79
+    },
+    {
+     "term": "acorn",
+     "weight": 5.95
+    },
+    {
+     "term": "acquire",
+     "weight": 9.94
+    },
+    {
+     "term": "acquit",
+     "weight": 13.22
+    },
+    {
+     "term": "across",
+     "weight": 6.637340000000001
+    },
+    {
+     "term": "active",
+     "weight": 6.53
+    },
+    {
+     "term": "activity",
+     "weight": 6.47
+    },
+    {
+     "term": "add",
+     "weight": 5.1
+    },
+    {
+     "term": "admit",
+     "weight": 7.56
+    },
+    {
+     "term": "adobe",
+     "weight": 12.22
+    },
+    {
+     "term": "adult",
+     "weight": 4.68
+    },
+    {
+     "term": "adultery",
+     "weight": 11.84
+    },
+    {
+     "term": "affair",
+     "weight": 10.94
+    },
+    {
+     "term": "afford",
+     "weight": 7.47
+    },
+    {
+     "term": "aflame",
+     "weight": 11.22
+    },
+    {
+     "term": "after",
+     "weight": 5.997920000000001
+    },
+    {
+     "term": "afternoon",
+     "weight": 4.65
+    },
+    {
+     "term": "afterwards",
+     "weight": 7.711835
+    },
+    {
+     "term": "again",
+     "weight": 5.784780000000001
+    },
+    {
+     "term": "against",
+     "weight": 7.969465000000001
+    },
+    {
+     "term": "agave",
+     "weight": 14.57
+    },
+    {
+     "term": "age",
+     "weight": 4.38
+    },
+    {
+     "term": "agree",
+     "weight": 7.68
+    },
+    {
+     "term": "agreement",
+     "weight": 8.16
+    },
+    {
+     "term": "air",
+     "weight": 3.94
+    },
+    {
+     "term": "airplane",
+     "weight": 3.94
+    },
+    {
+     "term": "albatross",
+     "weight": 11.64
+    },
+    {
+     "term": "alcohol",
+     "weight": 9
+    },
+    {
+     "term": "alcoholic",
+     "weight": 9.95
+    },
+    {
+     "term": "all",
+     "weight": 4.239515000000001
+    },
+    {
+     "term": "alligator",
+     "weight": 4.78
+    },
+    {
+     "term": "allow",
+     "weight": 5.32
+    },
+    {
+     "term": "almond",
+     "weight": 7.67
+    },
+    {
+     "term": "alone",
+     "weight": 4.94
+    },
+    {
+     "term": "altar",
+     "weight": 7.16
+    },
+    {
+     "term": "aluminum",
+     "weight": 7.26
+    },
+    {
+     "term": "always",
+     "weight": 6.2643450000000005
+    },
+    {
+     "term": "amazing",
+     "weight": 5.22
+    },
+    {
+     "term": "ambulance",
+     "weight": 6.16
+    },
+    {
+     "term": "ambush",
+     "weight": 9.3
+    },
+    {
+     "term": "amount",
+     "weight": 6.63
+    },
+    {
+     "term": "amulet",
+     "weight": 11.53
+    },
+    {
+     "term": "anaconda",
+     "weight": 10.06
+    },
+    {
+     "term": "ancestor",
+     "weight": 8.61
+    },
+    {
+     "term": "anchor",
+     "weight": 5.72
+    },
+    {
+     "term": "and",
+     "weight": 4.569882000000001
+    },
+    {
+     "term": "anger",
+     "weight": 6
+    },
+    {
+     "term": "angry",
+     "weight": 4.45
+    },
+    {
+     "term": "animal",
+     "weight": 2.89
+    },
+    {
+     "term": "ankle",
+     "weight": 4.89
+    },
+    {
+     "term": "annatto",
+     "weight": 14.71
+    },
+    {
+     "term": "announce",
+     "weight": 9.48
+    },
+    {
+     "term": "annoy",
+     "weight": 7.22
+    },
+    {
+     "term": "annoyed",
+     "weight": 7.72
+    },
+    {
+     "term": "answer",
+     "weight": 5.43
+    },
+    {
+     "term": "ant",
+     "weight": 4.32
+    },
+    {
+     "term": "anteater",
+     "weight": 8.5
+    },
+    {
+     "term": "antelope",
+     "weight": 8.39
+    },
+    {
+     "term": "anthill",
+     "weight": 7
+    },
+    {
+     "term": "anus",
+     "weight": 11.17
+    },
+    {
+     "term": "anvil",
+     "weight": 10.79
+    },
+    {
+     "term": "anxiety",
+     "weight": 8.17
+    },
+    {
+     "term": "anxious",
+     "weight": 10.21
+    },
+    {
+     "term": "appear",
+     "weight": 6.67
+    },
+    {
+     "term": "appearance",
+     "weight": 8.83
+    },
+    {
+     "term": "apple",
+     "weight": 4.15
+    },
+    {
+     "term": "approach",
+     "weight": 8.5
+    },
+    {
+     "term": "apricot",
+     "weight": 6.15
+    },
+    {
+     "term": "apron",
+     "weight": 6.75
+    },
+    {
+     "term": "arch",
+     "weight": 8.26
+    },
+    {
+     "term": "area",
+     "weight": 6.58
+    },
+    {
+     "term": "argue",
+     "weight": 4.61
+    },
+    {
+     "term": "arise",
+     "weight": 6.89
+    },
+    {
+     "term": "arm",
+     "weight": 3.26
+    },
+    {
+     "term": "armadillo",
+     "weight": 8.608885
+    },
+    {
+     "term": "armband",
+     "weight": 10
+    },
+    {
+     "term": "armor",
+     "weight": 7.17
+    },
+    {
+     "term": "armpit",
+     "weight": 6
+    },
+    {
+     "term": "army",
+     "weight": 7.15
+    },
+    {
+     "term": "arrange",
+     "weight": 8.28
+    },
+    {
+     "term": "arrive",
+     "weight": 6.26
+    },
+    {
+     "term": "arrow",
+     "weight": 6.07
+    },
+    {
+     "term": "arson",
+     "weight": 11.2
+    },
+    {
+     "term": "artery",
+     "weight": 13.06
+    },
+    {
+     "term": "artichoke",
+     "weight": 10
+    },
+    {
+     "term": "ascend",
+     "weight": 10.67
+    },
+    {
+     "term": "ashamed",
+     "weight": 7.11
+    },
+    {
+     "term": "ashes",
+     "weight": 7.06362
+    },
+    {
+     "term": "ashtray",
+     "weight": 5.95
+    },
+    {
+     "term": "ask",
+     "weight": 2.89
+    },
+    {
+     "term": "asparagus",
+     "weight": 6.79
+    },
+    {
+     "term": "aspen",
+     "weight": 10.036923000000002
+    },
+    {
+     "term": "assassin",
+     "weight": 11.28
+    },
+    {
+     "term": "assemble",
+     "weight": 8.72
+    },
+    {
+     "term": "astringent",
+     "weight": 13.89
+    },
+    {
+     "term": "at",
+     "weight": 4.037032
+    },
+    {
+     "term": "attach",
+     "weight": 6.39
+    },
+    {
+     "term": "attack",
+     "weight": 6.58
+    },
+    {
+     "term": "attentive",
+     "weight": 9.37
+    },
+    {
+     "term": "august",
+     "weight": 5.6462390000000005
+    },
+    {
+     "term": "aunt",
+     "weight": 3.8
+    },
+    {
+     "term": "authority",
+     "weight": 7.5
+    },
+    {
+     "term": "autumn",
+     "weight": 6
+    },
+    {
+     "term": "avocado",
+     "weight": 9.29
+    },
+    {
+     "term": "avoid",
+     "weight": 8.5
+    },
+    {
+     "term": "awaken",
+     "weight": 7.17
+    },
+    {
+     "term": "awl",
+     "weight": 10.75
+    },
+    {
+     "term": "axe",
+     "weight": 6.11
+    },
+    {
+     "term": "axle",
+     "weight": 10.85
+    },
+    {
+     "term": "baboon",
+     "weight": 9.11
+    },
+    {
+     "term": "baby",
+     "weight": 3.84
+    },
+    {
+     "term": "back",
+     "weight": 5.3052150000000005
+    },
+    {
+     "term": "backward",
+     "weight": 5.763466
+    },
+    {
+     "term": "bad",
+     "weight": 2.79
+    },
+    {
+     "term": "badger",
+     "weight": 8.74
+    },
+    {
+     "term": "bag",
+     "weight": 4.28
+    },
+    {
+     "term": "bait",
+     "weight": 7.11
+    },
+    {
+     "term": "bake",
+     "weight": 5.5
+    },
+    {
+     "term": "baker",
+     "weight": 6.040548
+    },
+    {
+     "term": "bald",
+     "weight": 7.26
+    },
+    {
+     "term": "baldhead",
+     "weight": 6.17
+    },
+    {
+     "term": "ball",
+     "weight": 2.9
+    },
+    {
+     "term": "balloon",
+     "weight": 4.37
+    },
+    {
+     "term": "bamboo",
+     "weight": 9.28
+    },
+    {
+     "term": "banana",
+     "weight": 3.78
+    },
+    {
+     "term": "bandicoot",
+     "weight": 13.42
+    },
+    {
+     "term": "bank",
+     "weight": 6.44
+    },
+    {
+     "term": "banyan",
+     "weight": 10.75
+    },
+    {
+     "term": "barefooted",
+     "weight": 5.37
+    },
+    {
+     "term": "bark",
+     "weight": 5.17
+    },
+    {
+     "term": "barley",
+     "weight": 9.8
+    },
+    {
+     "term": "barn",
+     "weight": 4.5
+    },
+    {
+     "term": "barrel",
+     "weight": 7.72
+    },
+    {
+     "term": "barter",
+     "weight": 10.72
+    },
+    {
+     "term": "base",
+     "weight": 6.42
+    },
+    {
+     "term": "basket",
+     "weight": 5.67
+    },
+    {
+     "term": "bastard",
+     "weight": 10.45
+    },
+    {
+     "term": "bat",
+     "weight": 4.85
+    },
+    {
+     "term": "bathe",
+     "weight": 5
+    },
+    {
+     "term": "bathtub",
+     "weight": 3.22
+    },
+    {
+     "term": "battery",
+     "weight": 5.58
+    },
+    {
+     "term": "battle",
+     "weight": 6.95
+    },
+    {
+     "term": "bay",
+     "weight": 8.67
+    },
+    {
+     "term": "be",
+     "weight": 5.11
+    },
+    {
+     "term": "beach",
+     "weight": 4.8
+    },
+    {
+     "term": "bead",
+     "weight": 5.63
+    },
+    {
+     "term": "beak",
+     "weight": 5.42
+    },
+    {
+     "term": "beam",
+     "weight": 8.78
+    },
+    {
+     "term": "bean",
+     "weight": 3.42
+    },
+    {
+     "term": "bear",
+     "weight": 3.58
+    },
+    {
+     "term": "beard",
+     "weight": 4.84
+    },
+    {
+     "term": "beast",
+     "weight": 5.74
+    },
+    {
+     "term": "beat",
+     "weight": 6.15
+    },
+    {
+     "term": "beautiful",
+     "weight": 5.72
+    },
+    {
+     "term": "beaver",
+     "weight": 5.21
+    },
+    {
+     "term": "because",
+     "weight": 4.441998
+    },
+    {
+     "term": "become",
+     "weight": 5.85
+    },
+    {
+     "term": "bed",
+     "weight": 2.89
+    },
+    {
+     "term": "bedbug",
+     "weight": 6.78
+    },
+    {
+     "term": "bedroom",
+     "weight": 3.9
+    },
+    {
+     "term": "bee",
+     "weight": 5
+    },
+    {
+     "term": "beech",
+     "weight": 11.69
+    },
+    {
+     "term": "beef",
+     "weight": 6.58
+    },
+    {
+     "term": "beehive",
+     "weight": 7.47
+    },
+    {
+     "term": "beer",
+     "weight": 6.11
+    },
+    {
+     "term": "beeswax",
+     "weight": 8.5
+    },
+    {
+     "term": "beetle",
+     "weight": 5.32
+    },
+    {
+     "term": "before",
+     "weight": 5.454413000000001
+    },
+    {
+     "term": "beg",
+     "weight": 5.78
+    },
+    {
+     "term": "beget",
+     "weight": 14.2
+    },
+    {
+     "term": "beggar",
+     "weight": 7.63
+    },
+    {
+     "term": "begin",
+     "weight": 4.84
+    },
+    {
+     "term": "beginning",
+     "weight": 5.4
+    },
+    {
+     "term": "behind",
+     "weight": 4.900249000000001
+    },
+    {
+     "term": "beige",
+     "weight": 7.74
+    },
+    {
+     "term": "belch",
+     "weight": 6.22
+    },
+    {
+     "term": "belief",
+     "weight": 7.3
+    },
+    {
+     "term": "believe",
+     "weight": 5.78
+    },
+    {
+     "term": "bell",
+     "weight": 3.89
+    },
+    {
+     "term": "bellows",
+     "weight": 13.191395
+    },
+    {
+     "term": "belly",
+     "weight": 4.05
+    },
+    {
+     "term": "belongings",
+     "weight": 9.17
+    },
+    {
+     "term": "below",
+     "weight": 5.838065000000001
+    },
+    {
+     "term": "belt",
+     "weight": 4.62
+    },
+    {
+     "term": "bench",
+     "weight": 4.21
+    },
+    {
+     "term": "bend",
+     "weight": 5.56
+    },
+    {
+     "term": "benefit",
+     "weight": 9.17
+    },
+    {
+     "term": "berry",
+     "weight": 5.209302000000001
+    },
+    {
+     "term": "beside",
+     "weight": 7.2234750000000005
+    },
+    {
+     "term": "betray",
+     "weight": 9.39
+    },
+    {
+     "term": "between",
+     "weight": 5.465070000000001
+    },
+    {
+     "term": "beverage",
+     "weight": 6.63
+    },
+    {
+     "term": "bewitch",
+     "weight": 10.61
+    },
+    {
+     "term": "bicycle",
+     "weight": 4.26
+    },
+    {
+     "term": "big",
+     "weight": 2.89
+    },
+    {
+     "term": "bile",
+     "weight": 11.67
+    },
+    {
+     "term": "bill",
+     "weight": 6.424200000000001
+    },
+    {
+     "term": "billion",
+     "weight": 8.37
+    },
+    {
+     "term": "birch",
+     "weight": 10.836198000000001
+    },
+    {
+     "term": "bird",
+     "weight": 3.52
+    },
+    {
+     "term": "birth",
+     "weight": 5.21
+    },
+    {
+     "term": "birthday",
+     "weight": 2.85
+    },
+    {
+     "term": "birthmark",
+     "weight": 6.85
+    },
+    {
+     "term": "bison",
+     "weight": 8.11
+    },
+    {
+     "term": "bit",
+     "weight": 6.47
+    },
+    {
+     "term": "bitch",
+     "weight": 10.11
+    },
+    {
+     "term": "bite",
+     "weight": 3.58
+    },
+    {
+     "term": "bitter",
+     "weight": 8.81
+    },
+    {
+     "term": "black",
+     "weight": 3.56
+    },
+    {
+     "term": "blackboard",
+     "weight": 5.42
+    },
+    {
+     "term": "blacken",
+     "weight": 9.05
+    },
+    {
+     "term": "blacksmith",
+     "weight": 9.84
+    },
+    {
+     "term": "bladder",
+     "weight": 10.78
+    },
+    {
+     "term": "blade",
+     "weight": 6.72
+    },
+    {
+     "term": "blame",
+     "weight": 6.48
+    },
+    {
+     "term": "bland",
+     "weight": 8.35
+    },
+    {
+     "term": "blanket",
+     "weight": 3.61
+    },
+    {
+     "term": "bleed",
+     "weight": 4.28
+    },
+    {
+     "term": "bless",
+     "weight": 5.33
+    },
+    {
+     "term": "blind",
+     "weight": 7
+    },
+    {
+     "term": "blink",
+     "weight": 5.63
+    },
+    {
+     "term": "blister",
+     "weight": 6.74
+    },
+    {
+     "term": "blond",
+     "weight": 6.72
+    },
+    {
+     "term": "blood",
+     "weight": 4.89
+    },
+    {
+     "term": "bloom",
+     "weight": 6.84
+    },
+    {
+     "term": "blouse",
+     "weight": 6.65
+    },
+    {
+     "term": "blow",
+     "weight": 4
+    },
+    {
+     "term": "blowgun",
+     "weight": 10.89
+    },
+    {
+     "term": "blue",
+     "weight": 3.53
+    },
+    {
+     "term": "blueberry",
+     "weight": 6.22
+    },
+    {
+     "term": "boar",
+     "weight": 9.83
+    },
+    {
+     "term": "board",
+     "weight": 6.37
+    },
+    {
+     "term": "boast",
+     "weight": 8.22
+    },
+    {
+     "term": "boat",
+     "weight": 3.84
+    },
+    {
+     "term": "body",
+     "weight": 4.28
+    },
+    {
+     "term": "boil",
+     "weight": 6.6
+    },
+    {
+     "term": "bolt",
+     "weight": 7.28
+    },
+    {
+     "term": "bomb",
+     "weight": 8
+    },
+    {
+     "term": "bone",
+     "weight": 5.53
+    },
+    {
+     "term": "book",
+     "weight": 3.68
+    },
+    {
+     "term": "boomerang",
+     "weight": 9.79
+    },
+    {
+     "term": "boot",
+     "weight": 3.89
+    },
+    {
+     "term": "border",
+     "weight": 6.85
+    },
+    {
+     "term": "bore",
+     "weight": 8.907281
+    },
+    {
+     "term": "boring",
+     "weight": 5.26
+    },
+    {
+     "term": "born",
+     "weight": 4.68
+    },
+    {
+     "term": "borrow",
+     "weight": 6.95
+    },
+    {
+     "term": "boss",
+     "weight": 6.16
+    },
+    {
+     "term": "bother",
+     "weight": 6.5
+    },
+    {
+     "term": "bottle",
+     "weight": 3.56
+    },
+    {
+     "term": "bottom",
+     "weight": 5.28
+    },
+    {
+     "term": "boundary",
+     "weight": 8.35
+    },
+    {
+     "term": "bovine",
+     "weight": 12.41
+    },
+    {
+     "term": "bow",
+     "weight": 4.95
+    },
+    {
+     "term": "bowl",
+     "weight": 4.26
+    },
+    {
+     "term": "box",
+     "weight": 4.3
+    },
+    {
+     "term": "boy",
+     "weight": 3.67
+    },
+    {
+     "term": "bracelet",
+     "weight": 5.68
+    },
+    {
+     "term": "brackish",
+     "weight": 15.23
+    },
+    {
+     "term": "braid",
+     "weight": 7.22
+    },
+    {
+     "term": "brain",
+     "weight": 5.76
+    },
+    {
+     "term": "braise",
+     "weight": 13.607018
+    },
+    {
+     "term": "brake",
+     "weight": 5.95
+    },
+    {
+     "term": "bran",
+     "weight": 9.95
+    },
+    {
+     "term": "branch",
+     "weight": 5.11
+    },
+    {
+     "term": "brass",
+     "weight": 9.05
+    },
+    {
+     "term": "brave",
+     "weight": 6
+    },
+    {
+     "term": "brawl",
+     "weight": 9.2
+    },
+    {
+     "term": "bread",
+     "weight": 3.58
+    },
+    {
+     "term": "breadfruit",
+     "weight": 13.29
+    },
+    {
+     "term": "break",
+     "weight": 5.3
+    },
+    {
+     "term": "breakfast",
+     "weight": 3.47
+    },
+    {
+     "term": "breast",
+     "weight": 6.6
+    },
+    {
+     "term": "breastbone",
+     "weight": 10.75
+    },
+    {
+     "term": "breath",
+     "weight": 5.81
+    },
+    {
+     "term": "breathe",
+     "weight": 4.11
+    },
+    {
+     "term": "breeze",
+     "weight": 6.22
+    },
+    {
+     "term": "bribe",
+     "weight": 9.74
+    },
+    {
+     "term": "brick",
+     "weight": 6.43
+    },
+    {
+     "term": "bride",
+     "weight": 5.1
+    },
+    {
+     "term": "bridge",
+     "weight": 5.58
+    },
+    {
+     "term": "brief",
+     "weight": 8.44
+    },
+    {
+     "term": "bright",
+     "weight": 6.58
+    },
+    {
+     "term": "brilliant",
+     "weight": 7.95
+    },
+    {
+     "term": "bring",
+     "weight": 4.42
+    },
+    {
+     "term": "broad",
+     "weight": 10.5
+    },
+    {
+     "term": "broccoli",
+     "weight": 5.2
+    },
+    {
+     "term": "bronze",
+     "weight": 10
+    },
+    {
+     "term": "brood",
+     "weight": 10.47
+    },
+    {
+     "term": "brook",
+     "weight": 8.42
+    },
+    {
+     "term": "broom",
+     "weight": 5.5
+    },
+    {
+     "term": "brother",
+     "weight": 3.63
+    },
+    {
+     "term": "brown",
+     "weight": 4.196887000000001
+    },
+    {
+     "term": "bruise",
+     "weight": 5.45
+    },
+    {
+     "term": "brush",
+     "weight": 3.78
+    },
+    {
+     "term": "bubble",
+     "weight": 3.79
+    },
+    {
+     "term": "bucket",
+     "weight": 5.61
+    },
+    {
+     "term": "buckeye",
+     "weight": 12.47
+    },
+    {
+     "term": "buckwheat",
+     "weight": 8.69
+    },
+    {
+     "term": "bud",
+     "weight": 7.010335
+    },
+    {
+     "term": "budge",
+     "weight": 9.25
+    },
+    {
+     "term": "budgerigar",
+     "weight": 8.98188
+    },
+    {
+     "term": "buffalo",
+     "weight": 6.701282000000001
+    },
+    {
+     "term": "bug",
+     "weight": 3.79
+    },
+    {
+     "term": "build",
+     "weight": 4.45
+    },
+    {
+     "term": "building",
+     "weight": 6.16
+    },
+    {
+     "term": "bulb",
+     "weight": 6.56
+    },
+    {
+     "term": "bull",
+     "weight": 4.53
+    },
+    {
+     "term": "bullet",
+     "weight": 6.7
+    },
+    {
+     "term": "bump",
+     "weight": 4.35
+    },
+    {
+     "term": "bunch",
+     "weight": 4.89
+    },
+    {
+     "term": "bundle",
+     "weight": 7.06
+    },
+    {
+     "term": "burn",
+     "weight": 4.72
+    },
+    {
+     "term": "burp",
+     "weight": 4.67
+    },
+    {
+     "term": "burst",
+     "weight": 7.72
+    },
+    {
+     "term": "bury",
+     "weight": 6.28
+    },
+    {
+     "term": "bus",
+     "weight": 3.85
+    },
+    {
+     "term": "bush",
+     "weight": 4.9
+    },
+    {
+     "term": "business",
+     "weight": 7.47
+    },
+    {
+     "term": "busy",
+     "weight": 5.95
+    },
+    {
+     "term": "but",
+     "weight": 4.601853000000001
+    },
+    {
+     "term": "butcher",
+     "weight": 7.9
+    },
+    {
+     "term": "butter",
+     "weight": 5.78
+    },
+    {
+     "term": "butterfly",
+     "weight": 3.67
+    },
+    {
+     "term": "buttocks",
+     "weight": 7.72
+    },
+    {
+     "term": "button",
+     "weight": 4.78
+    },
+    {
+     "term": "buy",
+     "weight": 5.56
+    },
+    {
+     "term": "buzzard",
+     "weight": 9.83
+    },
+    {
+     "term": "cabbage",
+     "weight": 5.78
+    },
+    {
+     "term": "cackle",
+     "weight": 8.56
+    },
+    {
+     "term": "cactus",
+     "weight": 6.72
+    },
+    {
+     "term": "cage",
+     "weight": 5.06
+    },
+    {
+     "term": "cake",
+     "weight": 3.26
+    },
+    {
+     "term": "calabash",
+     "weight": 16.75
+    },
+    {
+     "term": "calculate",
+     "weight": 9.26
+    },
+    {
+     "term": "calendar",
+     "weight": 5.89
+    },
+    {
+     "term": "calf",
+     "weight": 6.63
+    },
+    {
+     "term": "call",
+     "weight": 4.74
+    },
+    {
+     "term": "calm",
+     "weight": 6.26
+    },
+    {
+     "term": "camel",
+     "weight": 5.11
+    },
+    {
+     "term": "camera",
+     "weight": 6
+    },
+    {
+     "term": "camp",
+     "weight": 5.78
+    },
+    {
+     "term": "campfire",
+     "weight": 5.11
+    },
+    {
+     "term": "can",
+     "weight": 4.32
+    },
+    {
+     "term": "candle",
+     "weight": 5.37
+    },
+    {
+     "term": "candy",
+     "weight": 4
+    },
+    {
+     "term": "cannon",
+     "weight": 7.9
+    },
+    {
+     "term": "canoe",
+     "weight": 6.63
+    },
+    {
+     "term": "cap",
+     "weight": 5.53
+    },
+    {
+     "term": "cape",
+     "weight": 6.903765000000001
+    },
+    {
+     "term": "capon",
+     "weight": 11.89
+    },
+    {
+     "term": "car",
+     "weight": 3.37
+    },
+    {
+     "term": "carcass",
+     "weight": 12.25
+    },
+    {
+     "term": "card",
+     "weight": 6.2
+    },
+    {
+     "term": "caribou",
+     "weight": 12.06
+    },
+    {
+     "term": "carp",
+     "weight": 11.42
+    },
+    {
+     "term": "carpenter",
+     "weight": 7.393987000000001
+    },
+    {
+     "term": "carriage",
+     "weight": 5.84
+    },
+    {
+     "term": "carrot",
+     "weight": 2.74
+    },
+    {
+     "term": "carry",
+     "weight": 5.16
+    },
+    {
+     "term": "carve",
+     "weight": 6.35
+    },
+    {
+     "term": "cashew",
+     "weight": 8.68
+    },
+    {
+     "term": "cassava",
+     "weight": 17.44
+    },
+    {
+     "term": "castle",
+     "weight": 5.8
+    },
+    {
+     "term": "castrate",
+     "weight": 12.43
+    },
+    {
+     "term": "cat",
+     "weight": 3.68
+    },
+    {
+     "term": "catch",
+     "weight": 4.61
+    },
+    {
+     "term": "caterpillar",
+     "weight": 5.17
+    },
+    {
+     "term": "catfish",
+     "weight": 6.61
+    },
+    {
+     "term": "cattle",
+     "weight": 6.53
+    },
+    {
+     "term": "cauliflower",
+     "weight": 6.18
+    },
+    {
+     "term": "cause",
+     "weight": 5.84
+    },
+    {
+     "term": "cautious",
+     "weight": 8.25
+    },
+    {
+     "term": "cave",
+     "weight": 6.74
+    },
+    {
+     "term": "cease",
+     "weight": 9.26
+    },
+    {
+     "term": "cedar",
+     "weight": 9.86
+    },
+    {
+     "term": "celery",
+     "weight": 5.78
+    },
+    {
+     "term": "cemetery",
+     "weight": 7.78
+    },
+    {
+     "term": "center",
+     "weight": 6.57
+    },
+    {
+     "term": "centipede",
+     "weight": 7.39
+    },
+    {
+     "term": "certain",
+     "weight": 8.2
+    },
+    {
+     "term": "chaff",
+     "weight": 10.25
+    },
+    {
+     "term": "chain",
+     "weight": 5.22
+    },
+    {
+     "term": "chair",
+     "weight": 3.43
+    },
+    {
+     "term": "chameleon",
+     "weight": 10.18
+    },
+    {
+     "term": "change",
+     "weight": 4.26
+    },
+    {
+     "term": "channel",
+     "weight": 5.79
+    },
+    {
+     "term": "chapter",
+     "weight": 6.42
+    },
+    {
+     "term": "character",
+     "weight": 6.47
+    },
+    {
+     "term": "charcoal",
+     "weight": 8
+    },
+    {
+     "term": "charity",
+     "weight": 7.63
+    },
+    {
+     "term": "chat",
+     "weight": 7.33
+    },
+    {
+     "term": "cheap",
+     "weight": 7.11
+    },
+    {
+     "term": "cheat",
+     "weight": 5.11
+    },
+    {
+     "term": "check",
+     "weight": 5.53
+    },
+    {
+     "term": "cheek",
+     "weight": 5.06
+    },
+    {
+     "term": "cheese",
+     "weight": 4.33
+    },
+    {
+     "term": "cheetah",
+     "weight": 8.16
+    },
+    {
+     "term": "cherry",
+     "weight": 5.58
+    },
+    {
+     "term": "chest",
+     "weight": 5.05
+    },
+    {
+     "term": "chestnut",
+     "weight": 6.55
+    },
+    {
+     "term": "chew",
+     "weight": 4.05
+    },
+    {
+     "term": "chick",
+     "weight": 5.53
+    },
+    {
+     "term": "chicken",
+     "weight": 3.26
+    },
+    {
+     "term": "chief",
+     "weight": 7.53
+    },
+    {
+     "term": "chigger",
+     "weight": 10.78
+    },
+    {
+     "term": "child",
+     "weight": 5.14536
+    },
+    {
+     "term": "chili",
+     "weight": 6.61
+    },
+    {
+     "term": "chill",
+     "weight": 6.4
+    },
+    {
+     "term": "chime",
+     "weight": 7.83
+    },
+    {
+     "term": "chimney",
+     "weight": 6.58
+    },
+    {
+     "term": "chimp",
+     "weight": 7.17
+    },
+    {
+     "term": "chin",
+     "weight": 4.22
+    },
+    {
+     "term": "chisel",
+     "weight": 10.53
+    },
+    {
+     "term": "chocolate",
+     "weight": 3.33
+    },
+    {
+     "term": "choke",
+     "weight": 6.11
+    },
+    {
+     "term": "choose",
+     "weight": 4.74
+    },
+    {
+     "term": "chop",
+     "weight": 6.74
+    },
+    {
+     "term": "chopper",
+     "weight": 8.21
+    },
+    {
+     "term": "chopsticks",
+     "weight": 7.854453
+    },
+    {
+     "term": "christmas",
+     "weight": 4.346085
+    },
+    {
+     "term": "church",
+     "weight": 5.15
+    },
+    {
+     "term": "cicada",
+     "weight": 11.54
+    },
+    {
+     "term": "cigar",
+     "weight": 7.67
+    },
+    {
+     "term": "cigarette",
+     "weight": 6.39
+    },
+    {
+     "term": "circle",
+     "weight": 3.67
+    },
+    {
+     "term": "circular",
+     "weight": 7.68
+    },
+    {
+     "term": "circumcision",
+     "weight": 12.11
+    },
+    {
+     "term": "citizen",
+     "weight": 7.74
+    },
+    {
+     "term": "city",
+     "weight": 6.56
+    },
+    {
+     "term": "civet",
+     "weight": 11.33
+    },
+    {
+     "term": "clan",
+     "weight": 11.05
+    },
+    {
+     "term": "clap",
+     "weight": 3.4
+    },
+    {
+     "term": "claw",
+     "weight": 4.7
+    },
+    {
+     "term": "clay",
+     "weight": 5.32
+    },
+    {
+     "term": "clean",
+     "weight": 3.89
+    },
+    {
+     "term": "clear",
+     "weight": 5.8
+    },
+    {
+     "term": "clever",
+     "weight": 7.5
+    },
+    {
+     "term": "cliff",
+     "weight": 7.27676
+    },
+    {
+     "term": "climate",
+     "weight": 7.95
+    },
+    {
+     "term": "climb",
+     "weight": 5.3
+    },
+    {
+     "term": "clitoris",
+     "weight": 14
+    },
+    {
+     "term": "cloak",
+     "weight": 6.95
+    },
+    {
+     "term": "clock",
+     "weight": 4.42
+    },
+    {
+     "term": "close",
+     "weight": 4.5
+    },
+    {
+     "term": "cloth",
+     "weight": 5.3
+    },
+    {
+     "term": "clothe",
+     "weight": 8.83
+    },
+    {
+     "term": "clothes",
+     "weight": 3.11
+    },
+    {
+     "term": "cloud",
+     "weight": 3.63
+    },
+    {
+     "term": "cloudy",
+     "weight": 5.5
+    },
+    {
+     "term": "clown",
+     "weight": 3.72
+    },
+    {
+     "term": "club",
+     "weight": 5.89
+    },
+    {
+     "term": "coagulate",
+     "weight": 13.95
+    },
+    {
+     "term": "coal",
+     "weight": 6.65
+    },
+    {
+     "term": "coarse",
+     "weight": 9.11
+    },
+    {
+     "term": "coast",
+     "weight": 6.43
+    },
+    {
+     "term": "coat",
+     "weight": 3.58
+    },
+    {
+     "term": "cockroach",
+     "weight": 6.25
+    },
+    {
+     "term": "coconut",
+     "weight": 6.5
+    },
+    {
+     "term": "coffee",
+     "weight": 4.94
+    },
+    {
+     "term": "coffin",
+     "weight": 7.79
+    },
+    {
+     "term": "coin",
+     "weight": 4.17
+    },
+    {
+     "term": "cold",
+     "weight": 3.95
+    },
+    {
+     "term": "collapse",
+     "weight": 9.17
+    },
+    {
+     "term": "collar",
+     "weight": 6.56
+    },
+    {
+     "term": "collarbone",
+     "weight": 8.89
+    },
+    {
+     "term": "color",
+     "weight": 4
+    },
+    {
+     "term": "colorful",
+     "weight": 4.89
+    },
+    {
+     "term": "comb",
+     "weight": 5.5
+    },
+    {
+     "term": "come",
+     "weight": 3.32
+    },
+    {
+     "term": "command",
+     "weight": 8.67
+    },
+    {
+     "term": "common",
+     "weight": 6.94
+    },
+    {
+     "term": "companion",
+     "weight": 9.58
+    },
+    {
+     "term": "company",
+     "weight": 6.84
+    },
+    {
+     "term": "compare",
+     "weight": 8.57
+    },
+    {
+     "term": "compass",
+     "weight": 8.44
+    },
+    {
+     "term": "complain",
+     "weight": 7.28
+    },
+    {
+     "term": "compound",
+     "weight": 11.26
+    },
+    {
+     "term": "computer",
+     "weight": 9.7
+    },
+    {
+     "term": "conceal",
+     "weight": 10.81
+    },
+    {
+     "term": "conceive",
+     "weight": 10.39
+    },
+    {
+     "term": "concept",
+     "weight": 11.44
+    },
+    {
+     "term": "condemn",
+     "weight": 12.5
+    },
+    {
+     "term": "conduct",
+     "weight": 8.58
+    },
+    {
+     "term": "cone",
+     "weight": 4.67
+    },
+    {
+     "term": "confused",
+     "weight": 8.02275
+    },
+    {
+     "term": "congee",
+     "weight": 13.2
+    },
+    {
+     "term": "conjunctivitis",
+     "weight": 13.94
+    },
+    {
+     "term": "conjure",
+     "weight": 11.37
+    },
+    {
+     "term": "connect",
+     "weight": 7.58
+    },
+    {
+     "term": "contempt",
+     "weight": 12.44
+    },
+    {
+     "term": "contemptible",
+     "weight": 13.33
+    },
+    {
+     "term": "content",
+     "weight": 8.37
+    },
+    {
+     "term": "conversation",
+     "weight": 7.79
+    },
+    {
+     "term": "convey",
+     "weight": 12.65
+    },
+    {
+     "term": "convict",
+     "weight": 11
+    },
+    {
+     "term": "cook",
+     "weight": 4.22
+    },
+    {
+     "term": "cookhouse",
+     "weight": 10.71
+    },
+    {
+     "term": "cool",
+     "weight": 4.58
+    },
+    {
+     "term": "coop",
+     "weight": 8.246547
+    },
+    {
+     "term": "copper",
+     "weight": 7.95
+    },
+    {
+     "term": "copulate",
+     "weight": 13
+    },
+    {
+     "term": "coral",
+     "weight": 9.06
+    },
+    {
+     "term": "coriander",
+     "weight": 13.88
+    },
+    {
+     "term": "cormorant",
+     "weight": 14.22
+    },
+    {
+     "term": "corn",
+     "weight": 4.61
+    },
+    {
+     "term": "corner",
+     "weight": 5.21
+    },
+    {
+     "term": "cornfield",
+     "weight": 6.42
+    },
+    {
+     "term": "corpse",
+     "weight": 10
+    },
+    {
+     "term": "correct",
+     "weight": 5.37
+    },
+    {
+     "term": "cost",
+     "weight": 5.67
+    },
+    {
+     "term": "cotton",
+     "weight": 6
+    },
+    {
+     "term": "cough",
+     "weight": 4.32
+    },
+    {
+     "term": "count",
+     "weight": 2.61
+    },
+    {
+     "term": "country",
+     "weight": 7.05
+    },
+    {
+     "term": "countryside",
+     "weight": 8
+    },
+    {
+     "term": "courage",
+     "weight": 8.42
+    },
+    {
+     "term": "court",
+     "weight": 8.39
+    },
+    {
+     "term": "courtyard",
+     "weight": 9.95
+    },
+    {
+     "term": "cousin",
+     "weight": 4.95
+    },
+    {
+     "term": "cover",
+     "weight": 5.42
+    },
+    {
+     "term": "cow",
+     "weight": 3.94
+    },
+    {
+     "term": "coward",
+     "weight": 7.62
+    },
+    {
+     "term": "cowardly",
+     "weight": 8.84
+    },
+    {
+     "term": "coyote",
+     "weight": 6.68
+    },
+    {
+     "term": "crab",
+     "weight": 5.28
+    },
+    {
+     "term": "crack",
+     "weight": 6.33
+    },
+    {
+     "term": "cradle",
+     "weight": 5.22
+    },
+    {
+     "term": "cranberry",
+     "weight": 6.45
+    },
+    {
+     "term": "crane",
+     "weight": 6.775881000000001
+    },
+    {
+     "term": "crawl",
+     "weight": 3.89
+    },
+    {
+     "term": "crayfish",
+     "weight": 9.35
+    },
+    {
+     "term": "creek",
+     "weight": 5.89
+    },
+    {
+     "term": "creep",
+     "weight": 8
+    },
+    {
+     "term": "crested",
+     "weight": 12.06
+    },
+    {
+     "term": "cricket",
+     "weight": 7.72
+    },
+    {
+     "term": "crime",
+     "weight": 7.67
+    },
+    {
+     "term": "criminal",
+     "weight": 6.78
+    },
+    {
+     "term": "cripple",
+     "weight": 9.14
+    },
+    {
+     "term": "crocodile",
+     "weight": 5.11
+    },
+    {
+     "term": "crooked",
+     "weight": 6.33
+    },
+    {
+     "term": "crop",
+     "weight": 7.63
+    },
+    {
+     "term": "cross",
+     "weight": 4.74
+    },
+    {
+     "term": "crossbow",
+     "weight": 10.67
+    },
+    {
+     "term": "crouch",
+     "weight": 8.5
+    },
+    {
+     "term": "crow",
+     "weight": 5.74
+    },
+    {
+     "term": "crowd",
+     "weight": 7.14
+    },
+    {
+     "term": "crowded",
+     "weight": 7.63
+    },
+    {
+     "term": "crown",
+     "weight": 7.8
+    },
+    {
+     "term": "cruel",
+     "weight": 7.63
+    },
+    {
+     "term": "crush",
+     "weight": 7.58
+    },
+    {
+     "term": "cry",
+     "weight": 2.78
+    },
+    {
+     "term": "cuckoo",
+     "weight": 6.61
+    },
+    {
+     "term": "cucumber",
+     "weight": 5.72
+    },
+    {
+     "term": "cultivate",
+     "weight": 12.39
+    },
+    {
+     "term": "cunning",
+     "weight": 10.84
+    },
+    {
+     "term": "cup",
+     "weight": 3.57
+    },
+    {
+     "term": "cupboard",
+     "weight": 6.39
+    },
+    {
+     "term": "cure",
+     "weight": 9.58
+    },
+    {
+     "term": "curious",
+     "weight": 6.64
+    },
+    {
+     "term": "current",
+     "weight": 8.94
+    },
+    {
+     "term": "curse",
+     "weight": 7.47
+    },
+    {
+     "term": "curtain",
+     "weight": 4.95
+    },
+    {
+     "term": "curved",
+     "weight": 6.67
+    },
+    {
+     "term": "custom",
+     "weight": 8.36
+    },
+    {
+     "term": "cut",
+     "weight": 4.43
+    },
+    {
+     "term": "cuttlefish",
+     "weight": 12.88
+    },
+    {
+     "term": "damage",
+     "weight": 7.2
+    },
+    {
+     "term": "damp",
+     "weight": 7.67
+    },
+    {
+     "term": "dance",
+     "weight": 4.63
+    },
+    {
+     "term": "dandelion",
+     "weight": 5.11
+    },
+    {
+     "term": "dandruff",
+     "weight": 10.74
+    },
+    {
+     "term": "danger",
+     "weight": 4.61
+    },
+    {
+     "term": "dangerous",
+     "weight": 5.6
+    },
+    {
+     "term": "dare",
+     "weight": 6.63
+    },
+    {
+     "term": "dark",
+     "weight": 3.74
+    },
+    {
+     "term": "darkness",
+     "weight": 4.83
+    },
+    {
+     "term": "dart",
+     "weight": 7.38
+    },
+    {
+     "term": "dash",
+     "weight": 7.74
+    },
+    {
+     "term": "date",
+     "weight": 5.84
+    },
+    {
+     "term": "daughter",
+     "weight": 4.95
+    },
+    {
+     "term": "dawn",
+     "weight": 7
+    },
+    {
+     "term": "day",
+     "weight": 3.5
+    },
+    {
+     "term": "dead",
+     "weight": 5.17
+    },
+    {
+     "term": "deaf",
+     "weight": 6.83
+    },
+    {
+     "term": "dear",
+     "weight": 5.550326
+    },
+    {
+     "term": "death",
+     "weight": 5.37
+    },
+    {
+     "term": "debt",
+     "weight": 10.44
+    },
+    {
+     "term": "decay",
+     "weight": 8.79
+    },
+    {
+     "term": "deceit",
+     "weight": 10.95
+    },
+    {
+     "term": "deceive",
+     "weight": 8.68
+    },
+    {
+     "term": "decide",
+     "weight": 7.2
+    },
+    {
+     "term": "decorate",
+     "weight": 7
+    },
+    {
+     "term": "decrease",
+     "weight": 8.56
+    },
+    {
+     "term": "deep",
+     "weight": 5.47
+    },
+    {
+     "term": "deer",
+     "weight": 5.17
+    },
+    {
+     "term": "defeat",
+     "weight": 8.74
+    },
+    {
+     "term": "defecate",
+     "weight": 13.2
+    },
+    {
+     "term": "defect",
+     "weight": 10.26
+    },
+    {
+     "term": "defend",
+     "weight": 8.16
+    },
+    {
+     "term": "defendant",
+     "weight": 11.42
+    },
+    {
+     "term": "deity",
+     "weight": 13
+    },
+    {
+     "term": "deliver",
+     "weight": 6.63
+    },
+    {
+     "term": "demon",
+     "weight": 7.16
+    },
+    {
+     "term": "dense",
+     "weight": 10.2
+    },
+    {
+     "term": "dentist",
+     "weight": 5.22
+    },
+    {
+     "term": "deny",
+     "weight": 7.8
+    },
+    {
+     "term": "depend",
+     "weight": 8.5
+    },
+    {
+     "term": "depressed",
+     "weight": 9.47
+    },
+    {
+     "term": "depression",
+     "weight": 10.71
+    },
+    {
+     "term": "depth",
+     "weight": 9.72
+    },
+    {
+     "term": "descend",
+     "weight": 9.19
+    },
+    {
+     "term": "descendant",
+     "weight": 9.61
+    },
+    {
+     "term": "desert",
+     "weight": 8.35
+    },
+    {
+     "term": "desire",
+     "weight": 9.95
+    },
+    {
+     "term": "despise",
+     "weight": 12.38
+    },
+    {
+     "term": "destroy",
+     "weight": 6.7
+    },
+    {
+     "term": "detect",
+     "weight": 9.53
+    },
+    {
+     "term": "devil",
+     "weight": 5
+    },
+    {
+     "term": "dew",
+     "weight": 7.37
+    },
+    {
+     "term": "dialect",
+     "weight": 11.5
+    },
+    {
+     "term": "diamond",
+     "weight": 6.47
+    },
+    {
+     "term": "die",
+     "weight": 4.53
+    },
+    {
+     "term": "different",
+     "weight": 5.5
+    },
+    {
+     "term": "difficult",
+     "weight": 5.85
+    },
+    {
+     "term": "dig",
+     "weight": 4.19
+    },
+    {
+     "term": "diligent",
+     "weight": 11.78
+    },
+    {
+     "term": "dilute",
+     "weight": 12.11
+    },
+    {
+     "term": "diminish",
+     "weight": 10.95
+    },
+    {
+     "term": "dingo",
+     "weight": 11.29
+    },
+    {
+     "term": "dinner",
+     "weight": 3.99
+    },
+    {
+     "term": "dinosaur",
+     "weight": 4.91
+    },
+    {
+     "term": "dip",
+     "weight": 7
+    },
+    {
+     "term": "direction",
+     "weight": 6.68
+    },
+    {
+     "term": "dirt",
+     "weight": 3.83
+    },
+    {
+     "term": "dirty",
+     "weight": 4.55
+    },
+    {
+     "term": "disappear",
+     "weight": 5.37
+    },
+    {
+     "term": "disappointment",
+     "weight": 8.32
+    },
+    {
+     "term": "discipline",
+     "weight": 7.7
+    },
+    {
+     "term": "disease",
+     "weight": 7.55
+    },
+    {
+     "term": "disgrace",
+     "weight": 8.22
+    },
+    {
+     "term": "disgust",
+     "weight": 7.68
+    },
+    {
+     "term": "disgusting",
+     "weight": 6.06
+    },
+    {
+     "term": "dish",
+     "weight": 4.89
+    },
+    {
+     "term": "disobedient",
+     "weight": 6.63
+    },
+    {
+     "term": "dispute",
+     "weight": 12.05
+    },
+    {
+     "term": "distance",
+     "weight": 6.81
+    },
+    {
+     "term": "disturb",
+     "weight": 8.22
+    },
+    {
+     "term": "ditch",
+     "weight": 6.22
+    },
+    {
+     "term": "dive",
+     "weight": 7.21
+    },
+    {
+     "term": "divide",
+     "weight": 7.16
+    },
+    {
+     "term": "divorce",
+     "weight": 8.9
+    },
+    {
+     "term": "dizzy",
+     "weight": 5.5
+    },
+    {
+     "term": "do",
+     "weight": 3.6
+    },
+    {
+     "term": "doctor",
+     "weight": 4.6
+    },
+    {
+     "term": "dog",
+     "weight": 2.8
+    },
+    {
+     "term": "doll",
+     "weight": 3.68
+    },
+    {
+     "term": "dolphin",
+     "weight": 6.05
+    },
+    {
+     "term": "dominoes",
+     "weight": 7.703040000000001
+    },
+    {
+     "term": "donate",
+     "weight": 8.2
+    },
+    {
+     "term": "donkey",
+     "weight": 6
+    },
+    {
+     "term": "door",
+     "weight": 3.05
+    },
+    {
+     "term": "doorknob",
+     "weight": 4.7
+    },
+    {
+     "term": "doorpost",
+     "weight": 7.56
+    },
+    {
+     "term": "doubt",
+     "weight": 8.79
+    },
+    {
+     "term": "dough",
+     "weight": 6.63
+    },
+    {
+     "term": "dove",
+     "weight": 6.63
+    },
+    {
+     "term": "down",
+     "weight": 4.93222
+    },
+    {
+     "term": "dowry",
+     "weight": 14.59
+    },
+    {
+     "term": "drag",
+     "weight": 8.84
+    },
+    {
+     "term": "dragon",
+     "weight": 5.58
+    },
+    {
+     "term": "dragonfly",
+     "weight": 6.8
+    },
+    {
+     "term": "draw",
+     "weight": 4.11
+    },
+    {
+     "term": "dreadful",
+     "weight": 6.78
+    },
+    {
+     "term": "dream",
+     "weight": 4.88
+    },
+    {
+     "term": "dress",
+     "weight": 4.05
+    },
+    {
+     "term": "dribble",
+     "weight": 6.5
+    },
+    {
+     "term": "drill",
+     "weight": 7.14
+    },
+    {
+     "term": "drink",
+     "weight": 3.47
+    },
+    {
+     "term": "drip",
+     "weight": 5.89
+    },
+    {
+     "term": "drive",
+     "weight": 5.26
+    },
+    {
+     "term": "drizzle",
+     "weight": 7.56
+    },
+    {
+     "term": "drop",
+     "weight": 3.26
+    },
+    {
+     "term": "drown",
+     "weight": 7
+    },
+    {
+     "term": "drum",
+     "weight": 4.63
+    },
+    {
+     "term": "drunk",
+     "weight": 9.26
+    },
+    {
+     "term": "dry",
+     "weight": 4.11
+    },
+    {
+     "term": "duck",
+     "weight": 3.5
+    },
+    {
+     "term": "dull",
+     "weight": 8.05
+    },
+    {
+     "term": "dumb",
+     "weight": 4.5
+    },
+    {
+     "term": "dummy",
+     "weight": 5.17
+    },
+    {
+     "term": "dung",
+     "weight": 11.05
+    },
+    {
+     "term": "dusk",
+     "weight": 8.74
+    },
+    {
+     "term": "dust",
+     "weight": 5.06
+    },
+    {
+     "term": "dustpan",
+     "weight": 6.47
+    },
+    {
+     "term": "duty",
+     "weight": 7.15
+    },
+    {
+     "term": "dwell",
+     "weight": 10.78
+    },
+    {
+     "term": "dye",
+     "weight": 7.56
+    },
+    {
+     "term": "each",
+     "weight": 4.953534000000001
+    },
+    {
+     "term": "eagle",
+     "weight": 5.83
+    },
+    {
+     "term": "ear",
+     "weight": 3.63
+    },
+    {
+     "term": "earlobe",
+     "weight": 6
+    },
+    {
+     "term": "early",
+     "weight": 5.3052150000000005
+    },
+    {
+     "term": "earn",
+     "weight": 7.57
+    },
+    {
+     "term": "earring",
+     "weight": 7.17
+    },
+    {
+     "term": "earth",
+     "weight": 5.37
+    },
+    {
+     "term": "earthquake",
+     "weight": 7.53
+    },
+    {
+     "term": "earthworm",
+     "weight": 5.35
+    },
+    {
+     "term": "earwax",
+     "weight": 6.39
+    },
+    {
+     "term": "east",
+     "weight": 6.94
+    },
+    {
+     "term": "easy",
+     "weight": 5.43
+    },
+    {
+     "term": "eat",
+     "weight": 2.78
+    },
+    {
+     "term": "echo",
+     "weight": 8
+    },
+    {
+     "term": "eclipse",
+     "weight": 10.21
+    },
+    {
+     "term": "edge",
+     "weight": 6.17
+    },
+    {
+     "term": "eel",
+     "weight": 6.47
+    },
+    {
+     "term": "effect",
+     "weight": 9.26
+    },
+    {
+     "term": "egg",
+     "weight": 3.89
+    },
+    {
+     "term": "eggplant",
+     "weight": 8.3
+    },
+    {
+     "term": "eggshell",
+     "weight": 7.11
+    },
+    {
+     "term": "eight",
+     "weight": 5.3585
+    },
+    {
+     "term": "eighty",
+     "weight": 5.870036000000002
+    },
+    {
+     "term": "elbow",
+     "weight": 4.78
+    },
+    {
+     "term": "elder",
+     "weight": 7.67
+    },
+    {
+     "term": "election",
+     "weight": 9.17
+    },
+    {
+     "term": "electricity",
+     "weight": 6.6
+    },
+    {
+     "term": "elephant",
+     "weight": 4.8
+    },
+    {
+     "term": "elevation",
+     "weight": 9.95
+    },
+    {
+     "term": "elevator",
+     "weight": 5.47
+    },
+    {
+     "term": "eleven",
+     "weight": 5.784780000000001
+    },
+    {
+     "term": "elf",
+     "weight": 4.32
+    },
+    {
+     "term": "elk",
+     "weight": 7.05
+    },
+    {
+     "term": "elm",
+     "weight": 9.06
+    },
+    {
+     "term": "ember",
+     "weight": 10.5
+    },
+    {
+     "term": "emotion",
+     "weight": 6.37
+    },
+    {
+     "term": "emotional",
+     "weight": 9.45
+    },
+    {
+     "term": "emperor",
+     "weight": 7.44
+    },
+    {
+     "term": "empty",
+     "weight": 4.79
+    },
+    {
+     "term": "emu",
+     "weight": 9
+    },
+    {
+     "term": "encounter",
+     "weight": 8.63
+    },
+    {
+     "term": "end",
+     "weight": 4.28
+    },
+    {
+     "term": "endure",
+     "weight": 10.7
+    },
+    {
+     "term": "enemy",
+     "weight": 7.26
+    },
+    {
+     "term": "engine",
+     "weight": 6.28
+    },
+    {
+     "term": "enough",
+     "weight": 6.957050000000001
+    },
+    {
+     "term": "enter",
+     "weight": 5.67
+    },
+    {
+     "term": "envelope",
+     "weight": 6.25
+    },
+    {
+     "term": "envy",
+     "weight": 8.37
+    },
+    {
+     "term": "equal",
+     "weight": 6.47
+    },
+    {
+     "term": "erupt",
+     "weight": 8.26
+    },
+    {
+     "term": "escalator",
+     "weight": 7.11
+    },
+    {
+     "term": "escape",
+     "weight": 6.6
+    },
+    {
+     "term": "estuary",
+     "weight": 14.13
+    },
+    {
+     "term": "evening",
+     "weight": 5.84
+    },
+    {
+     "term": "everywhere",
+     "weight": 5.614268000000001
+    },
+    {
+     "term": "evil",
+     "weight": 6.71
+    },
+    {
+     "term": "ewe",
+     "weight": 9.31
+    },
+    {
+     "term": "exact",
+     "weight": 8.16
+    },
+    {
+     "term": "exchange",
+     "weight": 8.35
+    },
+    {
+     "term": "excited",
+     "weight": 6.21
+    },
+    {
+     "term": "excitement",
+     "weight": 7.2
+    },
+    {
+     "term": "excrement",
+     "weight": 12.11
+    },
+    {
+     "term": "excreta",
+     "weight": 12.8
+    },
+    {
+     "term": "expensive",
+     "weight": 6.33
+    },
+    {
+     "term": "explain",
+     "weight": 6.5
+    },
+    {
+     "term": "explode",
+     "weight": 7
+    },
+    {
+     "term": "extinguish",
+     "weight": 8.95
+    },
+    {
+     "term": "eye",
+     "weight": 3.75
+    },
+    {
+     "term": "eyeball",
+     "weight": 3.83
+    },
+    {
+     "term": "eyebrow",
+     "weight": 5.5
+    },
+    {
+     "term": "eyelash",
+     "weight": 5.8
+    },
+    {
+     "term": "eyelid",
+     "weight": 6.33
+    },
+    {
+     "term": "face",
+     "weight": 3.75
+    },
+    {
+     "term": "fade",
+     "weight": 6.95
+    },
+    {
+     "term": "fail",
+     "weight": 6
+    },
+    {
+     "term": "faint",
+     "weight": 7.53
+    },
+    {
+     "term": "fairy",
+     "weight": 5.17
+    },
+    {
+     "term": "faithful",
+     "weight": 8.42
+    },
+    {
+     "term": "falcon",
+     "weight": 7.42
+    },
+    {
+     "term": "fall",
+     "weight": 4.71
+    },
+    {
+     "term": "false",
+     "weight": 6.722596000000001
+    },
+    {
+     "term": "fame",
+     "weight": 7.26
+    },
+    {
+     "term": "familiar",
+     "weight": 7.21
+    },
+    {
+     "term": "family",
+     "weight": 3.38
+    },
+    {
+     "term": "famine",
+     "weight": 10
+    },
+    {
+     "term": "fan",
+     "weight": 5.63
+    },
+    {
+     "term": "far",
+     "weight": 4.878935
+    },
+    {
+     "term": "farewell",
+     "weight": 8.43
+    },
+    {
+     "term": "farm",
+     "weight": 3.85
+    },
+    {
+     "term": "farmer",
+     "weight": 4.74
+    },
+    {
+     "term": "fart",
+     "weight": 5.78
+    },
+    {
+     "term": "fast",
+     "weight": 3.738636
+    },
+    {
+     "term": "fasten",
+     "weight": 7.26
+    },
+    {
+     "term": "fat",
+     "weight": 5.15
+    },
+    {
+     "term": "fate",
+     "weight": 10.3
+    },
+    {
+     "term": "father",
+     "weight": 4.11
+    },
+    {
+     "term": "fathom",
+     "weight": 11.44
+    },
+    {
+     "term": "fatigue",
+     "weight": 11.83
+    },
+    {
+     "term": "fatness",
+     "weight": 8.61
+    },
+    {
+     "term": "fatty",
+     "weight": 6.37
+    },
+    {
+     "term": "fault",
+     "weight": 6.94
+    },
+    {
+     "term": "fear",
+     "weight": 4.79
+    },
+    {
+     "term": "feather",
+     "weight": 4.67
+    },
+    {
+     "term": "feed",
+     "weight": 4.17
+    },
+    {
+     "term": "feel",
+     "weight": 5.11
+    },
+    {
+     "term": "fell",
+     "weight": 3.280385
+    },
+    {
+     "term": "felt",
+     "weight": 6.104490000000001
+    },
+    {
+     "term": "female",
+     "weight": 5.89
+    },
+    {
+     "term": "fence",
+     "weight": 6.28
+    },
+    {
+     "term": "fern",
+     "weight": 8.67
+    },
+    {
+     "term": "ferry",
+     "weight": 8
+    },
+    {
+     "term": "festival",
+     "weight": 8.39
+    },
+    {
+     "term": "fetch",
+     "weight": 6.61
+    },
+    {
+     "term": "fever",
+     "weight": 5.84
+    },
+    {
+     "term": "few",
+     "weight": 5.997920000000001
+    },
+    {
+     "term": "field",
+     "weight": 6.1
+    },
+    {
+     "term": "fifteen",
+     "weight": 6.104490000000001
+    },
+    {
+     "term": "fifty",
+     "weight": 5.550326
+    },
+    {
+     "term": "fig",
+     "weight": 8.06
+    },
+    {
+     "term": "fight",
+     "weight": 5.47
+    },
+    {
+     "term": "file",
+     "weight": 8.21
+    },
+    {
+     "term": "fill",
+     "weight": 5.06
+    },
+    {
+     "term": "fin",
+     "weight": 7.3
+    },
+    {
+     "term": "finch",
+     "weight": 8.907281
+    },
+    {
+     "term": "find",
+     "weight": 5.78
+    },
+    {
+     "term": "fine",
+     "weight": 7.44
+    },
+    {
+     "term": "finger",
+     "weight": 3.43
+    },
+    {
+     "term": "fingernail",
+     "weight": 4
+    },
+    {
+     "term": "fingertip",
+     "weight": 6
+    },
+    {
+     "term": "finish",
+     "weight": 6.32
+    },
+    {
+     "term": "fir",
+     "weight": 8.75
+    },
+    {
+     "term": "fire",
+     "weight": 3.25
+    },
+    {
+     "term": "firefly",
+     "weight": 6.39
+    },
+    {
+     "term": "fireplace",
+     "weight": 7.37
+    },
+    {
+     "term": "firewood",
+     "weight": 6.61
+    },
+    {
+     "term": "first",
+     "weight": 4.388713
+    },
+    {
+     "term": "fish",
+     "weight": 4.05
+    },
+    {
+     "term": "fishbone",
+     "weight": 7.639098000000001
+    },
+    {
+     "term": "fisherman",
+     "weight": 5.16
+    },
+    {
+     "term": "fishhook",
+     "weight": 6.84
+    },
+    {
+     "term": "fishing",
+     "weight": 4.72
+    },
+    {
+     "term": "fishnet",
+     "weight": 10.55
+    },
+    {
+     "term": "fist",
+     "weight": 4.58
+    },
+    {
+     "term": "five",
+     "weight": 4.505940000000001
+    },
+    {
+     "term": "fix",
+     "weight": 5
+    },
+    {
+     "term": "flag",
+     "weight": 5.33
+    },
+    {
+     "term": "flail",
+     "weight": 12.19
+    },
+    {
+     "term": "flame",
+     "weight": 6.25
+    },
+    {
+     "term": "flamingo",
+     "weight": 6.32
+    },
+    {
+     "term": "flat",
+     "weight": 5.68
+    },
+    {
+     "term": "flatter",
+     "weight": 9.53
+    },
+    {
+     "term": "flavor",
+     "weight": 6.3
+    },
+    {
+     "term": "flax",
+     "weight": 12.445405000000001
+    },
+    {
+     "term": "flea",
+     "weight": 7.79
+    },
+    {
+     "term": "flee",
+     "weight": 8.33
+    },
+    {
+     "term": "flesh",
+     "weight": 8.3
+    },
+    {
+     "term": "flexible",
+     "weight": 7.58
+    },
+    {
+     "term": "flirt",
+     "weight": 8.68
+    },
+    {
+     "term": "float",
+     "weight": 5.39
+    },
+    {
+     "term": "flock",
+     "weight": 7.18
+    },
+    {
+     "term": "flood",
+     "weight": 6.58
+    },
+    {
+     "term": "floor",
+     "weight": 4.44
+    },
+    {
+     "term": "floral",
+     "weight": 8.84
+    },
+    {
+     "term": "flour",
+     "weight": 6.89
+    },
+    {
+     "term": "flow",
+     "weight": 7.4
+    },
+    {
+     "term": "flower",
+     "weight": 3.11
+    },
+    {
+     "term": "flute",
+     "weight": 8.47
+    },
+    {
+     "term": "fly",
+     "weight": 3.05
+    },
+    {
+     "term": "foam",
+     "weight": 6.15
+    },
+    {
+     "term": "fodder",
+     "weight": 14
+    },
+    {
+     "term": "fog",
+     "weight": 6.21
+    },
+    {
+     "term": "foggy",
+     "weight": 7.11
+    },
+    {
+     "term": "fold",
+     "weight": 4.95
+    },
+    {
+     "term": "folksong",
+     "weight": 7.33
+    },
+    {
+     "term": "follow",
+     "weight": 5.11
+    },
+    {
+     "term": "food",
+     "weight": 3.25
+    },
+    {
+     "term": "fool",
+     "weight": 7.56
+    },
+    {
+     "term": "foot",
+     "weight": 3.44
+    },
+    {
+     "term": "footprint",
+     "weight": 5.78
+    },
+    {
+     "term": "forbid",
+     "weight": 8.47
+    },
+    {
+     "term": "ford",
+     "weight": 8.097349000000001
+    },
+    {
+     "term": "forearm",
+     "weight": 8.65
+    },
+    {
+     "term": "forefinger",
+     "weight": 7.26
+    },
+    {
+     "term": "forehead",
+     "weight": 5.58
+    },
+    {
+     "term": "foreign",
+     "weight": 8.74
+    },
+    {
+     "term": "forest",
+     "weight": 6.28
+    },
+    {
+     "term": "forge",
+     "weight": 9.8
+    },
+    {
+     "term": "forget",
+     "weight": 4.78
+    },
+    {
+     "term": "forgive",
+     "weight": 5.44
+    },
+    {
+     "term": "fork",
+     "weight": 3.63
+    },
+    {
+     "term": "former",
+     "weight": 8.44903
+    },
+    {
+     "term": "forty",
+     "weight": 6.53077
+    },
+    {
+     "term": "forward",
+     "weight": 4.239515000000001
+    },
+    {
+     "term": "fountain",
+     "weight": 7.17
+    },
+    {
+     "term": "four",
+     "weight": 4.93222
+    },
+    {
+     "term": "fowl",
+     "weight": 7.89
+    },
+    {
+     "term": "fox",
+     "weight": 5.017476
+    },
+    {
+     "term": "fragrant",
+     "weight": 9.58
+    },
+    {
+     "term": "frame",
+     "weight": 7.67
+    },
+    {
+     "term": "freckle",
+     "weight": 5.61
+    },
+    {
+     "term": "free",
+     "weight": 5.21
+    },
+    {
+     "term": "freeman",
+     "weight": 11.38
+    },
+    {
+     "term": "freeze",
+     "weight": 4.89
+    },
+    {
+     "term": "fresh",
+     "weight": 6.22
+    },
+    {
+     "term": "friend",
+     "weight": 3.57
+    },
+    {
+     "term": "friendship",
+     "weight": 5.62
+    },
+    {
+     "term": "frighten",
+     "weight": 8.83
+    },
+    {
+     "term": "fringe",
+     "weight": 9.61
+    },
+    {
+     "term": "frog",
+     "weight": 4.32
+    },
+    {
+     "term": "from",
+     "weight": 4.441998
+    },
+    {
+     "term": "front",
+     "weight": 5.187988000000001
+    },
+    {
+     "term": "frost",
+     "weight": 5.209302000000001
+    },
+    {
+     "term": "fruit",
+     "weight": 3.63
+    },
+    {
+     "term": "fry",
+     "weight": 5.79
+    },
+    {
+     "term": "full",
+     "weight": 4.24
+    },
+    {
+     "term": "funeral",
+     "weight": 7.28
+    },
+    {
+     "term": "funnel",
+     "weight": 8.44
+    },
+    {
+     "term": "funny",
+     "weight": 5.47
+    },
+    {
+     "term": "fur",
+     "weight": 5.22
+    },
+    {
+     "term": "furrow",
+     "weight": 13
+    },
+    {
+     "term": "future",
+     "weight": 7.16
+    },
+    {
+     "term": "game",
+     "weight": 4.26
+    },
+    {
+     "term": "gap",
+     "weight": 8.22
+    },
+    {
+     "term": "garbage",
+     "weight": 4.89
+    },
+    {
+     "term": "garden",
+     "weight": 5.33
+    },
+    {
+     "term": "garlic",
+     "weight": 6.89
+    },
+    {
+     "term": "gate",
+     "weight": 5.32
+    },
+    {
+     "term": "gather",
+     "weight": 6.5
+    },
+    {
+     "term": "gazelle",
+     "weight": 9.37
+    },
+    {
+     "term": "gecko",
+     "weight": 10.32
+    },
+    {
+     "term": "gelding",
+     "weight": 12.6
+    },
+    {
+     "term": "generous",
+     "weight": 7.22
+    },
+    {
+     "term": "genitalia",
+     "weight": 11.84
+    },
+    {
+     "term": "gentle",
+     "weight": 4.89
+    },
+    {
+     "term": "get",
+     "weight": 3.17
+    },
+    {
+     "term": "ghost",
+     "weight": 5.06
+    },
+    {
+     "term": "gift",
+     "weight": 5.05
+    },
+    {
+     "term": "gill",
+     "weight": 7.393987000000001
+    },
+    {
+     "term": "ginger",
+     "weight": 8.05
+    },
+    {
+     "term": "giraffe",
+     "weight": 5
+    },
+    {
+     "term": "girl",
+     "weight": 4
+    },
+    {
+     "term": "give",
+     "weight": 4.28
+    },
+    {
+     "term": "glass",
+     "weight": 4.47
+    },
+    {
+     "term": "glasses",
+     "weight": 4.346085
+    },
+    {
+     "term": "globe",
+     "weight": 6.5
+    },
+    {
+     "term": "gloomy",
+     "weight": 9.28
+    },
+    {
+     "term": "glove",
+     "weight": 4.3
+    },
+    {
+     "term": "glue",
+     "weight": 4.67
+    },
+    {
+     "term": "glutton",
+     "weight": 12.22
+    },
+    {
+     "term": "gnaw",
+     "weight": 10.37
+    },
+    {
+     "term": "go",
+     "weight": 3.37
+    },
+    {
+     "term": "goanna",
+     "weight": 13.67
+    },
+    {
+     "term": "goat",
+     "weight": 5.21
+    },
+    {
+     "term": "god",
+     "weight": 4.346085
+    },
+    {
+     "term": "goiter",
+     "weight": 16
+    },
+    {
+     "term": "gold",
+     "weight": 7.1
+    },
+    {
+     "term": "gong",
+     "weight": 9.6213
+    },
+    {
+     "term": "good",
+     "weight": 3.55
+    },
+    {
+     "term": "goods",
+     "weight": 7.436615000000001
+    },
+    {
+     "term": "goose",
+     "weight": 5.15
+    },
+    {
+     "term": "gorilla",
+     "weight": 5.74
+    },
+    {
+     "term": "gossip",
+     "weight": 9.16
+    },
+    {
+     "term": "gourd",
+     "weight": 10.65
+    },
+    {
+     "term": "govern",
+     "weight": 9.53
+    },
+    {
+     "term": "government",
+     "weight": 8.5
+    },
+    {
+     "term": "grain",
+     "weight": 7.44
+    },
+    {
+     "term": "granary",
+     "weight": 11.38
+    },
+    {
+     "term": "grandchild",
+     "weight": 5.26
+    },
+    {
+     "term": "granddaughter",
+     "weight": 4.68
+    },
+    {
+     "term": "grandfather",
+     "weight": 4.39
+    },
+    {
+     "term": "grandmother",
+     "weight": 3.67
+    },
+    {
+     "term": "grandparent",
+     "weight": 5.5
+    },
+    {
+     "term": "grandson",
+     "weight": 5.89
+    },
+    {
+     "term": "grape",
+     "weight": 3.94
+    },
+    {
+     "term": "grapefruit",
+     "weight": 6.9
+    },
+    {
+     "term": "grasp",
+     "weight": 8.2
+    },
+    {
+     "term": "grass",
+     "weight": 3.94
+    },
+    {
+     "term": "grasshopper",
+     "weight": 5.78
+    },
+    {
+     "term": "grate",
+     "weight": 8.9
+    },
+    {
+     "term": "grave",
+     "weight": 7.06
+    },
+    {
+     "term": "gravel",
+     "weight": 7.19
+    },
+    {
+     "term": "gray",
+     "weight": 5.74
+    },
+    {
+     "term": "graze",
+     "weight": 8.9
+    },
+    {
+     "term": "greasy",
+     "weight": 6.39
+    },
+    {
+     "term": "greedy",
+     "weight": 7.53
+    },
+    {
+     "term": "green",
+     "weight": 3.79
+    },
+    {
+     "term": "greet",
+     "weight": 6.47
+    },
+    {
+     "term": "grief",
+     "weight": 8.39
+    },
+    {
+     "term": "grind",
+     "weight": 8.37
+    },
+    {
+     "term": "grindstone",
+     "weight": 11.47
+    },
+    {
+     "term": "groan",
+     "weight": 8.7
+    },
+    {
+     "term": "groom",
+     "weight": 7.78
+    },
+    {
+     "term": "ground",
+     "weight": 4.89
+    },
+    {
+     "term": "grow",
+     "weight": 4.79
+    },
+    {
+     "term": "growl",
+     "weight": 5.79
+    },
+    {
+     "term": "grub",
+     "weight": 8.95
+    },
+    {
+     "term": "gruel",
+     "weight": 11.6
+    },
+    {
+     "term": "guard",
+     "weight": 6.25
+    },
+    {
+     "term": "guava",
+     "weight": 12.39
+    },
+    {
+     "term": "guess",
+     "weight": 5.44
+    },
+    {
+     "term": "guest",
+     "weight": 6.21
+    },
+    {
+     "term": "guilty",
+     "weight": 8.05
+    },
+    {
+     "term": "guitar",
+     "weight": 5.32
+    },
+    {
+     "term": "gulf",
+     "weight": 9.365532
+    },
+    {
+     "term": "gum",
+     "weight": 4.89
+    },
+    {
+     "term": "gun",
+     "weight": 5.58
+    },
+    {
+     "term": "gunpowder",
+     "weight": 9.74
+    },
+    {
+     "term": "guts",
+     "weight": 6.957050000000001
+    },
+    {
+     "term": "hail",
+     "weight": 7.9
+    },
+    {
+     "term": "hair",
+     "weight": 3.17
+    },
+    {
+     "term": "half",
+     "weight": 5.454413000000001
+    },
+    {
+     "term": "hammer",
+     "weight": 5.42
+    },
+    {
+     "term": "hammock",
+     "weight": 7.11
+    },
+    {
+     "term": "hamster",
+     "weight": 4.37
+    },
+    {
+     "term": "hand",
+     "weight": 2.74
+    },
+    {
+     "term": "handkerchief",
+     "weight": 7.22
+    },
+    {
+     "term": "handle",
+     "weight": 6.3
+    },
+    {
+     "term": "handsome",
+     "weight": 6.5
+    },
+    {
+     "term": "hang",
+     "weight": 6.68
+    },
+    {
+     "term": "happen",
+     "weight": 5.26
+    },
+    {
+     "term": "happiness",
+     "weight": 6.17
+    },
+    {
+     "term": "happy",
+     "weight": 2.72
+    },
+    {
+     "term": "hard",
+     "weight": 4.39
+    },
+    {
+     "term": "hardly",
+     "weight": 7.543185000000001
+    },
+    {
+     "term": "hare",
+     "weight": 6.78
+    },
+    {
+     "term": "harmonica",
+     "weight": 7.32
+    },
+    {
+     "term": "harp",
+     "weight": 7.55
+    },
+    {
+     "term": "harvest",
+     "weight": 7.4
+    },
+    {
+     "term": "hat",
+     "weight": 3.33
+    },
+    {
+     "term": "hatch",
+     "weight": 7
+    },
+    {
+     "term": "hate",
+     "weight": 5.53
+    },
+    {
+     "term": "have",
+     "weight": 3.72
+    },
+    {
+     "term": "hawk",
+     "weight": 6.7439100000000005
+    },
+    {
+     "term": "hawthorn",
+     "weight": 10.36
+    },
+    {
+     "term": "hay",
+     "weight": 5.32
+    },
+    {
+     "term": "he",
+     "weight": 3.813235
+    },
+    {
+     "term": "head",
+     "weight": 3.42
+    },
+    {
+     "term": "headache",
+     "weight": 6.71
+    },
+    {
+     "term": "headband",
+     "weight": 6.33
+    },
+    {
+     "term": "headdress",
+     "weight": 9.06
+    },
+    {
+     "term": "headgear",
+     "weight": 10.78
+    },
+    {
+     "term": "headwaters",
+     "weight": 13
+    },
+    {
+     "term": "healthy",
+     "weight": 7.61
+    },
+    {
+     "term": "heap",
+     "weight": 7.79
+    },
+    {
+     "term": "hear",
+     "weight": 3.8
+    },
+    {
+     "term": "hearing",
+     "weight": 6.051205000000001
+    },
+    {
+     "term": "heart",
+     "weight": 5.17
+    },
+    {
+     "term": "heat",
+     "weight": 5.33
+    },
+    {
+     "term": "heaven",
+     "weight": 4.22
+    },
+    {
+     "term": "heavy",
+     "weight": 4.05
+    },
+    {
+     "term": "hedgehog",
+     "weight": 8.63
+    },
+    {
+     "term": "heel",
+     "weight": 7.85
+    },
+    {
+     "term": "height",
+     "weight": 5.42
+    },
+    {
+     "term": "helicopter",
+     "weight": 5.26
+    },
+    {
+     "term": "hell",
+     "weight": 5.11
+    },
+    {
+     "term": "hello",
+     "weight": 3.7599500000000003
+    },
+    {
+     "term": "helmet",
+     "weight": 5.71
+    },
+    {
+     "term": "help",
+     "weight": 3.65
+    },
+    {
+     "term": "hemp",
+     "weight": 12.94
+    },
+    {
+     "term": "hen",
+     "weight": 6.39
+    },
+    {
+     "term": "hence",
+     "weight": 11.091966000000001
+    },
+    {
+     "term": "her",
+     "weight": 5.092075
+    },
+    {
+     "term": "herb",
+     "weight": 9.05
+    },
+    {
+     "term": "herd",
+     "weight": 7.74
+    },
+    {
+     "term": "herdsman",
+     "weight": 9.61
+    },
+    {
+     "term": "here",
+     "weight": 3.738636
+    },
+    {
+     "term": "heron",
+     "weight": 10.35
+    },
+    {
+     "term": "hesitate",
+     "weight": 8.3
+    },
+    {
+     "term": "hiccough",
+     "weight": 10.2
+    },
+    {
+     "term": "hide",
+     "weight": 4.47
+    },
+    {
+     "term": "high",
+     "weight": 4.58
+    },
+    {
+     "term": "hill",
+     "weight": 3.47
+    },
+    {
+     "term": "hinder",
+     "weight": 11.1
+    },
+    {
+     "term": "hip",
+     "weight": 6.17
+    },
+    {
+     "term": "hippopotamus",
+     "weight": 7
+    },
+    {
+     "term": "hire",
+     "weight": 9
+    },
+    {
+     "term": "his",
+     "weight": 3.6853510000000003
+    },
+    {
+     "term": "hiss",
+     "weight": 6.33
+    },
+    {
+     "term": "hit",
+     "weight": 4.75
+    },
+    {
+     "term": "hitchhike",
+     "weight": 9.53
+    },
+    {
+     "term": "hither",
+     "weight": 13.074168
+    },
+    {
+     "term": "hoarse",
+     "weight": 7.95
+    },
+    {
+     "term": "hoe",
+     "weight": 8.72
+    },
+    {
+     "term": "hold",
+     "weight": 4.67
+    },
+    {
+     "term": "hole",
+     "weight": 5.05
+    },
+    {
+     "term": "hollow",
+     "weight": 7.44
+    },
+    {
+     "term": "holy",
+     "weight": 5.55
+    },
+    {
+     "term": "home",
+     "weight": 3.8665200000000004
+    },
+    {
+     "term": "honest",
+     "weight": 5.46
+    },
+    {
+     "term": "honey",
+     "weight": 5.44
+    },
+    {
+     "term": "honeycomb",
+     "weight": 7.11
+    },
+    {
+     "term": "honor",
+     "weight": 7.89
+    },
+    {
+     "term": "hoof",
+     "weight": 6.9
+    },
+    {
+     "term": "hook",
+     "weight": 6.26
+    },
+    {
+     "term": "hope",
+     "weight": 4.89
+    },
+    {
+     "term": "horizon",
+     "weight": 8.3
+    },
+    {
+     "term": "horizontal",
+     "weight": 8.15
+    },
+    {
+     "term": "horn",
+     "weight": 4.84
+    },
+    {
+     "term": "hornet",
+     "weight": 7.28
+    },
+    {
+     "term": "horse",
+     "weight": 4.15
+    },
+    {
+     "term": "hospital",
+     "weight": 5.55
+    },
+    {
+     "term": "host",
+     "weight": 8.05
+    },
+    {
+     "term": "hostility",
+     "weight": 11.47
+    },
+    {
+     "term": "hot",
+     "weight": 3.37
+    },
+    {
+     "term": "hound",
+     "weight": 5.74
+    },
+    {
+     "term": "hour",
+     "weight": 5.85
+    },
+    {
+     "term": "house",
+     "weight": 3.16
+    },
+    {
+     "term": "how",
+     "weight": 5.3585
+    },
+    {
+     "term": "howl",
+     "weight": 5.55
+    },
+    {
+     "term": "hug",
+     "weight": 2.58
+    },
+    {
+     "term": "humid",
+     "weight": 8.56
+    },
+    {
+     "term": "hummingbird",
+     "weight": 6.95
+    },
+    {
+     "term": "hump",
+     "weight": 6.11
+    },
+    {
+     "term": "hunchback",
+     "weight": 8.63
+    },
+    {
+     "term": "hundred",
+     "weight": 5.47
+    },
+    {
+     "term": "hunger",
+     "weight": 6.06
+    },
+    {
+     "term": "hungry",
+     "weight": 3.63
+    },
+    {
+     "term": "hunt",
+     "weight": 6.06
+    },
+    {
+     "term": "hunter",
+     "weight": 6.53077
+    },
+    {
+     "term": "hurry",
+     "weight": 4.44
+    },
+    {
+     "term": "hurt",
+     "weight": 4
+    },
+    {
+     "term": "husband",
+     "weight": 5.53
+    },
+    {
+     "term": "husk",
+     "weight": 8.63
+    },
+    {
+     "term": "hut",
+     "weight": 8.1
+    },
+    {
+     "term": "hyena",
+     "weight": 6.61
+    },
+    {
+     "term": "i",
+     "weight": 2.7901629999999997
+    },
+    {
+     "term": "ice",
+     "weight": 3.86
+    },
+    {
+     "term": "idea",
+     "weight": 5.95
+    },
+    {
+     "term": "identical",
+     "weight": 8.72
+    },
+    {
+     "term": "identity",
+     "weight": 9.45
+    },
+    {
+     "term": "idle",
+     "weight": 8.9
+    },
+    {
+     "term": "idol",
+     "weight": 8.37
+    },
+    {
+     "term": "if",
+     "weight": 5.3585
+    },
+    {
+     "term": "igloo",
+     "weight": 5.42
+    },
+    {
+     "term": "ignite",
+     "weight": 9.82
+    },
+    {
+     "term": "ignorant",
+     "weight": 9.5
+    },
+    {
+     "term": "ignore",
+     "weight": 6.74
+    },
+    {
+     "term": "iguana",
+     "weight": 7.61
+    },
+    {
+     "term": "imagine",
+     "weight": 6.06
+    },
+    {
+     "term": "imitate",
+     "weight": 9.2
+    },
+    {
+     "term": "immediately",
+     "weight": 6.765224000000001
+    },
+    {
+     "term": "impatient",
+     "weight": 7.39
+    },
+    {
+     "term": "important",
+     "weight": 5.79
+    },
+    {
+     "term": "improve",
+     "weight": 7.47
+    },
+    {
+     "term": "in",
+     "weight": 3.6853510000000003
+    },
+    {
+     "term": "incense",
+     "weight": 10.45
+    },
+    {
+     "term": "incisor",
+     "weight": 10.7
+    },
+    {
+     "term": "increase",
+     "weight": 7.42
+    },
+    {
+     "term": "inflated",
+     "weight": 9.5
+    },
+    {
+     "term": "infringe",
+     "weight": 14.56
+    },
+    {
+     "term": "inhale",
+     "weight": 7.26
+    },
+    {
+     "term": "inherit",
+     "weight": 9.05
+    },
+    {
+     "term": "injure",
+     "weight": 7.53
+    },
+    {
+     "term": "ink",
+     "weight": 5.16
+    },
+    {
+     "term": "innocent",
+     "weight": 5.95
+    },
+    {
+     "term": "insect",
+     "weight": 4.75
+    },
+    {
+     "term": "insert",
+     "weight": 8.2
+    },
+    {
+     "term": "inside",
+     "weight": 4.772365000000001
+    },
+    {
+     "term": "insolent",
+     "weight": 13.47
+    },
+    {
+     "term": "instantly",
+     "weight": 7.543185000000001
+    },
+    {
+     "term": "instead",
+     "weight": 6.6799680000000015
+    },
+    {
+     "term": "instep",
+     "weight": 12
+    },
+    {
+     "term": "insult",
+     "weight": 8.63
+    },
+    {
+     "term": "intact",
+     "weight": 9.84
+    },
+    {
+     "term": "intelligent",
+     "weight": 8.28
+    },
+    {
+     "term": "intention",
+     "weight": 9.42
+    },
+    {
+     "term": "interest",
+     "weight": 7.37
+    },
+    {
+     "term": "interpreter",
+     "weight": 11
+    },
+    {
+     "term": "intestine",
+     "weight": 9.28
+    },
+    {
+     "term": "investigate",
+     "weight": 9
+    },
+    {
+     "term": "invite",
+     "weight": 6.79
+    },
+    {
+     "term": "iron",
+     "weight": 7.32
+    },
+    {
+     "term": "irrigate",
+     "weight": 9.28
+    },
+    {
+     "term": "island",
+     "weight": 7.41
+    },
+    {
+     "term": "it",
+     "weight": 4.39937
+    },
+    {
+     "term": "itch",
+     "weight": 5.05
+    },
+    {
+     "term": "itchy",
+     "weight": 5.16
+    },
+    {
+     "term": "item",
+     "weight": 5.68
+    },
+    {
+     "term": "ivory",
+     "weight": 9.39
+    },
+    {
+     "term": "jackal",
+     "weight": 12.17
+    },
+    {
+     "term": "jacket",
+     "weight": 3.95
+    },
+    {
+     "term": "jaguar",
+     "weight": 7.78
+    },
+    {
+     "term": "jaw",
+     "weight": 5.33
+    },
+    {
+     "term": "jealous",
+     "weight": 7.42
+    },
+    {
+     "term": "jealousy",
+     "weight": 7.61
+    },
+    {
+     "term": "jellyfish",
+     "weight": 6.61
+    },
+    {
+     "term": "jewel",
+     "weight": 6.22
+    },
+    {
+     "term": "jingle",
+     "weight": 5.21
+    },
+    {
+     "term": "jog",
+     "weight": 6.21
+    },
+    {
+     "term": "join",
+     "weight": 5.83
+    },
+    {
+     "term": "joint",
+     "weight": 9.05
+    },
+    {
+     "term": "joke",
+     "weight": 5.2
+    },
+    {
+     "term": "journey",
+     "weight": 7.67
+    },
+    {
+     "term": "joy",
+     "weight": 6.74
+    },
+    {
+     "term": "judge",
+     "weight": 8.85
+    },
+    {
+     "term": "judgment",
+     "weight": 8.939252
+    },
+    {
+     "term": "jug",
+     "weight": 5.83
+    },
+    {
+     "term": "juice",
+     "weight": 4.4
+    },
+    {
+     "term": "jump",
+     "weight": 2.84
+    },
+    {
+     "term": "jungle",
+     "weight": 5.26
+    },
+    {
+     "term": "just",
+     "weight": 7.010335
+    },
+    {
+     "term": "kangaroo",
+     "weight": 5.55
+    },
+    {
+     "term": "kapok",
+     "weight": 14.5
+    },
+    {
+     "term": "keen",
+     "weight": 10.7
+    },
+    {
+     "term": "keep",
+     "weight": 4.42
+    },
+    {
+     "term": "kettle",
+     "weight": 8.06
+    },
+    {
+     "term": "key",
+     "weight": 3.58
+    },
+    {
+     "term": "khaki",
+     "weight": 9.89
+    },
+    {
+     "term": "kick",
+     "weight": 4.06
+    },
+    {
+     "term": "kid",
+     "weight": 4.28
+    },
+    {
+     "term": "kidney",
+     "weight": 9.33
+    },
+    {
+     "term": "kids",
+     "weight": 3.861149
+    },
+    {
+     "term": "kill",
+     "weight": 6.35
+    },
+    {
+     "term": "kind",
+     "weight": 4.89
+    },
+    {
+     "term": "kindness",
+     "weight": 6.26
+    },
+    {
+     "term": "king",
+     "weight": 5.42
+    },
+    {
+     "term": "kingfisher",
+     "weight": 12.73
+    },
+    {
+     "term": "kiss",
+     "weight": 3.61
+    },
+    {
+     "term": "kitchen",
+     "weight": 3.68
+    },
+    {
+     "term": "kiwi",
+     "weight": 7.56
+    },
+    {
+     "term": "knead",
+     "weight": 8.8
+    },
+    {
+     "term": "knee",
+     "weight": 4.42
+    },
+    {
+     "term": "kneel",
+     "weight": 6.95
+    },
+    {
+     "term": "knife",
+     "weight": 4.15
+    },
+    {
+     "term": "knit",
+     "weight": 7.86
+    },
+    {
+     "term": "knock",
+     "weight": 4.63
+    },
+    {
+     "term": "knot",
+     "weight": 6.05
+    },
+    {
+     "term": "know",
+     "weight": 4.5
+    },
+    {
+     "term": "knowledge",
+     "weight": 7.68
+    },
+    {
+     "term": "knuckle",
+     "weight": 5.94
+    },
+    {
+     "term": "lack",
+     "weight": 8.28
+    },
+    {
+     "term": "ladder",
+     "weight": 4.39937
+    },
+    {
+     "term": "ladle",
+     "weight": 9.83
+    },
+    {
+     "term": "lady",
+     "weight": 3.68
+    },
+    {
+     "term": "ladybug",
+     "weight": 4.84
+    },
+    {
+     "term": "lagoon",
+     "weight": 9.42
+    },
+    {
+     "term": "lair",
+     "weight": 11.63
+    },
+    {
+     "term": "lake",
+     "weight": 4.61
+    },
+    {
+     "term": "lamb",
+     "weight": 4.15
+    },
+    {
+     "term": "lame",
+     "weight": 9.21
+    },
+    {
+     "term": "lamp",
+     "weight": 4
+    },
+    {
+     "term": "land",
+     "weight": 5.22
+    },
+    {
+     "term": "landscape",
+     "weight": 9.89
+    },
+    {
+     "term": "language",
+     "weight": 6.79
+    },
+    {
+     "term": "lantern",
+     "weight": 8.55
+    },
+    {
+     "term": "lap",
+     "weight": 3.15
+    },
+    {
+     "term": "larch",
+     "weight": 13.64
+    },
+    {
+     "term": "lard",
+     "weight": 9.74
+    },
+    {
+     "term": "lariat",
+     "weight": 14.08
+    },
+    {
+     "term": "larynx",
+     "weight": 12.72
+    },
+    {
+     "term": "last",
+     "weight": 4.346085
+    },
+    {
+     "term": "latch",
+     "weight": 8
+    },
+    {
+     "term": "late",
+     "weight": 5.28
+    },
+    {
+     "term": "laugh",
+     "weight": 3.79
+    },
+    {
+     "term": "laughter",
+     "weight": 5.39
+    },
+    {
+     "term": "launder",
+     "weight": 10.12
+    },
+    {
+     "term": "lavish",
+     "weight": 10.76
+    },
+    {
+     "term": "law",
+     "weight": 8.33
+    },
+    {
+     "term": "lawn",
+     "weight": 5.45
+    },
+    {
+     "term": "lay",
+     "weight": 5.838065000000001
+    },
+    {
+     "term": "lazy",
+     "weight": 6.39
+    },
+    {
+     "term": "lead",
+     "weight": 6.76
+    },
+    {
+     "term": "leaf",
+     "weight": 4.6
+    },
+    {
+     "term": "leak",
+     "weight": 5.47
+    },
+    {
+     "term": "lean",
+     "weight": 7.17
+    },
+    {
+     "term": "learn",
+     "weight": 4.44
+    },
+    {
+     "term": "leash",
+     "weight": 5.79
+    },
+    {
+     "term": "leather",
+     "weight": 7.25
+    },
+    {
+     "term": "leave",
+     "weight": 5.58
+    },
+    {
+     "term": "ledge",
+     "weight": 11.05
+    },
+    {
+     "term": "leech",
+     "weight": 7.84
+    },
+    {
+     "term": "left",
+     "weight": 5.571640000000001
+    },
+    {
+     "term": "leg",
+     "weight": 3
+    },
+    {
+     "term": "lemon",
+     "weight": 4.74
+    },
+    {
+     "term": "lend",
+     "weight": 8.45
+    },
+    {
+     "term": "length",
+     "weight": 6.05
+    },
+    {
+     "term": "lengthen",
+     "weight": 7.84
+    },
+    {
+     "term": "lentil",
+     "weight": 13.06
+    },
+    {
+     "term": "leopard",
+     "weight": 6.84
+    },
+    {
+     "term": "leprosy",
+     "weight": 11.68
+    },
+    {
+     "term": "let",
+     "weight": 4.53
+    },
+    {
+     "term": "letter",
+     "weight": 4.74
+    },
+    {
+     "term": "lettuce",
+     "weight": 4.28
+    },
+    {
+     "term": "level",
+     "weight": 6
+    },
+    {
+     "term": "liar",
+     "weight": 4.89
+    },
+    {
+     "term": "library",
+     "weight": 4.95
+    },
+    {
+     "term": "lick",
+     "weight": 4.3
+    },
+    {
+     "term": "lid",
+     "weight": 5.95
+    },
+    {
+     "term": "lie",
+     "weight": 3.75
+    },
+    {
+     "term": "life",
+     "weight": 5.89
+    },
+    {
+     "term": "lift",
+     "weight": 4.74
+    },
+    {
+     "term": "light",
+     "weight": 4.05
+    },
+    {
+     "term": "lightbulb",
+     "weight": 5.89
+    },
+    {
+     "term": "lighter",
+     "weight": 7.116905000000001
+    },
+    {
+     "term": "lightning",
+     "weight": 4.76
+    },
+    {
+     "term": "lightweight",
+     "weight": 7.95
+    },
+    {
+     "term": "like",
+     "weight": 3.6853510000000003
+    },
+    {
+     "term": "lilac",
+     "weight": 8.89
+    },
+    {
+     "term": "lime",
+     "weight": 6.61
+    },
+    {
+     "term": "limp",
+     "weight": 7.16
+    },
+    {
+     "term": "line",
+     "weight": 4.85
+    },
+    {
+     "term": "linen",
+     "weight": 7.68
+    },
+    {
+     "term": "lion",
+     "weight": 4.42
+    },
+    {
+     "term": "lip",
+     "weight": 3.79
+    },
+    {
+     "term": "lipstick",
+     "weight": 5.42
+    },
+    {
+     "term": "liquid",
+     "weight": 5.83
+    },
+    {
+     "term": "liquor",
+     "weight": 8.4
+    },
+    {
+     "term": "listen",
+     "weight": 5.4
+    },
+    {
+     "term": "live",
+     "weight": 6.1
+    },
+    {
+     "term": "liver",
+     "weight": 8.56
+    },
+    {
+     "term": "livestock",
+     "weight": 7.89
+    },
+    {
+     "term": "lizard",
+     "weight": 5.42
+    },
+    {
+     "term": "load",
+     "weight": 7.78
+    },
+    {
+     "term": "lobster",
+     "weight": 7.44
+    },
+    {
+     "term": "lock",
+     "weight": 5.74
+    },
+    {
+     "term": "locust",
+     "weight": 8.67
+    },
+    {
+     "term": "logic",
+     "weight": 10.58
+    },
+    {
+     "term": "loin",
+     "weight": 11.06
+    },
+    {
+     "term": "loincloth",
+     "weight": 9.67
+    },
+    {
+     "term": "long",
+     "weight": 4.239515000000001
+    },
+    {
+     "term": "look",
+     "weight": 4.05
+    },
+    {
+     "term": "loom",
+     "weight": 8.78
+    },
+    {
+     "term": "loose",
+     "weight": 7.71
+    },
+    {
+     "term": "loosen",
+     "weight": 7.22
+    },
+    {
+     "term": "lord",
+     "weight": 5.95
+    },
+    {
+     "term": "lose",
+     "weight": 5.78
+    },
+    {
+     "term": "lotus",
+     "weight": 13.59
+    },
+    {
+     "term": "loud",
+     "weight": 4.537911000000001
+    },
+    {
+     "term": "louse",
+     "weight": 10.26
+    },
+    {
+     "term": "love",
+     "weight": 5.17
+    },
+    {
+     "term": "lovely",
+     "weight": 7.26
+    },
+    {
+     "term": "low",
+     "weight": 4.7
+    },
+    {
+     "term": "luck",
+     "weight": 6.53
+    },
+    {
+     "term": "lunatic",
+     "weight": 9.83
+    },
+    {
+     "term": "lunch",
+     "weight": 3.61
+    },
+    {
+     "term": "lung",
+     "weight": 7.16
+    },
+    {
+     "term": "lynx",
+     "weight": 10.53
+    },
+    {
+     "term": "macaw",
+     "weight": 8.8
+    },
+    {
+     "term": "machete",
+     "weight": 9.6
+    },
+    {
+     "term": "machine",
+     "weight": 6.53
+    },
+    {
+     "term": "mad",
+     "weight": 3.55
+    },
+    {
+     "term": "magenta",
+     "weight": 7.79
+    },
+    {
+     "term": "maggot",
+     "weight": 9.5
+    },
+    {
+     "term": "magic",
+     "weight": 5.52
+    },
+    {
+     "term": "magician",
+     "weight": 5.37
+    },
+    {
+     "term": "magpie",
+     "weight": 10.47
+    },
+    {
+     "term": "mail",
+     "weight": 4.65
+    },
+    {
+     "term": "main",
+     "weight": 6.55
+    },
+    {
+     "term": "mainland",
+     "weight": 11.63
+    },
+    {
+     "term": "make",
+     "weight": 4.68
+    },
+    {
+     "term": "malaria",
+     "weight": 12.33
+    },
+    {
+     "term": "male",
+     "weight": 5.63
+    },
+    {
+     "term": "mallard",
+     "weight": 9.94
+    },
+    {
+     "term": "man",
+     "weight": 3.11
+    },
+    {
+     "term": "manage",
+     "weight": 7.67
+    },
+    {
+     "term": "manatee",
+     "weight": 10.56
+    },
+    {
+     "term": "mane",
+     "weight": 5.6
+    },
+    {
+     "term": "mango",
+     "weight": 8.22
+    },
+    {
+     "term": "mangrove",
+     "weight": 14.53
+    },
+    {
+     "term": "manner",
+     "weight": 6.83
+    },
+    {
+     "term": "mantis",
+     "weight": 9.28
+    },
+    {
+     "term": "many",
+     "weight": 4.601853000000001
+    },
+    {
+     "term": "map",
+     "weight": 5.6
+    },
+    {
+     "term": "maple",
+     "weight": 5.94
+    },
+    {
+     "term": "mare",
+     "weight": 8.84
+    },
+    {
+     "term": "market",
+     "weight": 7.16
+    },
+    {
+     "term": "marmot",
+     "weight": 13.91
+    },
+    {
+     "term": "marriage",
+     "weight": 7.17
+    },
+    {
+     "term": "marrow",
+     "weight": 12.16
+    },
+    {
+     "term": "marry",
+     "weight": 5.83
+    },
+    {
+     "term": "marsh",
+     "weight": 10.633714999999999
+    },
+    {
+     "term": "marten",
+     "weight": 10.14
+    },
+    {
+     "term": "mask",
+     "weight": 4.8
+    },
+    {
+     "term": "mason",
+     "weight": 10.516488
+    },
+    {
+     "term": "massage",
+     "weight": 10.9
+    },
+    {
+     "term": "mast",
+     "weight": 10.59
+    },
+    {
+     "term": "master",
+     "weight": 6.5
+    },
+    {
+     "term": "mat",
+     "weight": 4.62
+    },
+    {
+     "term": "match",
+     "weight": 5.72
+    },
+    {
+     "term": "matter",
+     "weight": 7.56
+    },
+    {
+     "term": "mattress",
+     "weight": 5.1
+    },
+    {
+     "term": "me",
+     "weight": 3.280385
+    },
+    {
+     "term": "mead",
+     "weight": 11.38
+    },
+    {
+     "term": "meadow",
+     "weight": 6.89
+    },
+    {
+     "term": "meal",
+     "weight": 4.74
+    },
+    {
+     "term": "meaning",
+     "weight": 6.1
+    },
+    {
+     "term": "measles",
+     "weight": 9.28
+    },
+    {
+     "term": "measure",
+     "weight": 7.53
+    },
+    {
+     "term": "meat",
+     "weight": 4.42
+    },
+    {
+     "term": "medicine",
+     "weight": 4.89
+    },
+    {
+     "term": "meet",
+     "weight": 4.74
+    },
+    {
+     "term": "melon",
+     "weight": 4.21
+    },
+    {
+     "term": "melt",
+     "weight": 5.47
+    },
+    {
+     "term": "member",
+     "weight": 8.2
+    },
+    {
+     "term": "memory",
+     "weight": 6.4
+    },
+    {
+     "term": "menstruate",
+     "weight": 12.67
+    },
+    {
+     "term": "menstruation",
+     "weight": 10.39
+    },
+    {
+     "term": "merchant",
+     "weight": 9.8
+    },
+    {
+     "term": "message",
+     "weight": 6.32
+    },
+    {
+     "term": "metal",
+     "weight": 5.61
+    },
+    {
+     "term": "meteor",
+     "weight": 7.67
+    },
+    {
+     "term": "method",
+     "weight": 11.15
+    },
+    {
+     "term": "microphone",
+     "weight": 6.25
+    },
+    {
+     "term": "microscope",
+     "weight": 9.16
+    },
+    {
+     "term": "middle",
+     "weight": 4.6977660000000006
+    },
+    {
+     "term": "midnight",
+     "weight": 6.21
+    },
+    {
+     "term": "midwife",
+     "weight": 10.89
+    },
+    {
+     "term": "mighty",
+     "weight": 5.63
+    },
+    {
+     "term": "migrate",
+     "weight": 9.62
+    },
+    {
+     "term": "milk",
+     "weight": 3.37
+    },
+    {
+     "term": "mill",
+     "weight": 8.17
+    },
+    {
+     "term": "millet",
+     "weight": 14.08
+    },
+    {
+     "term": "million",
+     "weight": 6.47
+    },
+    {
+     "term": "mind",
+     "weight": 5.37
+    },
+    {
+     "term": "minister",
+     "weight": 7.42
+    },
+    {
+     "term": "miracle",
+     "weight": 6.8
+    },
+    {
+     "term": "mirror",
+     "weight": 4.89
+    },
+    {
+     "term": "misery",
+     "weight": 9.22
+    },
+    {
+     "term": "misfortune",
+     "weight": 10.53
+    },
+    {
+     "term": "miss",
+     "weight": 6.33
+    },
+    {
+     "term": "mistake",
+     "weight": 5.78
+    },
+    {
+     "term": "mix",
+     "weight": 5.11
+    },
+    {
+     "term": "moisten",
+     "weight": 9.28
+    },
+    {
+     "term": "molar",
+     "weight": 8.12
+    },
+    {
+     "term": "mold",
+     "weight": 9.26
+    },
+    {
+     "term": "mole",
+     "weight": 7.33
+    },
+    {
+     "term": "money",
+     "weight": 5.11
+    },
+    {
+     "term": "mongoose",
+     "weight": 9.94
+    },
+    {
+     "term": "monkey",
+     "weight": 4.21
+    },
+    {
+     "term": "month",
+     "weight": 5.79
+    },
+    {
+     "term": "moon",
+     "weight": 4.83
+    },
+    {
+     "term": "moor",
+     "weight": 11.8
+    },
+    {
+     "term": "mop",
+     "weight": 5.11
+    },
+    {
+     "term": "more",
+     "weight": 3.781264
+    },
+    {
+     "term": "morning",
+     "weight": 4
+    },
+    {
+     "term": "mortar",
+     "weight": 11.9
+    },
+    {
+     "term": "mosque",
+     "weight": 14.12
+    },
+    {
+     "term": "mosquito",
+     "weight": 6.1
+    },
+    {
+     "term": "moss",
+     "weight": 8.310489
+    },
+    {
+     "term": "moth",
+     "weight": 5.74
+    },
+    {
+     "term": "mother",
+     "weight": 2.63
+    },
+    {
+     "term": "motionless",
+     "weight": 8.83
+    },
+    {
+     "term": "motor",
+     "weight": 7.42
+    },
+    {
+     "term": "motorcycle",
+     "weight": 5.05
+    },
+    {
+     "term": "mould",
+     "weight": 11.33
+    },
+    {
+     "term": "mountain",
+     "weight": 6.15
+    },
+    {
+     "term": "mountainous",
+     "weight": 10.56
+    },
+    {
+     "term": "mourn",
+     "weight": 9.21
+    },
+    {
+     "term": "mourning",
+     "weight": 11.05
+    },
+    {
+     "term": "mouse",
+     "weight": 4.94
+    },
+    {
+     "term": "moustache",
+     "weight": 5.4
+    },
+    {
+     "term": "mouth",
+     "weight": 3.58
+    },
+    {
+     "term": "move",
+     "weight": 4.62
+    },
+    {
+     "term": "movement",
+     "weight": 6.58
+    },
+    {
+     "term": "movie",
+     "weight": 3.56
+    },
+    {
+     "term": "much",
+     "weight": 4.580539
+    },
+    {
+     "term": "mud",
+     "weight": 4.05
+    },
+    {
+     "term": "muggy",
+     "weight": 8.06
+    },
+    {
+     "term": "mule",
+     "weight": 5.65
+    },
+    {
+     "term": "mumble",
+     "weight": 7.15
+    },
+    {
+     "term": "murder",
+     "weight": 8.79
+    },
+    {
+     "term": "muscle",
+     "weight": 8.45
+    },
+    {
+     "term": "mush",
+     "weight": 5.78
+    },
+    {
+     "term": "mushroom",
+     "weight": 6.44
+    },
+    {
+     "term": "music",
+     "weight": 3.81
+    },
+    {
+     "term": "mussel",
+     "weight": 10
+    },
+    {
+     "term": "must",
+     "weight": 4.58
+    },
+    {
+     "term": "mustard",
+     "weight": 4.95
+    },
+    {
+     "term": "mute",
+     "weight": 9.84
+    },
+    {
+     "term": "muzzle",
+     "weight": 8.44
+    },
+    {
+     "term": "my",
+     "weight": 2.715564
+    },
+    {
+     "term": "nail",
+     "weight": 5.42
+    },
+    {
+     "term": "naked",
+     "weight": 4.68
+    },
+    {
+     "term": "name",
+     "weight": 3.68
+    },
+    {
+     "term": "nape",
+     "weight": 10.53
+    },
+    {
+     "term": "narrow",
+     "weight": 7.57
+    },
+    {
+     "term": "nature",
+     "weight": 6.16
+    },
+    {
+     "term": "navel",
+     "weight": 9.6
+    },
+    {
+     "term": "near",
+     "weight": 5.411785000000001
+    },
+    {
+     "term": "necessary",
+     "weight": 7.55
+    },
+    {
+     "term": "neck",
+     "weight": 3
+    },
+    {
+     "term": "necklace",
+     "weight": 5
+    },
+    {
+     "term": "need",
+     "weight": 3.56
+    },
+    {
+     "term": "needle",
+     "weight": 5.32
+    },
+    {
+     "term": "negro",
+     "weight": 9.83
+    },
+    {
+     "term": "neighbor",
+     "weight": 5.06
+    },
+    {
+     "term": "nephew",
+     "weight": 6.37
+    },
+    {
+     "term": "nerve",
+     "weight": 9.67
+    },
+    {
+     "term": "nervous",
+     "weight": 6.79
+    },
+    {
+     "term": "nest",
+     "weight": 5.11
+    },
+    {
+     "term": "net",
+     "weight": 7
+    },
+    {
+     "term": "nettle",
+     "weight": 14.33
+    },
+    {
+     "term": "never",
+     "weight": 5.070761000000001
+    },
+    {
+     "term": "new",
+     "weight": 4.72
+    },
+    {
+     "term": "news",
+     "weight": 6.16
+    },
+    {
+     "term": "newspaper",
+     "weight": 5.78
+    },
+    {
+     "term": "next",
+     "weight": 4.346085
+    },
+    {
+     "term": "niece",
+     "weight": 7
+    },
+    {
+     "term": "night",
+     "weight": 3.61
+    },
+    {
+     "term": "nightingale",
+     "weight": 8.811368
+    },
+    {
+     "term": "nine",
+     "weight": 3.2271
+    },
+    {
+     "term": "ninety",
+     "weight": 6.690625000000001
+    },
+    {
+     "term": "nipple",
+     "weight": 9.05
+    },
+    {
+     "term": "nit",
+     "weight": 8.57
+    },
+    {
+     "term": "no",
+     "weight": 2.715564
+    },
+    {
+     "term": "noble",
+     "weight": 10.67
+    },
+    {
+     "term": "nobody",
+     "weight": 5.251930000000001
+    },
+    {
+     "term": "noise",
+     "weight": 4.5
+    },
+    {
+     "term": "noisy",
+     "weight": 5.33
+    },
+    {
+     "term": "noodles",
+     "weight": 5.297516
+    },
+    {
+     "term": "noon",
+     "weight": 5.89
+    },
+    {
+     "term": "noose",
+     "weight": 8.28
+    },
+    {
+     "term": "north",
+     "weight": 6.55
+    },
+    {
+     "term": "nose",
+     "weight": 2.95
+    },
+    {
+     "term": "nostril",
+     "weight": 7.37
+    },
+    {
+     "term": "not",
+     "weight": 3.8878340000000002
+    },
+    {
+     "term": "nothing",
+     "weight": 5.209302000000001
+    },
+    {
+     "term": "notice",
+     "weight": 7.35
+    },
+    {
+     "term": "now",
+     "weight": 5.251930000000001
+    },
+    {
+     "term": "numb",
+     "weight": 9.26
+    },
+    {
+     "term": "number",
+     "weight": 3.94
+    },
+    {
+     "term": "nurse",
+     "weight": 5.84
+    },
+    {
+     "term": "nut",
+     "weight": 5.21
+    },
+    {
+     "term": "oak",
+     "weight": 7.35
+    },
+    {
+     "term": "oar",
+     "weight": 5.83
+    },
+    {
+     "term": "oath",
+     "weight": 11.39
+    },
+    {
+     "term": "oats",
+     "weight": 7.489900000000001
+    },
+    {
+     "term": "obey",
+     "weight": 5.44
+    },
+    {
+     "term": "obscure",
+     "weight": 11.87
+    },
+    {
+     "term": "obstinate",
+     "weight": 13.11
+    },
+    {
+     "term": "obstruct",
+     "weight": 10.94
+    },
+    {
+     "term": "ocean",
+     "weight": 4.74
+    },
+    {
+     "term": "octopus",
+     "weight": 6.26
+    },
+    {
+     "term": "odor",
+     "weight": 6.81
+    },
+    {
+     "term": "offend",
+     "weight": 9.67
+    },
+    {
+     "term": "office",
+     "weight": 6.68
+    },
+    {
+     "term": "official",
+     "weight": 8.68
+    },
+    {
+     "term": "offspring",
+     "weight": 11.65
+    },
+    {
+     "term": "often",
+     "weight": 6.53077
+    },
+    {
+     "term": "oil",
+     "weight": 7.33
+    },
+    {
+     "term": "ointment",
+     "weight": 7.9
+    },
+    {
+     "term": "okra",
+     "weight": 12.61
+    },
+    {
+     "term": "old",
+     "weight": 3.72
+    },
+    {
+     "term": "olive",
+     "weight": 6.68
+    },
+    {
+     "term": "omen",
+     "weight": 12.05
+    },
+    {
+     "term": "once",
+     "weight": 4.974848000000001
+    },
+    {
+     "term": "one",
+     "weight": 3.2271
+    },
+    {
+     "term": "onion",
+     "weight": 6.05
+    },
+    {
+     "term": "only",
+     "weight": 4.953534000000001
+    },
+    {
+     "term": "open",
+     "weight": 5
+    },
+    {
+     "term": "operate",
+     "weight": 7.11
+    },
+    {
+     "term": "opium",
+     "weight": 12.41
+    },
+    {
+     "term": "opossum",
+     "weight": 8.76
+    },
+    {
+     "term": "opposite",
+     "weight": 5.06
+    },
+    {
+     "term": "or",
+     "weight": 4.1436020000000005
+    },
+    {
+     "term": "orange",
+     "weight": 3.26
+    },
+    {
+     "term": "order",
+     "weight": 6.26
+    },
+    {
+     "term": "ornament",
+     "weight": 6.1
+    },
+    {
+     "term": "orphan",
+     "weight": 6.94
+    },
+    {
+     "term": "ostrich",
+     "weight": 6.42
+    },
+    {
+     "term": "other",
+     "weight": 5.33
+    },
+    {
+     "term": "otter",
+     "weight": 5.47
+    },
+    {
+     "term": "our",
+     "weight": 4.346085
+    },
+    {
+     "term": "out",
+     "weight": 3.280385
+    },
+    {
+     "term": "outrigger",
+     "weight": 11.41
+    },
+    {
+     "term": "outside",
+     "weight": 3.578781
+    },
+    {
+     "term": "ovary",
+     "weight": 12.26
+    },
+    {
+     "term": "oven",
+     "weight": 5.67
+    },
+    {
+     "term": "overcome",
+     "weight": 8
+    },
+    {
+     "term": "owe",
+     "weight": 8.61
+    },
+    {
+     "term": "owl",
+     "weight": 6.21
+    },
+    {
+     "term": "own",
+     "weight": 5.209302000000001
+    },
+    {
+     "term": "owner",
+     "weight": 7.5
+    },
+    {
+     "term": "ox",
+     "weight": 4.72
+    },
+    {
+     "term": "oyster",
+     "weight": 8
+    },
+    {
+     "term": "paddle",
+     "weight": 6.58
+    },
+    {
+     "term": "paddy",
+     "weight": 11.688758
+    },
+    {
+     "term": "padlock",
+     "weight": 8.84
+    },
+    {
+     "term": "pain",
+     "weight": 4.26
+    },
+    {
+     "term": "painful",
+     "weight": 6.44
+    },
+    {
+     "term": "paint",
+     "weight": 4.45
+    },
+    {
+     "term": "paintbrush",
+     "weight": 6.22
+    },
+    {
+     "term": "painting",
+     "weight": 5.26
+    },
+    {
+     "term": "pair",
+     "weight": 5.94
+    },
+    {
+     "term": "palate",
+     "weight": 11.72
+    },
+    {
+     "term": "palm",
+     "weight": 6
+    },
+    {
+     "term": "pan",
+     "weight": 4.72
+    },
+    {
+     "term": "pancreas",
+     "weight": 12.84
+    },
+    {
+     "term": "panda",
+     "weight": 5.67
+    },
+    {
+     "term": "pant",
+     "weight": 5.94
+    },
+    {
+     "term": "papaya",
+     "weight": 10.84
+    },
+    {
+     "term": "paper",
+     "weight": 4
+    },
+    {
+     "term": "parakeet",
+     "weight": 6.53
+    },
+    {
+     "term": "parrot",
+     "weight": 5.58
+    },
+    {
+     "term": "part",
+     "weight": 5.11
+    },
+    {
+     "term": "partridge",
+     "weight": 8.05
+    },
+    {
+     "term": "pass",
+     "weight": 5.39
+    },
+    {
+     "term": "passionate",
+     "weight": 11.28
+    },
+    {
+     "term": "pasture",
+     "weight": 6.33
+    },
+    {
+     "term": "path",
+     "weight": 6.11
+    },
+    {
+     "term": "patient",
+     "weight": 7.05
+    },
+    {
+     "term": "pattern",
+     "weight": 6.89
+    },
+    {
+     "term": "paw",
+     "weight": 5.89
+    },
+    {
+     "term": "pay",
+     "weight": 5.5
+    },
+    {
+     "term": "pea",
+     "weight": 3.95
+    },
+    {
+     "term": "peace",
+     "weight": 6.32
+    },
+    {
+     "term": "peach",
+     "weight": 4.21
+    },
+    {
+     "term": "peacock",
+     "weight": 5.763466
+    },
+    {
+     "term": "peak",
+     "weight": 7.11
+    },
+    {
+     "term": "peanut",
+     "weight": 5
+    },
+    {
+     "term": "pear",
+     "weight": 4
+    },
+    {
+     "term": "pearl",
+     "weight": 6.2750020000000015
+    },
+    {
+     "term": "pebble",
+     "weight": 5.68
+    },
+    {
+     "term": "peccary",
+     "weight": 12.71
+    },
+    {
+     "term": "peck",
+     "weight": 7.894866
+    },
+    {
+     "term": "peel",
+     "weight": 6.05
+    },
+    {
+     "term": "peg",
+     "weight": 6.829166000000001
+    },
+    {
+     "term": "pelican",
+     "weight": 8.22
+    },
+    {
+     "term": "pelt",
+     "weight": 10.836198000000001
+    },
+    {
+     "term": "pen",
+     "weight": 5.11
+    },
+    {
+     "term": "pencil",
+     "weight": 4.06
+    },
+    {
+     "term": "penguin",
+     "weight": 5.68
+    },
+    {
+     "term": "penis",
+     "weight": 8.53
+    },
+    {
+     "term": "people",
+     "weight": 3.52
+    },
+    {
+     "term": "pepper",
+     "weight": 5.47
+    },
+    {
+     "term": "perch",
+     "weight": 9.16
+    },
+    {
+     "term": "perhaps",
+     "weight": 7.596470000000001
+    },
+    {
+     "term": "period",
+     "weight": 6.78
+    },
+    {
+     "term": "perish",
+     "weight": 10.95
+    },
+    {
+     "term": "perjury",
+     "weight": 12.78
+    },
+    {
+     "term": "persimmon",
+     "weight": 15.29
+    },
+    {
+     "term": "person",
+     "weight": 4.67
+    },
+    {
+     "term": "perspire",
+     "weight": 12.26
+    },
+    {
+     "term": "persuade",
+     "weight": 10.79
+    },
+    {
+     "term": "pestle",
+     "weight": 13
+    },
+    {
+     "term": "pet",
+     "weight": 4.05
+    },
+    {
+     "term": "petrol",
+     "weight": 12.28
+    },
+    {
+     "term": "petroleum",
+     "weight": 11.11
+    },
+    {
+     "term": "pheasant",
+     "weight": 9.68
+    },
+    {
+     "term": "phlegm",
+     "weight": 11.27
+    },
+    {
+     "term": "photo",
+     "weight": 5.16
+    },
+    {
+     "term": "photograph",
+     "weight": 6.68
+    },
+    {
+     "term": "piano",
+     "weight": 5.5
+    },
+    {
+     "term": "pick",
+     "weight": 5.26
+    },
+    {
+     "term": "picture",
+     "weight": 4.05
+    },
+    {
+     "term": "piece",
+     "weight": 4.89
+    },
+    {
+     "term": "pierce",
+     "weight": 8.076035
+    },
+    {
+     "term": "pig",
+     "weight": 3.84
+    },
+    {
+     "term": "piglet",
+     "weight": 5.68
+    },
+    {
+     "term": "pike",
+     "weight": 12.06
+    },
+    {
+     "term": "pill",
+     "weight": 6.06
+    },
+    {
+     "term": "pillar",
+     "weight": 8.26
+    },
+    {
+     "term": "pillow",
+     "weight": 3.47
+    },
+    {
+     "term": "pimple",
+     "weight": 9.57
+    },
+    {
+     "term": "pin",
+     "weight": 4.53
+    },
+    {
+     "term": "pinch",
+     "weight": 5.5
+    },
+    {
+     "term": "pine",
+     "weight": 5.53
+    },
+    {
+     "term": "pineapple",
+     "weight": 6.25
+    },
+    {
+     "term": "pink",
+     "weight": 3.8
+    },
+    {
+     "term": "pipe",
+     "weight": 8.17
+    },
+    {
+     "term": "piranha",
+     "weight": 8.74
+    },
+    {
+     "term": "pirate",
+     "weight": 6.5
+    },
+    {
+     "term": "pistol",
+     "weight": 7.28
+    },
+    {
+     "term": "pit",
+     "weight": 6.14
+    },
+    {
+     "term": "pitcher",
+     "weight": 6.42
+    },
+    {
+     "term": "pitchfork",
+     "weight": 6.89
+    },
+    {
+     "term": "pity",
+     "weight": 8.72
+    },
+    {
+     "term": "place",
+     "weight": 4.95
+    },
+    {
+     "term": "placenta",
+     "weight": 12.06
+    },
+    {
+     "term": "plain",
+     "weight": 7.37
+    },
+    {
+     "term": "plaintiff",
+     "weight": 12.33
+    },
+    {
+     "term": "plait",
+     "weight": 13
+    },
+    {
+     "term": "plan",
+     "weight": 6.78
+    },
+    {
+     "term": "plant",
+     "weight": 3.95
+    },
+    {
+     "term": "plantain",
+     "weight": 12.8
+    },
+    {
+     "term": "plastic",
+     "weight": 5.11
+    },
+    {
+     "term": "plate",
+     "weight": 3.84
+    },
+    {
+     "term": "plateau",
+     "weight": 9.74
+    },
+    {
+     "term": "play",
+     "weight": 4.1
+    },
+    {
+     "term": "please",
+     "weight": 3.4828680000000003
+    },
+    {
+     "term": "pleasure",
+     "weight": 8.21
+    },
+    {
+     "term": "pliers",
+     "weight": 7
+    },
+    {
+     "term": "plot",
+     "weight": 8.65
+    },
+    {
+     "term": "plow",
+     "weight": 7.11
+    },
+    {
+     "term": "plunder",
+     "weight": 12.47
+    },
+    {
+     "term": "pocket",
+     "weight": 4.74
+    },
+    {
+     "term": "poet",
+     "weight": 8.61
+    },
+    {
+     "term": "poetry",
+     "weight": 8.11
+    },
+    {
+     "term": "point",
+     "weight": 4.55
+    },
+    {
+     "term": "poison",
+     "weight": 5.58
+    },
+    {
+     "term": "poisonous",
+     "weight": 4.89
+    },
+    {
+     "term": "pole",
+     "weight": 5.63
+    },
+    {
+     "term": "police",
+     "weight": 5.05
+    },
+    {
+     "term": "polish",
+     "weight": 8.06
+    },
+    {
+     "term": "polite",
+     "weight": 4.63
+    },
+    {
+     "term": "pomegranate",
+     "weight": 11.17
+    },
+    {
+     "term": "poncho",
+     "weight": 8.84
+    },
+    {
+     "term": "pond",
+     "weight": 5.16
+    },
+    {
+     "term": "pony",
+     "weight": 5.39
+    },
+    {
+     "term": "poor",
+     "weight": 6.11
+    },
+    {
+     "term": "poplar",
+     "weight": 10.27
+    },
+    {
+     "term": "porcupine",
+     "weight": 6.89
+    },
+    {
+     "term": "pork",
+     "weight": 5.63
+    },
+    {
+     "term": "porpoise",
+     "weight": 8.94
+    },
+    {
+     "term": "port",
+     "weight": 9.32
+    },
+    {
+     "term": "possum",
+     "weight": 6.61
+    },
+    {
+     "term": "postcard",
+     "weight": 6.74
+    },
+    {
+     "term": "postman",
+     "weight": 5.22
+    },
+    {
+     "term": "pot",
+     "weight": 5.95
+    },
+    {
+     "term": "potato",
+     "weight": 4.84
+    },
+    {
+     "term": "potter",
+     "weight": 8.445298999999999
+    },
+    {
+     "term": "pouch",
+     "weight": 6.56
+    },
+    {
+     "term": "pound",
+     "weight": 6.79
+    },
+    {
+     "term": "pour",
+     "weight": 5
+    },
+    {
+     "term": "powder",
+     "weight": 5.06
+    },
+    {
+     "term": "power",
+     "weight": 7.48
+    },
+    {
+     "term": "powerful",
+     "weight": 6.42
+    },
+    {
+     "term": "praise",
+     "weight": 7.95
+    },
+    {
+     "term": "prawn",
+     "weight": 13.06
+    },
+    {
+     "term": "pray",
+     "weight": 5.79
+    },
+    {
+     "term": "preach",
+     "weight": 7.33
+    },
+    {
+     "term": "precious",
+     "weight": 7.57
+    },
+    {
+     "term": "precipice",
+     "weight": 11.94
+    },
+    {
+     "term": "pregnant",
+     "weight": 6.76
+    },
+    {
+     "term": "prepare",
+     "weight": 7.72
+    },
+    {
+     "term": "preserve",
+     "weight": 9.63
+    },
+    {
+     "term": "president",
+     "weight": 6.89
+    },
+    {
+     "term": "press",
+     "weight": 6.4
+    },
+    {
+     "term": "pretend",
+     "weight": 4.56
+    },
+    {
+     "term": "pretty",
+     "weight": 4.090317000000001
+    },
+    {
+     "term": "prevent",
+     "weight": 8.6
+    },
+    {
+     "term": "price",
+     "weight": 7.35
+    },
+    {
+     "term": "pride",
+     "weight": 8.95
+    },
+    {
+     "term": "priest",
+     "weight": 7.1
+    },
+    {
+     "term": "prince",
+     "weight": 5.26
+    },
+    {
+     "term": "prison",
+     "weight": 7.5
+    },
+    {
+     "term": "prisoner",
+     "weight": 8
+    },
+    {
+     "term": "problem",
+     "weight": 6.06
+    },
+    {
+     "term": "process",
+     "weight": 10.7
+    },
+    {
+     "term": "produce",
+     "weight": 7.75
+    },
+    {
+     "term": "promise",
+     "weight": 5.67
+    },
+    {
+     "term": "prostitute",
+     "weight": 11.78
+    },
+    {
+     "term": "protect",
+     "weight": 6.79
+    },
+    {
+     "term": "proud",
+     "weight": 5.44
+    },
+    {
+     "term": "proverb",
+     "weight": 8.16
+    },
+    {
+     "term": "pubes",
+     "weight": 11
+    },
+    {
+     "term": "puddle",
+     "weight": 5.37
+    },
+    {
+     "term": "pull",
+     "weight": 4.79
+    },
+    {
+     "term": "pulse",
+     "weight": 10.21
+    },
+    {
+     "term": "puma",
+     "weight": 9
+    },
+    {
+     "term": "pumpkin",
+     "weight": 4.78
+    },
+    {
+     "term": "punish",
+     "weight": 6.68
+    },
+    {
+     "term": "punishment",
+     "weight": 5.47
+    },
+    {
+     "term": "pupil",
+     "weight": 8.06
+    },
+    {
+     "term": "puppy",
+     "weight": 3.28
+    },
+    {
+     "term": "pure",
+     "weight": 7.95
+    },
+    {
+     "term": "purple",
+     "weight": 3.6
+    },
+    {
+     "term": "pursue",
+     "weight": 10
+    },
+    {
+     "term": "pus",
+     "weight": 7.78
+    },
+    {
+     "term": "push",
+     "weight": 4.26
+    },
+    {
+     "term": "put",
+     "weight": 3.72
+    },
+    {
+     "term": "pyramid",
+     "weight": 7.61
+    },
+    {
+     "term": "pyre",
+     "weight": 14.07
+    },
+    {
+     "term": "python",
+     "weight": 7.89
+    },
+    {
+     "term": "quail",
+     "weight": 9.72
+    },
+    {
+     "term": "quantity",
+     "weight": 11.11
+    },
+    {
+     "term": "quarrel",
+     "weight": 8.32
+    },
+    {
+     "term": "queen",
+     "weight": 4.42
+    },
+    {
+     "term": "question",
+     "weight": 6.16
+    },
+    {
+     "term": "quiet",
+     "weight": 4.15
+    },
+    {
+     "term": "quilt",
+     "weight": 6.55
+    },
+    {
+     "term": "quiver",
+     "weight": 11.05
+    },
+    {
+     "term": "rabbit",
+     "weight": 3.94
+    },
+    {
+     "term": "rabid",
+     "weight": 9.22
+    },
+    {
+     "term": "rabies",
+     "weight": 8.22
+    },
+    {
+     "term": "raccoon",
+     "weight": 6.79
+    },
+    {
+     "term": "rack",
+     "weight": 6.26
+    },
+    {
+     "term": "racket",
+     "weight": 8.2
+    },
+    {
+     "term": "radio",
+     "weight": 5.17
+    },
+    {
+     "term": "radish",
+     "weight": 5.25
+    },
+    {
+     "term": "raft",
+     "weight": 7.35
+    },
+    {
+     "term": "rafter",
+     "weight": 10.74
+    },
+    {
+     "term": "rag",
+     "weight": 5.22
+    },
+    {
+     "term": "rain",
+     "weight": 3.6
+    },
+    {
+     "term": "rainbow",
+     "weight": 4.26
+    },
+    {
+     "term": "raincoat",
+     "weight": 5.5
+    },
+    {
+     "term": "raise",
+     "weight": 6.72
+    },
+    {
+     "term": "rake",
+     "weight": 5.32
+    },
+    {
+     "term": "ram",
+     "weight": 8.32
+    },
+    {
+     "term": "rape",
+     "weight": 10.74
+    },
+    {
+     "term": "rare",
+     "weight": 7.45
+    },
+    {
+     "term": "raspberry",
+     "weight": 5.33
+    },
+    {
+     "term": "rat",
+     "weight": 5.11
+    },
+    {
+     "term": "rattan",
+     "weight": 13.57
+    },
+    {
+     "term": "rattle",
+     "weight": 4.5
+    },
+    {
+     "term": "rattlesnake",
+     "weight": 6.78
+    },
+    {
+     "term": "raven",
+     "weight": 8.56
+    },
+    {
+     "term": "ravine",
+     "weight": 10.61
+    },
+    {
+     "term": "raw",
+     "weight": 7.17
+    },
+    {
+     "term": "razor",
+     "weight": 7.11
+    },
+    {
+     "term": "read",
+     "weight": 4.11
+    },
+    {
+     "term": "ready",
+     "weight": 5.53
+    },
+    {
+     "term": "reap",
+     "weight": 9.83
+    },
+    {
+     "term": "rear",
+     "weight": 6.89
+    },
+    {
+     "term": "reason",
+     "weight": 7.84
+    },
+    {
+     "term": "recognize",
+     "weight": 8.89
+    },
+    {
+     "term": "recommend",
+     "weight": 9.11
+    },
+    {
+     "term": "recover",
+     "weight": 7.56
+    },
+    {
+     "term": "red",
+     "weight": 3.68
+    },
+    {
+     "term": "reed",
+     "weight": 8.779397000000001
+    },
+    {
+     "term": "reef",
+     "weight": 9.72
+    },
+    {
+     "term": "refrigerator",
+     "weight": 4.11
+    },
+    {
+     "term": "refuse",
+     "weight": 9.33
+    },
+    {
+     "term": "rejoice",
+     "weight": 8.61
+    },
+    {
+     "term": "relationship",
+     "weight": 9.11
+    },
+    {
+     "term": "relative",
+     "weight": 6.47
+    },
+    {
+     "term": "release",
+     "weight": 8.53
+    },
+    {
+     "term": "religion",
+     "weight": 7.06
+    },
+    {
+     "term": "remain",
+     "weight": 8.17
+    },
+    {
+     "term": "remains",
+     "weight": 7.873552000000001
+    },
+    {
+     "term": "remember",
+     "weight": 5.63
+    },
+    {
+     "term": "repair",
+     "weight": 7.81
+    },
+    {
+     "term": "repeat",
+     "weight": 5.28
+    },
+    {
+     "term": "request",
+     "weight": 8.74
+    },
+    {
+     "term": "rescue",
+     "weight": 7.17
+    },
+    {
+     "term": "resemble",
+     "weight": 10.05
+    },
+    {
+     "term": "resin",
+     "weight": 12.07
+    },
+    {
+     "term": "respect",
+     "weight": 8.5
+    },
+    {
+     "term": "rest",
+     "weight": 4.22
+    },
+    {
+     "term": "result",
+     "weight": 8.22
+    },
+    {
+     "term": "retreat",
+     "weight": 10.53
+    },
+    {
+     "term": "return",
+     "weight": 5.61
+    },
+    {
+     "term": "revenge",
+     "weight": 8
+    },
+    {
+     "term": "revolution",
+     "weight": 10
+    },
+    {
+     "term": "rhinoceros",
+     "weight": 6
+    },
+    {
+     "term": "rib",
+     "weight": 6.3
+    },
+    {
+     "term": "ribbon",
+     "weight": 5.25
+    },
+    {
+     "term": "rice",
+     "weight": 3.72
+    },
+    {
+     "term": "rich",
+     "weight": 6.32
+    },
+    {
+     "term": "riddle",
+     "weight": 7.17
+    },
+    {
+     "term": "ride",
+     "weight": 4.67
+    },
+    {
+     "term": "ridge",
+     "weight": 8.84
+    },
+    {
+     "term": "ridgepole",
+     "weight": 14
+    },
+    {
+     "term": "right",
+     "weight": 4.346085
+    },
+    {
+     "term": "ring",
+     "weight": 4.53
+    },
+    {
+     "term": "ringworm",
+     "weight": 10.28
+    },
+    {
+     "term": "rinse",
+     "weight": 4.95
+    },
+    {
+     "term": "ripe",
+     "weight": 7.11
+    },
+    {
+     "term": "ripen",
+     "weight": 7.22
+    },
+    {
+     "term": "rise",
+     "weight": 6.72
+    },
+    {
+     "term": "rite",
+     "weight": 10.42
+    },
+    {
+     "term": "river",
+     "weight": 4.9
+    },
+    {
+     "term": "road",
+     "weight": 4.55
+    },
+    {
+     "term": "roar",
+     "weight": 4.79
+    },
+    {
+     "term": "roast",
+     "weight": 8.5
+    },
+    {
+     "term": "rob",
+     "weight": 7.28
+    },
+    {
+     "term": "robber",
+     "weight": 5.74
+    },
+    {
+     "term": "robin",
+     "weight": 6.690625000000001
+    },
+    {
+     "term": "robot",
+     "weight": 5.35
+    },
+    {
+     "term": "rock",
+     "weight": 3.22
+    },
+    {
+     "term": "rodent",
+     "weight": 6.95
+    },
+    {
+     "term": "roll",
+     "weight": 4.47
+    },
+    {
+     "term": "roof",
+     "weight": 5
+    },
+    {
+     "term": "room",
+     "weight": 4.22
+    },
+    {
+     "term": "rooster",
+     "weight": 6.41
+    },
+    {
+     "term": "root",
+     "weight": 5.94
+    },
+    {
+     "term": "rope",
+     "weight": 5.44
+    },
+    {
+     "term": "rose",
+     "weight": 6.11
+    },
+    {
+     "term": "rot",
+     "weight": 7.57
+    },
+    {
+     "term": "rotten",
+     "weight": 6.95
+    },
+    {
+     "term": "rough",
+     "weight": 6.21
+    },
+    {
+     "term": "round",
+     "weight": 4.75
+    },
+    {
+     "term": "row",
+     "weight": 7
+    },
+    {
+     "term": "rub",
+     "weight": 6
+    },
+    {
+     "term": "rudder",
+     "weight": 10.39
+    },
+    {
+     "term": "rude",
+     "weight": 7.11
+    },
+    {
+     "term": "rug",
+     "weight": 4.61
+    },
+    {
+     "term": "rule",
+     "weight": 4.72
+    },
+    {
+     "term": "ruler",
+     "weight": 5.94
+    },
+    {
+     "term": "rum",
+     "weight": 11.56
+    },
+    {
+     "term": "ruminate",
+     "weight": 14.5
+    },
+    {
+     "term": "run",
+     "weight": 4.47
+    },
+    {
+     "term": "rush",
+     "weight": 6.7
+    },
+    {
+     "term": "rust",
+     "weight": 7.75
+    },
+    {
+     "term": "rustle",
+     "weight": 10.32
+    },
+    {
+     "term": "rye",
+     "weight": 9.26
+    },
+    {
+     "term": "sack",
+     "weight": 5.83
+    },
+    {
+     "term": "sacrifice",
+     "weight": 9.61
+    },
+    {
+     "term": "sad",
+     "weight": 3.24
+    },
+    {
+     "term": "saddle",
+     "weight": 6.42
+    },
+    {
+     "term": "sadness",
+     "weight": 5
+    },
+    {
+     "term": "safe",
+     "weight": 5.11
+    },
+    {
+     "term": "sail",
+     "weight": 6.47
+    },
+    {
+     "term": "sailboat",
+     "weight": 4.65
+    },
+    {
+     "term": "saliva",
+     "weight": 8.42
+    },
+    {
+     "term": "salmon",
+     "weight": 8
+    },
+    {
+     "term": "salt",
+     "weight": 5.05
+    },
+    {
+     "term": "salty",
+     "weight": 5.33
+    },
+    {
+     "term": "same",
+     "weight": 5.624925000000001
+    },
+    {
+     "term": "sand",
+     "weight": 4.63
+    },
+    {
+     "term": "sandwich",
+     "weight": 4.79
+    },
+    {
+     "term": "sap",
+     "weight": 7.53
+    },
+    {
+     "term": "sardine",
+     "weight": 7.74
+    },
+    {
+     "term": "satisfy",
+     "weight": 10
+    },
+    {
+     "term": "saturday",
+     "weight": 5.480882
+    },
+    {
+     "term": "sauce",
+     "weight": 5.37
+    },
+    {
+     "term": "saucepan",
+     "weight": 7.89
+    },
+    {
+     "term": "saucer",
+     "weight": 8.44
+    },
+    {
+     "term": "sausage",
+     "weight": 6.05
+    },
+    {
+     "term": "savor",
+     "weight": 10.14
+    },
+    {
+     "term": "saw",
+     "weight": 5.3585
+    },
+    {
+     "term": "saxophone",
+     "weight": 9.1
+    },
+    {
+     "term": "say",
+     "weight": 3.42
+    },
+    {
+     "term": "scab",
+     "weight": 6.65
+    },
+    {
+     "term": "scabies",
+     "weight": 12
+    },
+    {
+     "term": "scale",
+     "weight": 8.85
+    },
+    {
+     "term": "scar",
+     "weight": 5.68
+    },
+    {
+     "term": "scared",
+     "weight": 3.79
+    },
+    {
+     "term": "scarf",
+     "weight": 5.68
+    },
+    {
+     "term": "scatter",
+     "weight": 7.95
+    },
+    {
+     "term": "scenery",
+     "weight": 9.7
+    },
+    {
+     "term": "school",
+     "weight": 3.89
+    },
+    {
+     "term": "scissor",
+     "weight": 4.56
+    },
+    {
+     "term": "scissors",
+     "weight": 4.5
+    },
+    {
+     "term": "scold",
+     "weight": 8.53
+    },
+    {
+     "term": "scorpion",
+     "weight": 7.84
+    },
+    {
+     "term": "scrape",
+     "weight": 6.21
+    },
+    {
+     "term": "scratch",
+     "weight": 5.61
+    },
+    {
+     "term": "scream",
+     "weight": 4.2
+    },
+    {
+     "term": "screw",
+     "weight": 6.65
+    },
+    {
+     "term": "screwdriver",
+     "weight": 6
+    },
+    {
+     "term": "scrotum",
+     "weight": 14.44
+    },
+    {
+     "term": "sculptor",
+     "weight": 9.84
+    },
+    {
+     "term": "scythe",
+     "weight": 11.87
+    },
+    {
+     "term": "sea",
+     "weight": 4.74
+    },
+    {
+     "term": "seagull",
+     "weight": 5.42
+    },
+    {
+     "term": "seahorse",
+     "weight": 5.83
+    },
+    {
+     "term": "seal",
+     "weight": 5.42
+    },
+    {
+     "term": "search",
+     "weight": 8.72
+    },
+    {
+     "term": "season",
+     "weight": 6.05
+    },
+    {
+     "term": "second",
+     "weight": 4.68
+    },
+    {
+     "term": "secret",
+     "weight": 5.39
+    },
+    {
+     "term": "see",
+     "weight": 3.06
+    },
+    {
+     "term": "seed",
+     "weight": 4.72
+    },
+    {
+     "term": "seedling",
+     "weight": 6.89
+    },
+    {
+     "term": "seem",
+     "weight": 6.74
+    },
+    {
+     "term": "seize",
+     "weight": 10.15
+    },
+    {
+     "term": "self",
+     "weight": 5
+    },
+    {
+     "term": "sell",
+     "weight": 7.05
+    },
+    {
+     "term": "semen",
+     "weight": 12.37
+    },
+    {
+     "term": "send",
+     "weight": 5.68
+    },
+    {
+     "term": "sense",
+     "weight": 7.32
+    },
+    {
+     "term": "separate",
+     "weight": 6.63
+    },
+    {
+     "term": "sermon",
+     "weight": 6.6
+    },
+    {
+     "term": "servant",
+     "weight": 7.89
+    },
+    {
+     "term": "serve",
+     "weight": 7.17
+    },
+    {
+     "term": "sesame",
+     "weight": 7.41
+    },
+    {
+     "term": "set",
+     "weight": 6
+    },
+    {
+     "term": "seven",
+     "weight": 5.3585
+    },
+    {
+     "term": "severe",
+     "weight": 9.05
+    },
+    {
+     "term": "sew",
+     "weight": 6.05
+    },
+    {
+     "term": "sex",
+     "weight": 9.79
+    },
+    {
+     "term": "shadow",
+     "weight": 5
+    },
+    {
+     "term": "shake",
+     "weight": 5.26
+    },
+    {
+     "term": "shallow",
+     "weight": 7
+    },
+    {
+     "term": "shaman",
+     "weight": 12.25
+    },
+    {
+     "term": "shame",
+     "weight": 6.55
+    },
+    {
+     "term": "shape",
+     "weight": 4.47
+    },
+    {
+     "term": "share",
+     "weight": 4.84
+    },
+    {
+     "term": "shark",
+     "weight": 5.47
+    },
+    {
+     "term": "sharp",
+     "weight": 6.11
+    },
+    {
+     "term": "sharpen",
+     "weight": 5.61
+    },
+    {
+     "term": "shave",
+     "weight": 5.89
+    },
+    {
+     "term": "shawl",
+     "weight": 9.74
+    },
+    {
+     "term": "she",
+     "weight": 3.568124
+    },
+    {
+     "term": "shear",
+     "weight": 8.67
+    },
+    {
+     "term": "sheath",
+     "weight": 10.93
+    },
+    {
+     "term": "sheep",
+     "weight": 4.25
+    },
+    {
+     "term": "shelf",
+     "weight": 5.5
+    },
+    {
+     "term": "shell",
+     "weight": 5.22
+    },
+    {
+     "term": "shepherd",
+     "weight": 6.67
+    },
+    {
+     "term": "shield",
+     "weight": 6.5
+    },
+    {
+     "term": "shin",
+     "weight": 8.39
+    },
+    {
+     "term": "shine",
+     "weight": 5.79
+    },
+    {
+     "term": "shiny",
+     "weight": 4.32
+    },
+    {
+     "term": "ship",
+     "weight": 5.33
+    },
+    {
+     "term": "shirt",
+     "weight": 3.53
+    },
+    {
+     "term": "shiver",
+     "weight": 7.5
+    },
+    {
+     "term": "shoe",
+     "weight": 2.6
+    },
+    {
+     "term": "shoemaker",
+     "weight": 7.58
+    },
+    {
+     "term": "shoot",
+     "weight": 5.53
+    },
+    {
+     "term": "shop",
+     "weight": 5.78
+    },
+    {
+     "term": "shore",
+     "weight": 6.925079
+    },
+    {
+     "term": "short",
+     "weight": 4.32
+    },
+    {
+     "term": "shotgun",
+     "weight": 7.53
+    },
+    {
+     "term": "shoulder",
+     "weight": 4.5
+    },
+    {
+     "term": "shout",
+     "weight": 4.72
+    },
+    {
+     "term": "shovel",
+     "weight": 6.28
+    },
+    {
+     "term": "show",
+     "weight": 6.21
+    },
+    {
+     "term": "shower",
+     "weight": 4.72
+    },
+    {
+     "term": "shrew",
+     "weight": 11.82
+    },
+    {
+     "term": "shriek",
+     "weight": 8.94
+    },
+    {
+     "term": "shrimp",
+     "weight": 7.11
+    },
+    {
+     "term": "shrink",
+     "weight": 7.06
+    },
+    {
+     "term": "shrub",
+     "weight": 8.06
+    },
+    {
+     "term": "shuttle",
+     "weight": 8.37
+    },
+    {
+     "term": "shy",
+     "weight": 5.32
+    },
+    {
+     "term": "sibling",
+     "weight": 7.58
+    },
+    {
+     "term": "sick",
+     "weight": 4.05
+    },
+    {
+     "term": "sickle",
+     "weight": 11.35
+    },
+    {
+     "term": "side",
+     "weight": 4.72
+    },
+    {
+     "term": "sieve",
+     "weight": 12.36
+    },
+    {
+     "term": "sight",
+     "weight": 5.44
+    },
+    {
+     "term": "sign",
+     "weight": 4.32
+    },
+    {
+     "term": "silence",
+     "weight": 4.6
+    },
+    {
+     "term": "silent",
+     "weight": 4.42
+    },
+    {
+     "term": "silk",
+     "weight": 7.39
+    },
+    {
+     "term": "silkworm",
+     "weight": 7.95
+    },
+    {
+     "term": "silver",
+     "weight": 6.21
+    },
+    {
+     "term": "similar",
+     "weight": 7.33
+    },
+    {
+     "term": "sin",
+     "weight": 6.74
+    },
+    {
+     "term": "sing",
+     "weight": 3.47
+    },
+    {
+     "term": "singe",
+     "weight": 11.57
+    },
+    {
+     "term": "sink",
+     "weight": 4.47
+    },
+    {
+     "term": "sister",
+     "weight": 3.68
+    },
+    {
+     "term": "sit",
+     "weight": 3.47
+    },
+    {
+     "term": "six",
+     "weight": 5.251930000000001
+    },
+    {
+     "term": "sixteen",
+     "weight": 4.804336000000001
+    },
+    {
+     "term": "sixty",
+     "weight": 5.742152000000001
+    },
+    {
+     "term": "size",
+     "weight": 4.84
+    },
+    {
+     "term": "skate",
+     "weight": 5.37
+    },
+    {
+     "term": "skeleton",
+     "weight": 6.68
+    },
+    {
+     "term": "ski",
+     "weight": 6.68
+    },
+    {
+     "term": "skilful",
+     "weight": 10.06
+    },
+    {
+     "term": "skilled",
+     "weight": 8.68
+    },
+    {
+     "term": "skin",
+     "weight": 4.48
+    },
+    {
+     "term": "skinny",
+     "weight": 5.16
+    },
+    {
+     "term": "skirt",
+     "weight": 5.67
+    },
+    {
+     "term": "skull",
+     "weight": 6.33
+    },
+    {
+     "term": "skunk",
+     "weight": 5.32
+    },
+    {
+     "term": "sky",
+     "weight": 4.17
+    },
+    {
+     "term": "slab",
+     "weight": 8.53
+    },
+    {
+     "term": "slap",
+     "weight": 4.67
+    },
+    {
+     "term": "slaughter",
+     "weight": 9.56
+    },
+    {
+     "term": "slave",
+     "weight": 7.84
+    },
+    {
+     "term": "sleep",
+     "weight": 2.79
+    },
+    {
+     "term": "sleepy",
+     "weight": 3.37
+    },
+    {
+     "term": "sleeve",
+     "weight": 4.94
+    },
+    {
+     "term": "sleigh",
+     "weight": 6
+    },
+    {
+     "term": "slice",
+     "weight": 5.69
+    },
+    {
+     "term": "sling",
+     "weight": 8.67
+    },
+    {
+     "term": "slip",
+     "weight": 6.17
+    },
+    {
+     "term": "slippery",
+     "weight": 6.72
+    },
+    {
+     "term": "slope",
+     "weight": 8.67
+    },
+    {
+     "term": "sloth",
+     "weight": 8.37
+    },
+    {
+     "term": "slow",
+     "weight": 4.15
+    },
+    {
+     "term": "slowly",
+     "weight": 6.317630000000001
+    },
+    {
+     "term": "small",
+     "weight": 3.22
+    },
+    {
+     "term": "smallpox",
+     "weight": 10.71
+    },
+    {
+     "term": "smell",
+     "weight": 4.22
+    },
+    {
+     "term": "smile",
+     "weight": 3.51
+    },
+    {
+     "term": "smoke",
+     "weight": 4
+    },
+    {
+     "term": "smoking",
+     "weight": 6.733883
+    },
+    {
+     "term": "smooth",
+     "weight": 5.61
+    },
+    {
+     "term": "snail",
+     "weight": 5.79
+    },
+    {
+     "term": "snake",
+     "weight": 5.1
+    },
+    {
+     "term": "snap",
+     "weight": 6.05
+    },
+    {
+     "term": "snare",
+     "weight": 10.68
+    },
+    {
+     "term": "sneeze",
+     "weight": 4.17
+    },
+    {
+     "term": "sniff",
+     "weight": 6.16
+    },
+    {
+     "term": "snore",
+     "weight": 5.94
+    },
+    {
+     "term": "snot",
+     "weight": 5.47
+    },
+    {
+     "term": "snow",
+     "weight": 4.11
+    },
+    {
+     "term": "snowman",
+     "weight": 3.47
+    },
+    {
+     "term": "so",
+     "weight": 5.14536
+    },
+    {
+     "term": "soak",
+     "weight": 6.53
+    },
+    {
+     "term": "soap",
+     "weight": 3.17
+    },
+    {
+     "term": "sober",
+     "weight": 10.84
+    },
+    {
+     "term": "society",
+     "weight": 8.7
+    },
+    {
+     "term": "sock",
+     "weight": 2.94
+    },
+    {
+     "term": "sofa",
+     "weight": 4.5
+    },
+    {
+     "term": "soft",
+     "weight": 3.95
+    },
+    {
+     "term": "soldier",
+     "weight": 6.94
+    },
+    {
+     "term": "sole",
+     "weight": 7.06
+    },
+    {
+     "term": "solid",
+     "weight": 7.79
+    },
+    {
+     "term": "some",
+     "weight": 4.846964
+    },
+    {
+     "term": "someone",
+     "weight": 4.921563000000001
+    },
+    {
+     "term": "sometimes",
+     "weight": 6.370915000000001
+    },
+    {
+     "term": "son",
+     "weight": 3.78
+    },
+    {
+     "term": "song",
+     "weight": 4.26
+    },
+    {
+     "term": "soon",
+     "weight": 4.82565
+    },
+    {
+     "term": "soot",
+     "weight": 7.2
+    },
+    {
+     "term": "sorcerer",
+     "weight": 11.37
+    },
+    {
+     "term": "sore",
+     "weight": 5.84
+    },
+    {
+     "term": "sorghum",
+     "weight": 13.92
+    },
+    {
+     "term": "sorrowful",
+     "weight": 10.11
+    },
+    {
+     "term": "sorry",
+     "weight": 3.44
+    },
+    {
+     "term": "sort",
+     "weight": 6.807852000000001
+    },
+    {
+     "term": "soul",
+     "weight": 6.17
+    },
+    {
+     "term": "sound",
+     "weight": 3.72
+    },
+    {
+     "term": "soup",
+     "weight": 5.37
+    },
+    {
+     "term": "sour",
+     "weight": 4.89
+    },
+    {
+     "term": "south",
+     "weight": 6.06
+    },
+    {
+     "term": "sow",
+     "weight": 9.67
+    },
+    {
+     "term": "soybean",
+     "weight": 11.6
+    },
+    {
+     "term": "space",
+     "weight": 5.67
+    },
+    {
+     "term": "spade",
+     "weight": 8.11
+    },
+    {
+     "term": "spark",
+     "weight": 7.95
+    },
+    {
+     "term": "sparkle",
+     "weight": 5.95
+    },
+    {
+     "term": "sparrow",
+     "weight": 7.489900000000001
+    },
+    {
+     "term": "sparse",
+     "weight": 11.83
+    },
+    {
+     "term": "spawn",
+     "weight": 11.25
+    },
+    {
+     "term": "speak",
+     "weight": 3.56
+    },
+    {
+     "term": "spear",
+     "weight": 7.22
+    },
+    {
+     "term": "speech",
+     "weight": 6.22
+    },
+    {
+     "term": "sperm",
+     "weight": 11.14
+    },
+    {
+     "term": "spherical",
+     "weight": 12.17
+    },
+    {
+     "term": "spicy",
+     "weight": 5.06
+    },
+    {
+     "term": "spider",
+     "weight": 3.43
+    },
+    {
+     "term": "spill",
+     "weight": 3.84
+    },
+    {
+     "term": "spin",
+     "weight": 5
+    },
+    {
+     "term": "spinach",
+     "weight": 4.94
+    },
+    {
+     "term": "spindle",
+     "weight": 10.72
+    },
+    {
+     "term": "spine",
+     "weight": 7.35
+    },
+    {
+     "term": "spirit",
+     "weight": 7.11
+    },
+    {
+     "term": "spit",
+     "weight": 5.06
+    },
+    {
+     "term": "splash",
+     "weight": 3.67
+    },
+    {
+     "term": "spleen",
+     "weight": 11.35
+    },
+    {
+     "term": "splendor",
+     "weight": 10.79
+    },
+    {
+     "term": "split",
+     "weight": 6.25
+    },
+    {
+     "term": "spoil",
+     "weight": 6.3
+    },
+    {
+     "term": "spoke",
+     "weight": 6.232374000000001
+    },
+    {
+     "term": "spoon",
+     "weight": 2.5
+    },
+    {
+     "term": "spot",
+     "weight": 5.39
+    },
+    {
+     "term": "spouse",
+     "weight": 9.94
+    },
+    {
+     "term": "spread",
+     "weight": 5.72
+    },
+    {
+     "term": "spring",
+     "weight": 5.5
+    },
+    {
+     "term": "sprout",
+     "weight": 9.11
+    },
+    {
+     "term": "spruce",
+     "weight": 10.84
+    },
+    {
+     "term": "square",
+     "weight": 4.11
+    },
+    {
+     "term": "squeeze",
+     "weight": 5.42
+    },
+    {
+     "term": "squirrel",
+     "weight": 4.44
+    },
+    {
+     "term": "stab",
+     "weight": 6.4
+    },
+    {
+     "term": "staff",
+     "weight": 10
+    },
+    {
+     "term": "stairs",
+     "weight": 4.22
+    },
+    {
+     "term": "stall",
+     "weight": 7.75
+    },
+    {
+     "term": "stallion",
+     "weight": 9.42
+    },
+    {
+     "term": "stamp",
+     "weight": 6.33
+    },
+    {
+     "term": "stand",
+     "weight": 4.39
+    },
+    {
+     "term": "star",
+     "weight": 3.89
+    },
+    {
+     "term": "starfish",
+     "weight": 5.76
+    },
+    {
+     "term": "starlight",
+     "weight": 7.37
+    },
+    {
+     "term": "state",
+     "weight": 6.39
+    },
+    {
+     "term": "statue",
+     "weight": 7.55
+    },
+    {
+     "term": "steal",
+     "weight": 6.17
+    },
+    {
+     "term": "steam",
+     "weight": 6.26
+    },
+    {
+     "term": "steel",
+     "weight": 7.68
+    },
+    {
+     "term": "steep",
+     "weight": 8
+    },
+    {
+     "term": "stem",
+     "weight": 7.26
+    },
+    {
+     "term": "step",
+     "weight": 4.11
+    },
+    {
+     "term": "stepdaughter",
+     "weight": 8.61
+    },
+    {
+     "term": "stepfather",
+     "weight": 8.42
+    },
+    {
+     "term": "stepmother",
+     "weight": 6.33
+    },
+    {
+     "term": "stepson",
+     "weight": 7.94
+    },
+    {
+     "term": "stethoscope",
+     "weight": 8.5
+    },
+    {
+     "term": "stick",
+     "weight": 3.89
+    },
+    {
+     "term": "sticky",
+     "weight": 4.06
+    },
+    {
+     "term": "still",
+     "weight": 5.262587000000001
+    },
+    {
+     "term": "sting",
+     "weight": 6.21
+    },
+    {
+     "term": "stinger",
+     "weight": 7.79
+    },
+    {
+     "term": "stingy",
+     "weight": 7.78
+    },
+    {
+     "term": "stink",
+     "weight": 4.3
+    },
+    {
+     "term": "stinky",
+     "weight": 4.53
+    },
+    {
+     "term": "stir",
+     "weight": 5.58
+    },
+    {
+     "term": "stocking",
+     "weight": 6.68
+    },
+    {
+     "term": "stomach",
+     "weight": 5.26
+    },
+    {
+     "term": "stone",
+     "weight": 4.44
+    },
+    {
+     "term": "stool",
+     "weight": 6.21
+    },
+    {
+     "term": "stop",
+     "weight": 2.89
+    },
+    {
+     "term": "store",
+     "weight": 4.76
+    },
+    {
+     "term": "stork",
+     "weight": 7.649755000000002
+    },
+    {
+     "term": "storm",
+     "weight": 4.94
+    },
+    {
+     "term": "story",
+     "weight": 3.89
+    },
+    {
+     "term": "stove",
+     "weight": 4.32
+    },
+    {
+     "term": "straight",
+     "weight": 6.797195
+    },
+    {
+     "term": "strain",
+     "weight": 8.63
+    },
+    {
+     "term": "strait",
+     "weight": 11.11
+    },
+    {
+     "term": "strange",
+     "weight": 6.42
+    },
+    {
+     "term": "stranger",
+     "weight": 4.53
+    },
+    {
+     "term": "strap",
+     "weight": 5.61
+    },
+    {
+     "term": "straw",
+     "weight": 4.22
+    },
+    {
+     "term": "strawberry",
+     "weight": 4.21
+    },
+    {
+     "term": "stream",
+     "weight": 6.47
+    },
+    {
+     "term": "street",
+     "weight": 4.58
+    },
+    {
+     "term": "strength",
+     "weight": 6.21
+    },
+    {
+     "term": "stretch",
+     "weight": 5.47
+    },
+    {
+     "term": "strike",
+     "weight": 7.75
+    },
+    {
+     "term": "string",
+     "weight": 4.94
+    },
+    {
+     "term": "stroke",
+     "weight": 9.24
+    },
+    {
+     "term": "strong",
+     "weight": 4.58
+    },
+    {
+     "term": "stubborn",
+     "weight": 7.17
+    },
+    {
+     "term": "study",
+     "weight": 6.58
+    },
+    {
+     "term": "stumble",
+     "weight": 7.94
+    },
+    {
+     "term": "stump",
+     "weight": 7.58
+    },
+    {
+     "term": "stupid",
+     "weight": 4.4
+    },
+    {
+     "term": "sturgeon",
+     "weight": 10.5
+    },
+    {
+     "term": "stutter",
+     "weight": 8.78
+    },
+    {
+     "term": "stutterer",
+     "weight": 10.06
+    },
+    {
+     "term": "submarine",
+     "weight": 7.94
+    },
+    {
+     "term": "subtle",
+     "weight": 11.63
+    },
+    {
+     "term": "succeed",
+     "weight": 8.16
+    },
+    {
+     "term": "suck",
+     "weight": 5.58
+    },
+    {
+     "term": "suckle",
+     "weight": 9.61
+    },
+    {
+     "term": "suddenly",
+     "weight": 7.383330000000001
+    },
+    {
+     "term": "suffer",
+     "weight": 8.89
+    },
+    {
+     "term": "suffice",
+     "weight": 12.26
+    },
+    {
+     "term": "sugar",
+     "weight": 3.95
+    },
+    {
+     "term": "sugarcane",
+     "weight": 7.63
+    },
+    {
+     "term": "suit",
+     "weight": 6.67
+    },
+    {
+     "term": "suitcase",
+     "weight": 8.22
+    },
+    {
+     "term": "sulphur",
+     "weight": 10.591087
+    },
+    {
+     "term": "summer",
+     "weight": 4.33
+    },
+    {
+     "term": "summit",
+     "weight": 10.11
+    },
+    {
+     "term": "sun",
+     "weight": 3.4
+    },
+    {
+     "term": "sunbath",
+     "weight": 9.6
+    },
+    {
+     "term": "sunday",
+     "weight": 5.4401340000000005
+    },
+    {
+     "term": "sunflower",
+     "weight": 6
+    },
+    {
+     "term": "sunglasses",
+     "weight": 5.56
+    },
+    {
+     "term": "sunny",
+     "weight": 6.17
+    },
+    {
+     "term": "sunrise",
+     "weight": 5.72
+    },
+    {
+     "term": "sunset",
+     "weight": 6.06
+    },
+    {
+     "term": "sunshine",
+     "weight": 4.58
+    },
+    {
+     "term": "surf",
+     "weight": 7.4
+    },
+    {
+     "term": "surface",
+     "weight": 8.86
+    },
+    {
+     "term": "surname",
+     "weight": 12.22
+    },
+    {
+     "term": "surpass",
+     "weight": 11
+    },
+    {
+     "term": "surprise",
+     "weight": 5.47
+    },
+    {
+     "term": "surprised",
+     "weight": 6.63
+    },
+    {
+     "term": "surrender",
+     "weight": 7.61
+    },
+    {
+     "term": "surround",
+     "weight": 8.05
+    },
+    {
+     "term": "suspect",
+     "weight": 8.58
+    },
+    {
+     "term": "suspicion",
+     "weight": 10.21
+    },
+    {
+     "term": "swallow",
+     "weight": 5.17
+    },
+    {
+     "term": "swamp",
+     "weight": 7.95
+    },
+    {
+     "term": "swan",
+     "weight": 6.317630000000001
+    },
+    {
+     "term": "swarm",
+     "weight": 8.68
+    },
+    {
+     "term": "sway",
+     "weight": 9.58
+    },
+    {
+     "term": "swear",
+     "weight": 7.21
+    },
+    {
+     "term": "sweat",
+     "weight": 7.26
+    },
+    {
+     "term": "sweater",
+     "weight": 5.22
+    },
+    {
+     "term": "sweep",
+     "weight": 4.2
+    },
+    {
+     "term": "sweet",
+     "weight": 4.53
+    },
+    {
+     "term": "swell",
+     "weight": 7.42
+    },
+    {
+     "term": "swim",
+     "weight": 4.17
+    },
+    {
+     "term": "swing",
+     "weight": 4.16
+    },
+    {
+     "term": "sword",
+     "weight": 5.45
+    },
+    {
+     "term": "sympathize",
+     "weight": 9.42
+    },
+    {
+     "term": "system",
+     "weight": 9.9
+    },
+    {
+     "term": "table",
+     "weight": 4.39
+    },
+    {
+     "term": "tadpole",
+     "weight": 6.37
+    },
+    {
+     "term": "tail",
+     "weight": 3.7
+    },
+    {
+     "term": "tailor",
+     "weight": 9.83
+    },
+    {
+     "term": "take",
+     "weight": 4.37
+    },
+    {
+     "term": "tale",
+     "weight": 6.32
+    },
+    {
+     "term": "talk",
+     "weight": 3.68
+    },
+    {
+     "term": "tall",
+     "weight": 4.95
+    },
+    {
+     "term": "tamarind",
+     "weight": 14.86
+    },
+    {
+     "term": "tambourine",
+     "weight": 6.53
+    },
+    {
+     "term": "tame",
+     "weight": 7.58
+    },
+    {
+     "term": "tangerine",
+     "weight": 8.15
+    },
+    {
+     "term": "tank",
+     "weight": 7.17
+    },
+    {
+     "term": "tap",
+     "weight": 5.84
+    },
+    {
+     "term": "tapir",
+     "weight": 11.23
+    },
+    {
+     "term": "tarantula",
+     "weight": 7.76
+    },
+    {
+     "term": "taro",
+     "weight": 14.2
+    },
+    {
+     "term": "taste",
+     "weight": 4.26
+    },
+    {
+     "term": "tasteless",
+     "weight": 9.53
+    },
+    {
+     "term": "tasty",
+     "weight": 5.4
+    },
+    {
+     "term": "tattoo",
+     "weight": 7.79
+    },
+    {
+     "term": "tax",
+     "weight": 8.94
+    },
+    {
+     "term": "tea",
+     "weight": 5.47
+    },
+    {
+     "term": "teach",
+     "weight": 4.67
+    },
+    {
+     "term": "teacher",
+     "weight": 4.55
+    },
+    {
+     "term": "team",
+     "weight": 6
+    },
+    {
+     "term": "tear",
+     "weight": 4.89
+    },
+    {
+     "term": "telephone",
+     "weight": 4.63
+    },
+    {
+     "term": "telescope",
+     "weight": 6.95
+    },
+    {
+     "term": "television",
+     "weight": 4.11
+    },
+    {
+     "term": "tell",
+     "weight": 4.26
+    },
+    {
+     "term": "temple",
+     "weight": 8.79
+    },
+    {
+     "term": "ten",
+     "weight": 3.578781
+    },
+    {
+     "term": "tendon",
+     "weight": 9.58
+    },
+    {
+     "term": "tent",
+     "weight": 5.16
+    },
+    {
+     "term": "termite",
+     "weight": 7.94
+    },
+    {
+     "term": "test",
+     "weight": 6.26
+    },
+    {
+     "term": "testicle",
+     "weight": 11.6
+    },
+    {
+     "term": "tether",
+     "weight": 10.67
+    },
+    {
+     "term": "thank",
+     "weight": 3.79
+    },
+    {
+     "term": "that",
+     "weight": 5.529012000000001
+    },
+    {
+     "term": "thatch",
+     "weight": 10.72
+    },
+    {
+     "term": "thaw",
+     "weight": 8.11
+    },
+    {
+     "term": "their",
+     "weight": 5.262587000000001
+    },
+    {
+     "term": "then",
+     "weight": 6.7439100000000005
+    },
+    {
+     "term": "theory",
+     "weight": 9.37
+    },
+    {
+     "term": "there",
+     "weight": 5.251930000000001
+    },
+    {
+     "term": "thermometer",
+     "weight": 6.63
+    },
+    {
+     "term": "these",
+     "weight": 6.424200000000001
+    },
+    {
+     "term": "they",
+     "weight": 4.878935
+    },
+    {
+     "term": "thick",
+     "weight": 5.61
+    },
+    {
+     "term": "thief",
+     "weight": 7.22
+    },
+    {
+     "term": "thigh",
+     "weight": 6.42
+    },
+    {
+     "term": "thin",
+     "weight": 6.47
+    },
+    {
+     "term": "thing",
+     "weight": 4.58
+    },
+    {
+     "term": "think",
+     "weight": 4.75
+    },
+    {
+     "term": "third",
+     "weight": 4.580539
+    },
+    {
+     "term": "thirst",
+     "weight": 6.06
+    },
+    {
+     "term": "thirsty",
+     "weight": 3.89
+    },
+    {
+     "term": "thirty",
+     "weight": 5.944635000000001
+    },
+    {
+     "term": "this",
+     "weight": 4.93222
+    },
+    {
+     "term": "thorn",
+     "weight": 5.965949000000001
+    },
+    {
+     "term": "those",
+     "weight": 5.006819000000001
+    },
+    {
+     "term": "thought",
+     "weight": 5.891350000000001
+    },
+    {
+     "term": "thousand",
+     "weight": 6.6
+    },
+    {
+     "term": "thread",
+     "weight": 7.06
+    },
+    {
+     "term": "threaten",
+     "weight": 8.95
+    },
+    {
+     "term": "three",
+     "weight": 3.6853510000000003
+    },
+    {
+     "term": "thresh",
+     "weight": 14
+    },
+    {
+     "term": "threshold",
+     "weight": 11.9
+    },
+    {
+     "term": "throat",
+     "weight": 5.09
+    },
+    {
+     "term": "through",
+     "weight": 5.816751
+    },
+    {
+     "term": "throw",
+     "weight": 4.14
+    },
+    {
+     "term": "thrust",
+     "weight": 9.72
+    },
+    {
+     "term": "thumb",
+     "weight": 4.42
+    },
+    {
+     "term": "thunder",
+     "weight": 4.89
+    },
+    {
+     "term": "thunderbolt",
+     "weight": 6.65
+    },
+    {
+     "term": "thus",
+     "weight": 9.19502
+    },
+    {
+     "term": "tick",
+     "weight": 6.05
+    },
+    {
+     "term": "tickle",
+     "weight": 4.35
+    },
+    {
+     "term": "tide",
+     "weight": 6.68
+    },
+    {
+     "term": "tie",
+     "weight": 4.74
+    },
+    {
+     "term": "tiger",
+     "weight": 4
+    },
+    {
+     "term": "tight",
+     "weight": 5.251930000000001
+    },
+    {
+     "term": "tile",
+     "weight": 6.8
+    },
+    {
+     "term": "time",
+     "weight": 5.16
+    },
+    {
+     "term": "tin",
+     "weight": 6.79
+    },
+    {
+     "term": "tinkle",
+     "weight": 5.67
+    },
+    {
+     "term": "tip",
+     "weight": 5.42
+    },
+    {
+     "term": "tire",
+     "weight": 6.16
+    },
+    {
+     "term": "tired",
+     "weight": 4.62
+    },
+    {
+     "term": "toad",
+     "weight": 6.11
+    },
+    {
+     "term": "toaster",
+     "weight": 6.72
+    },
+    {
+     "term": "tobacco",
+     "weight": 7.39
+    },
+    {
+     "term": "today",
+     "weight": 4.772365000000001
+    },
+    {
+     "term": "toe",
+     "weight": 3
+    },
+    {
+     "term": "toenail",
+     "weight": 5.1
+    },
+    {
+     "term": "together",
+     "weight": 5.944635000000001
+    },
+    {
+     "term": "toilet",
+     "weight": 3.54
+    },
+    {
+     "term": "tomato",
+     "weight": 4.61
+    },
+    {
+     "term": "tomorrow",
+     "weight": 5.187988000000001
+    },
+    {
+     "term": "tone",
+     "weight": 7.67
+    },
+    {
+     "term": "tongs",
+     "weight": 7.777639000000001
+    },
+    {
+     "term": "tongue",
+     "weight": 4.47
+    },
+    {
+     "term": "tool",
+     "weight": 5.37
+    },
+    {
+     "term": "tooth",
+     "weight": 3.61
+    },
+    {
+     "term": "toothbrush",
+     "weight": 4.33
+    },
+    {
+     "term": "top",
+     "weight": 3.89
+    },
+    {
+     "term": "torch",
+     "weight": 7.84
+    },
+    {
+     "term": "tornado",
+     "weight": 6.21
+    },
+    {
+     "term": "torso",
+     "weight": 9.33
+    },
+    {
+     "term": "tortilla",
+     "weight": 8.28
+    },
+    {
+     "term": "tortoise",
+     "weight": 5.88
+    },
+    {
+     "term": "torture",
+     "weight": 10.7
+    },
+    {
+     "term": "toucan",
+     "weight": 8.69
+    },
+    {
+     "term": "touch",
+     "weight": 5.16
+    },
+    {
+     "term": "towards",
+     "weight": 6.2750020000000015
+    },
+    {
+     "term": "towel",
+     "weight": 3.22
+    },
+    {
+     "term": "tower",
+     "weight": 6.33
+    },
+    {
+     "term": "town",
+     "weight": 5.11
+    },
+    {
+     "term": "toy",
+     "weight": 3
+    },
+    {
+     "term": "trade",
+     "weight": 6.42
+    },
+    {
+     "term": "tragedy",
+     "weight": 10.21
+    },
+    {
+     "term": "train",
+     "weight": 4
+    },
+    {
+     "term": "translate",
+     "weight": 10
+    },
+    {
+     "term": "transparent",
+     "weight": 10.67
+    },
+    {
+     "term": "trap",
+     "weight": 6.44
+    },
+    {
+     "term": "trauma",
+     "weight": 9.72
+    },
+    {
+     "term": "travel",
+     "weight": 5.9
+    },
+    {
+     "term": "tray",
+     "weight": 6.05
+    },
+    {
+     "term": "tread",
+     "weight": 8.75
+    },
+    {
+     "term": "treaty",
+     "weight": 9.84
+    },
+    {
+     "term": "tree",
+     "weight": 3.57
+    },
+    {
+     "term": "trench",
+     "weight": 10.21
+    },
+    {
+     "term": "tribe",
+     "weight": 8.17
+    },
+    {
+     "term": "trillion",
+     "weight": 8.94
+    },
+    {
+     "term": "tripod",
+     "weight": 9.26
+    },
+    {
+     "term": "triumph",
+     "weight": 10.16
+    },
+    {
+     "term": "trough",
+     "weight": 8.41
+    },
+    {
+     "term": "trousers",
+     "weight": 7.89
+    },
+    {
+     "term": "trout",
+     "weight": 8.56
+    },
+    {
+     "term": "truck",
+     "weight": 3.79
+    },
+    {
+     "term": "true",
+     "weight": 4.644481000000001
+    },
+    {
+     "term": "trumpet",
+     "weight": 6.28
+    },
+    {
+     "term": "trunk",
+     "weight": 8.3
+    },
+    {
+     "term": "trust",
+     "weight": 6.55
+    },
+    {
+     "term": "truth",
+     "weight": 4.42
+    },
+    {
+     "term": "try",
+     "weight": 3.44
+    },
+    {
+     "term": "tube",
+     "weight": 5.5
+    },
+    {
+     "term": "tumble",
+     "weight": 7.89
+    },
+    {
+     "term": "turbid",
+     "weight": 15.83
+    },
+    {
+     "term": "turkey",
+     "weight": 3.95
+    },
+    {
+     "term": "turmeric",
+     "weight": 15
+    },
+    {
+     "term": "turn",
+     "weight": 4.11
+    },
+    {
+     "term": "turnip",
+     "weight": 7
+    },
+    {
+     "term": "turquoise",
+     "weight": 7.68
+    },
+    {
+     "term": "turtle",
+     "weight": 4.17
+    },
+    {
+     "term": "tusk",
+     "weight": 7.67
+    },
+    {
+     "term": "twelve",
+     "weight": 4.4846260000000004
+    },
+    {
+     "term": "twice",
+     "weight": 5.891350000000001
+    },
+    {
+     "term": "twig",
+     "weight": 6.28
+    },
+    {
+     "term": "twin",
+     "weight": 6.06
+    },
+    {
+     "term": "twist",
+     "weight": 6.46
+    },
+    {
+     "term": "two",
+     "weight": 4.239515000000001
+    },
+    {
+     "term": "type",
+     "weight": 6.58
+    },
+    {
+     "term": "udder",
+     "weight": 7.29
+    },
+    {
+     "term": "ugly",
+     "weight": 4.17
+    },
+    {
+     "term": "ulcer",
+     "weight": 12.68
+    },
+    {
+     "term": "umbrella",
+     "weight": 5.68
+    },
+    {
+     "term": "uncle",
+     "weight": 4.47
+    },
+    {
+     "term": "uncover",
+     "weight": 7.17
+    },
+    {
+     "term": "understand",
+     "weight": 6.17
+    },
+    {
+     "term": "undress",
+     "weight": 5.28
+    },
+    {
+     "term": "unhappy",
+     "weight": 4.89
+    },
+    {
+     "term": "unicorn",
+     "weight": 4.83
+    },
+    {
+     "term": "university",
+     "weight": 10.72
+    },
+    {
+     "term": "unpleasant",
+     "weight": 9.32
+    },
+    {
+     "term": "unripe",
+     "weight": 7.5
+    },
+    {
+     "term": "untie",
+     "weight": 4.84
+    },
+    {
+     "term": "until",
+     "weight": 5.891350000000001
+    },
+    {
+     "term": "untruth",
+     "weight": 7.58
+    },
+    {
+     "term": "up",
+     "weight": 2.918047
+    },
+    {
+     "term": "upon",
+     "weight": 6.179089
+    },
+    {
+     "term": "urge",
+     "weight": 9.11
+    },
+    {
+     "term": "urinate",
+     "weight": 7.63
+    },
+    {
+     "term": "urine",
+     "weight": 9.83
+    },
+    {
+     "term": "us",
+     "weight": 4.18623
+    },
+    {
+     "term": "use",
+     "weight": 4.5
+    },
+    {
+     "term": "uvula",
+     "weight": 11.73
+    },
+    {
+     "term": "vacuum",
+     "weight": 6.74
+    },
+    {
+     "term": "vagina",
+     "weight": 8.89
+    },
+    {
+     "term": "valley",
+     "weight": 7.94
+    },
+    {
+     "term": "vase",
+     "weight": 7.89
+    },
+    {
+     "term": "vegetable",
+     "weight": 4.17
+    },
+    {
+     "term": "vehicle",
+     "weight": 6.58
+    },
+    {
+     "term": "veil",
+     "weight": 9.69
+    },
+    {
+     "term": "vein",
+     "weight": 8.53
+    },
+    {
+     "term": "veranda",
+     "weight": 11.89
+    },
+    {
+     "term": "vertical",
+     "weight": 9.71
+    },
+    {
+     "term": "very",
+     "weight": 4.900249000000001
+    },
+    {
+     "term": "vest",
+     "weight": 5.83
+    },
+    {
+     "term": "victory",
+     "weight": 7.53
+    },
+    {
+     "term": "village",
+     "weight": 7.84
+    },
+    {
+     "term": "vine",
+     "weight": 6.95
+    },
+    {
+     "term": "vinegar",
+     "weight": 7.11
+    },
+    {
+     "term": "violence",
+     "weight": 6.39
+    },
+    {
+     "term": "violin",
+     "weight": 7.45
+    },
+    {
+     "term": "virgin",
+     "weight": 10.63
+    },
+    {
+     "term": "visible",
+     "weight": 8.05
+    },
+    {
+     "term": "visit",
+     "weight": 5.79
+    },
+    {
+     "term": "voice",
+     "weight": 4.83
+    },
+    {
+     "term": "volcano",
+     "weight": 6.74
+    },
+    {
+     "term": "vomit",
+     "weight": 5.68
+    },
+    {
+     "term": "vulgar",
+     "weight": 11.57
+    },
+    {
+     "term": "vulture",
+     "weight": 8.89
+    },
+    {
+     "term": "vulva",
+     "weight": 13.11
+    },
+    {
+     "term": "wages",
+     "weight": 9.568014999999999
+    },
+    {
+     "term": "wagon",
+     "weight": 5.22
+    },
+    {
+     "term": "waist",
+     "weight": 6.42
+    },
+    {
+     "term": "wait",
+     "weight": 4.3
+    },
+    {
+     "term": "wake",
+     "weight": 5.63
+    },
+    {
+     "term": "waken",
+     "weight": 8.2
+    },
+    {
+     "term": "walk",
+     "weight": 3.45
+    },
+    {
+     "term": "wall",
+     "weight": 3.79
+    },
+    {
+     "term": "wallaby",
+     "weight": 12.36
+    },
+    {
+     "term": "walnut",
+     "weight": 6.16
+    },
+    {
+     "term": "walrus",
+     "weight": 5.06
+    },
+    {
+     "term": "wander",
+     "weight": 6.89
+    },
+    {
+     "term": "want",
+     "weight": 4.16
+    },
+    {
+     "term": "war",
+     "weight": 7.67
+    },
+    {
+     "term": "wardrobe",
+     "weight": 7.84
+    },
+    {
+     "term": "ware",
+     "weight": 10.740285000000002
+    },
+    {
+     "term": "warehouse",
+     "weight": 8.58
+    },
+    {
+     "term": "warm",
+     "weight": 4.65
+    },
+    {
+     "term": "warrior",
+     "weight": 8.25
+    },
+    {
+     "term": "wart",
+     "weight": 7.25
+    },
+    {
+     "term": "wash",
+     "weight": 4
+    },
+    {
+     "term": "washbasin",
+     "weight": 8.5
+    },
+    {
+     "term": "wasp",
+     "weight": 5.58
+    },
+    {
+     "term": "waste",
+     "weight": 6.5
+    },
+    {
+     "term": "watch",
+     "weight": 4.33
+    },
+    {
+     "term": "water",
+     "weight": 2.37
+    },
+    {
+     "term": "waterfall",
+     "weight": 5.47
+    },
+    {
+     "term": "watermelon",
+     "weight": 4.22
+    },
+    {
+     "term": "watery",
+     "weight": 6.65
+    },
+    {
+     "term": "wave",
+     "weight": 4.26
+    },
+    {
+     "term": "way",
+     "weight": 5.39
+    },
+    {
+     "term": "we",
+     "weight": 5.0387900000000005
+    },
+    {
+     "term": "weak",
+     "weight": 5.58
+    },
+    {
+     "term": "wealth",
+     "weight": 8.76
+    },
+    {
+     "term": "weapon",
+     "weight": 6.95
+    },
+    {
+     "term": "wear",
+     "weight": 4.63
+    },
+    {
+     "term": "weasel",
+     "weight": 7.25
+    },
+    {
+     "term": "weather",
+     "weight": 5.94
+    },
+    {
+     "term": "weave",
+     "weight": 9.89
+    },
+    {
+     "term": "web",
+     "weight": 5.37
+    },
+    {
+     "term": "wedding",
+     "weight": 6
+    },
+    {
+     "term": "weed",
+     "weight": 6.79
+    },
+    {
+     "term": "week",
+     "weight": 5.11
+    },
+    {
+     "term": "weigh",
+     "weight": 6.62
+    },
+    {
+     "term": "weight",
+     "weight": 6.53
+    },
+    {
+     "term": "well",
+     "weight": 6.157775000000001
+    },
+    {
+     "term": "west",
+     "weight": 5.89
+    },
+    {
+     "term": "wet",
+     "weight": 2.47
+    },
+    {
+     "term": "whale",
+     "weight": 5.47
+    },
+    {
+     "term": "what",
+     "weight": 3.855863
+    },
+    {
+     "term": "wheat",
+     "weight": 6.53
+    },
+    {
+     "term": "wheel",
+     "weight": 4.4
+    },
+    {
+     "term": "when",
+     "weight": 4.239515000000001
+    },
+    {
+     "term": "where",
+     "weight": 4.090317000000001
+    },
+    {
+     "term": "whetstone",
+     "weight": 12.8
+    },
+    {
+     "term": "which",
+     "weight": 6.584055000000001
+    },
+    {
+     "term": "while",
+     "weight": 7.06362
+    },
+    {
+     "term": "whip",
+     "weight": 7
+    },
+    {
+     "term": "whirlpool",
+     "weight": 8.95
+    },
+    {
+     "term": "whirlwind",
+     "weight": 10.5
+    },
+    {
+     "term": "whisper",
+     "weight": 4.26
+    },
+    {
+     "term": "whistle",
+     "weight": 5.42
+    },
+    {
+     "term": "white",
+     "weight": 4.06
+    },
+    {
+     "term": "who",
+     "weight": 3.813235
+    },
+    {
+     "term": "whole",
+     "weight": 6.89
+    },
+    {
+     "term": "why",
+     "weight": 3.9730900000000005
+    },
+    {
+     "term": "wide",
+     "weight": 5.84
+    },
+    {
+     "term": "widow",
+     "weight": 9
+    },
+    {
+     "term": "widower",
+     "weight": 9.42
+    },
+    {
+     "term": "wife",
+     "weight": 5.67
+    },
+    {
+     "term": "wild",
+     "weight": 6.11
+    },
+    {
+     "term": "willow",
+     "weight": 6.83
+    },
+    {
+     "term": "win",
+     "weight": 4.22
+    },
+    {
+     "term": "wind",
+     "weight": 3.89
+    },
+    {
+     "term": "windmill",
+     "weight": 5.32
+    },
+    {
+     "term": "window",
+     "weight": 4.74
+    },
+    {
+     "term": "windy",
+     "weight": 5.39
+    },
+    {
+     "term": "wine",
+     "weight": 7.9
+    },
+    {
+     "term": "wing",
+     "weight": 4.79
+    },
+    {
+     "term": "winter",
+     "weight": 4.38
+    },
+    {
+     "term": "wipe",
+     "weight": 4.83
+    },
+    {
+     "term": "wire",
+     "weight": 4.89
+    },
+    {
+     "term": "wise",
+     "weight": 6.79
+    },
+    {
+     "term": "witch",
+     "weight": 4.78
+    },
+    {
+     "term": "with",
+     "weight": 4.441998
+    },
+    {
+     "term": "without",
+     "weight": 6.53077
+    },
+    {
+     "term": "witness",
+     "weight": 8.74
+    },
+    {
+     "term": "wok",
+     "weight": 12.27
+    },
+    {
+     "term": "wolf",
+     "weight": 4.5
+    },
+    {
+     "term": "woman",
+     "weight": 4.95
+    },
+    {
+     "term": "womb",
+     "weight": 9.48
+    },
+    {
+     "term": "wombat",
+     "weight": 11.31
+    },
+    {
+     "term": "wood",
+     "weight": 4.58
+    },
+    {
+     "term": "woodpecker",
+     "weight": 6.5
+    },
+    {
+     "term": "wool",
+     "weight": 8.06
+    },
+    {
+     "term": "word",
+     "weight": 4.42
+    },
+    {
+     "term": "work",
+     "weight": 5.86
+    },
+    {
+     "term": "worker",
+     "weight": 6.67
+    },
+    {
+     "term": "world",
+     "weight": 5.32
+    },
+    {
+     "term": "worm",
+     "weight": 3.89
+    },
+    {
+     "term": "worry",
+     "weight": 6.61
+    },
+    {
+     "term": "worship",
+     "weight": 7
+    },
+    {
+     "term": "wound",
+     "weight": 7.52
+    },
+    {
+     "term": "wrap",
+     "weight": 7
+    },
+    {
+     "term": "wreath",
+     "weight": 7.06
+    },
+    {
+     "term": "wring",
+     "weight": 8.18
+    },
+    {
+     "term": "wrinkle",
+     "weight": 7.21
+    },
+    {
+     "term": "wrinkled",
+     "weight": 7.26
+    },
+    {
+     "term": "wrist",
+     "weight": 5.94
+    },
+    {
+     "term": "wristwatch",
+     "weight": 7.32
+    },
+    {
+     "term": "write",
+     "weight": 4.89
+    },
+    {
+     "term": "wrong",
+     "weight": 4.22
+    },
+    {
+     "term": "yak",
+     "weight": 7.78
+    },
+    {
+     "term": "yam",
+     "weight": 8.342459999999999
+    },
+    {
+     "term": "yard",
+     "weight": 3.94
+    },
+    {
+     "term": "yawn",
+     "weight": 5.3
+    },
+    {
+     "term": "year",
+     "weight": 5.24
+    },
+    {
+     "term": "yearling",
+     "weight": 11.32
+    },
+    {
+     "term": "yeast",
+     "weight": 9.53
+    },
+    {
+     "term": "yellow",
+     "weight": 3.2
+    },
+    {
+     "term": "yes",
+     "weight": 2.310598
+    },
+    {
+     "term": "yesterday",
+     "weight": 4.580539
+    },
+    {
+     "term": "yet",
+     "weight": 6.957050000000001
+    },
+    {
+     "term": "yoke",
+     "weight": 7.94
+    },
+    {
+     "term": "yolk",
+     "weight": 5.89
+    },
+    {
+     "term": "you",
+     "weight": 4.346085
+    },
+    {
+     "term": "young",
+     "weight": 4.61
+    },
+    {
+     "term": "your",
+     "weight": 4.100974000000001
+    },
+    {
+     "term": "zebra",
+     "weight": 4.79
+    },
+    {
+     "term": "zero",
+     "weight": 5.3052150000000005
+    }
+   ]
+  }
+ ],
+ "licenseClass": "commercial-ok"
+}
