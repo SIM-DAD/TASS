@@ -1,7 +1,6 @@
 {
   "name": "@simdad/tass-cli",
   "version": "0.5.1",
-  "private": true,
   "description": "TASS's command line for humans and AI: score documents against the bundled open lexicons (or an imported LIWC-format .dic), analyze raw text to JSON, list the bundle with citations, run KWIC concordance, and serve the whole engine over MCP (stdio) for AI agents. Thin, dependency-free shell over @simdad/tass-core; same determinism guarantee (same input => byte-identical output).",
   "license": "Apache-2.0",
   "main": "lib/cli.js",
@@ -22,5 +21,15 @@
   "scripts": {
     "build": "tsc -b",
     "test": "node --test test/cli.test.cjs test/determinism.test.cjs test/m3-throughput.test.cjs test/mcp.test.cjs test/gui.test.cjs test/validation-cli.test.cjs"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SIM-DAD/tass.git",
+    "directory": "packages/tass-cli"
+  },
+  "homepage": "https://github.com/SIM-DAD/tass",
+  "author": "SIM DAD LLC"
 }

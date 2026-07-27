@@ -1,7 +1,6 @@
 {
   "name": "@simdad/tass-core",
   "version": "0.5.1",
-  "private": true,
   "description": "TASS's engine: LIWC-style category counting over OPEN lexicons (wildcard `stem*` terms, weighted categories, per-document + per-group rollups), a LIWC-format .dic importer (file-format reader - users bring their own licensed dictionaries), and KWIC concordance. Pure, deterministic, dependency-free. Bundled-lexicon licensing contract: commercial-ok sources only (NRC/LIWC/GI etc. are NEVER bundled).",
   "license": "Apache-2.0",
   "main": "lib/index.js",
@@ -23,5 +22,15 @@
       "default": "./lib/index.js"
     },
     "./package.json": "./package.json"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SIM-DAD/tass.git",
+    "directory": "packages/tass-core"
+  },
+  "homepage": "https://github.com/SIM-DAD/tass",
+  "author": "SIM DAD LLC"
 }

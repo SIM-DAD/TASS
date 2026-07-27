@@ -1,7 +1,6 @@
 {
   "name": "@simdad/tass-project",
   "version": "0.5.1",
-  "private": true,
   "description": "TASS reproducible project container (.tassproj): deterministic timestamp-free archive of a run's config, corpus provenance, lexicon snapshots, and results; integrity-verified load; byte-identical re-run; compare-runs diff.",
   "license": "Apache-2.0",
   "main": "lib/index.js",
@@ -17,5 +16,15 @@
   "scripts": {
     "build": "tsc -b",
     "test": "node --test test/project.test.cjs test/validation.test.cjs"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SIM-DAD/tass.git",
+    "directory": "packages/tass-project"
+  },
+  "homepage": "https://github.com/SIM-DAD/tass",
+  "author": "SIM DAD LLC"
 }
